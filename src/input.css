@@ -1,0 +1,44 @@
+
+@import "tailwindcss";
+
+@layer base {
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Rethink Sans", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+    }
+    body, p {
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        color: #42453C;
+    }
+}   
+
+@layer theme {
+  :root, :host {
+    --color-black: #42453C !important;
+  }
+}
+
+@layer components {
+    .bg-brand-primary {
+        @apply bg-[#F0EAE3];
+    }
+    .bg-brand-secondary {
+        @apply bg-[#86A161];
+    }
+    .brand-border {
+        @apply border-[#648930];
+    }
+    .text-brand-primary {
+        @apply text-[#5A730F];
+    }
+
+    th, td {
+        @apply border border-[#BAAE9F] px-4 py-2;
+    }
+
+}
+
+
