@@ -38,6 +38,13 @@
     th, td {
         @apply border border-[#BAAE9F] px-4 py-2;
     }
+    .link-with-icon::before {
+        content: '';
+        @apply inline-block w-4 h-4 mr-2 align-middle;
+        background-image: url('/src/images/footer-link-icon.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
 
 }
 
