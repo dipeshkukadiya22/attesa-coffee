@@ -20,7 +20,8 @@
 </head>
 
 <body class="bg-brand-primary">
-  <nav class="py-4 relative text-[#EDE8E1] bg-black/50 backdrop-blur-lg z-5">
+  <nav id="main-nav"
+    class="sticky top-0 transition-all duration-500 ease-in-out py-4 text-[#EDE8E1] bg-black/50 backdrop-blur-lg z-99">
     <div class="container mx-auto flex items-center justify-between">
       <div class="font-bold text-xl w-[20%]">
         <a href="index.html">
@@ -34,11 +35,13 @@
         <li><a href="#" class="p-2">Beans by kg</a></li>
         <li><a href="#" class="p-2">Blog</a></li>
         <li><a href="#" class="p-2">Contact</a></li>
-
       </ul>
       <div class="flex justify-end items-center text-base w-[20%]">
         <div>
-          <a href="#" class="p-2 border text-[#EDE8E1] border-[#D7D0C4] px-4 rounded-lg">Sign In</a>
+          <a href="#" id="sign-in-btn"
+            class="p-2 border text-[#EDE8E1] border-[#D7D0C4] px-4 rounded-lg transition-colors duration-500">
+            Sign In
+          </a>
         </div>
       </div>
     </div>
@@ -52,7 +55,7 @@
 
     <div class="w-full mt-[-85px]">
 
-      <div class="swiper mySwiper w-full h-[714px]">
+      <div class="swiper mySwiper w-full h-[800px]">
         <div class="swiper-wrapper">
 
           <!-- Slide 1 -->
@@ -68,14 +71,9 @@
                 </div>
                 <div>
                   <a href="#"
-                    class="inline-block text-sm bg-white/20 text-white border border-[#D7D0C4] px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md">
+                    class="relative inline-block text-sm bg-white/20 text-white border border-[#D7D0C4] px-4 py-1 pr-6 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md overflow-hidden">
                     Our Coffee
-                    <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block ml-1 align-middle" fill="white">
-                      <path
-                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
-                      </path>
-                    </svg>
+                    <div class="arrow-animation absolute top-1 right-1 w-4 h-4"></div>
                   </a>
                 </div>
               </div>
@@ -94,14 +92,9 @@
                 </div>
                 <div>
                   <a href="#"
-                    class="inline-block text-sm bg-white/20 text-white border border-[#D7D0C4] px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md">
+                    class="relative inline-block text-sm bg-white/20 text-white border border-[#D7D0C4] px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md overflow-hidden pr-6">
                     Origins
-                    <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block ml-1 align-middle" fill="white">
-                      <path
-                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
-                      </path>
-                    </svg>
+                    <div class="arrow-animation absolute top-1 right-1 w-4 h-4"></div>
                   </a>
                 </div>
               </div>
@@ -119,14 +112,9 @@
                 </div>
                 <div>
                   <a href="#"
-                    class="inline-block text-sm bg-white/20 text-white border border-[#D7D0C4] px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md">
+                    class="relative inline-block text-sm bg-white/20 text-white border border-[#D7D0C4] px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md pr-6">
                     Order Samples
-                    <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block ml-1 align-middle" fill="white">
-                      <path
-                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
-                      </path>
-                    </svg>
+                    <div class="arrow-animation absolute top-1 right-1 w-4 h-4"></div>
                   </a>
                 </div>
               </div>
@@ -149,7 +137,7 @@
           <img src="/src/images/home-vision.png" alt="Vision" class="w-full h-auto rounded-lg shadow-lg">
         </div>
         <div class="inline-flex flex-col justify-center items-center text-center">
-          <h2 class="text-4xl text-brand-primary mb-4 w-md leading-12">Coffee, a bond between the hands growing it & the
+          <h2 class="text-4xl font-semibold text-brand-primary mb-4 w-md leading-12">Coffee, a bond between the hands growing it & the
             roasters
             bringing it to life.</h2>
           <p class="text-base mb-6 leading-7 w-lg">At Attesa, we believe the journey from farm to cup should be as
@@ -174,7 +162,7 @@
 
     <!-- Loose Beans -->
     <div
-      class="bg-brand-secondary bg-[url(/src/images/BG-Frame-1618869025.svg)] bg-cover bg-bottom bg-no-repeat h-[343px] my-10 content-center">
+      class="bg-[#6F894D] bg-[url(/src/images/BG-Frame-1618869025.svg)] bg-cover bg-bottom bg-no-repeat h-[343px] my-10 content-center">
       <div class="container mx-auto px-4 my-8">
         <div class="flex flex-col justify-center items-center text-[#EDE8E1] space-y-6">
           <h3 class="text-7xl font-extrabold italic capitalize">loose beans, big dreams</h3>
@@ -196,12 +184,12 @@
     </div>
 
     <!-- Table Section -->
-    <div class="relative container mx-auto px-4 py-14 space-y-8 z-[99] bg-[#F0EAE3]">
+    <div class="relative container mx-auto px-4 py-14 space-y-8 z-[10] bg-[#F0EAE3]">
       <div class="flex flex-col items-center text-center space-y-4">
         <h3 class="text-4xl font-semibold text-brand-primary">Lineup for the Roast</h3>
         <p class="text-xl">From standout varietals to diverse cup profiles, each lot is sourced with precision.</p>
       </div>
-      <div class="overflow-x-auto bg-[#F5EADE] p-2 border border-[#DBC4A7] rounded">
+      <div class="overflow-x-auto bg-[#F5EADE] p-2 border border-[#DBC4A7] rounded-lg">
         <table
           class="standard-tbl table-auto min-w-full text-left border border-[#BAAE9F] border-collapse rounded-lg overflow-hidden">
           <thead>
@@ -429,7 +417,7 @@
 
     <!-- Image Accordion Section -->
     <div class="px-4 py-16">
-      <div id="image-accordion" class="flex flex-row gap-4 h-[620px]">
+      <div id="image-accordion" class="flex flex-row gap-2 h-[620px]">
         <!-- Accordion Item 1 (Open by default) -->
         <div
           class="group relative flex-1 transition-[flex] duration-500 overflow-hidden rounded-lg cursor-pointer bg-cover bg-center bg-[url('/src/images/aco-img-1.jpg')] items-start"
@@ -849,6 +837,20 @@
           </div>
 
         </div>
+
+        <div class="flex flex-col items-center text-center space-y-2">
+          <a href="#"
+            class="inline-block bg-brand-secondary text-white border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary mt-8">
+            Read More
+            <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+              class="inline-block ml-2 align-middle" fill="white">
+              <path
+                d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+              </path>
+            </svg>
+          </a>
+        </div>
+
       </div>
 
 
@@ -969,7 +971,7 @@
       const swiper = new Swiper(".mySwiper", {
         loop: true,
         autoplay: {
-          delay: 3000,
+          delay: 9000,
           disableOnInteraction: false,
         },
         pagination: {
@@ -1010,6 +1012,56 @@
       // Open first by default
       window.addEventListener('DOMContentLoaded', () => openAccordion(0));
     </script>
+
+
+    <!-- Sticky Navigation Script -->
+    <script>
+      const nav = document.getElementById('main-nav');
+      const signInBtn = document.getElementById('sign-in-btn');
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) {
+          // Nav styles
+          nav.classList.add('bg-[#F5EADE]', 'text-[#3B3D34]', 'shadow-md');
+          nav.classList.remove('bg-black/50', 'text-[#EDE8E1]');
+
+          // Sign In button styles
+          signInBtn.classList.add('text-[#3B3D34]', 'border-[#3B3D34]');
+          signInBtn.classList.remove('text-[#EDE8E1]', 'border-[#D7D0C4]');
+        } else {
+          // Nav styles revert
+          nav.classList.remove('bg-[#F5EADE]', 'text-[#3B3D34]', 'shadow-md');
+          nav.classList.add('bg-black/50', 'text-[#EDE8E1]');
+
+          // Sign In button revert
+          signInBtn.classList.remove('text-[#3B3D34]', 'border-[#3B3D34]');
+          signInBtn.classList.add('text-[#EDE8E1]', 'border-[#D7D0C4]');
+        }
+      });
+    </script>
+    
+
+    <!-- Icon Animation Script -->
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const iconHTML = `
+        <span class="absolute inset-0 transition-all duration-300 ease-in-out group-hover:-translate-y-2 group-hover:translate-x-2 group-hover:opacity-0 z-10">
+          <svg class="inline-block w-2 h-2" viewBox="0 0 512 512" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z" />
+          </svg>
+        </span>
+        <span class="absolute inset-0 translate-y-2 -translate-x-2 opacity-0 transition-all duration-300 ease-in-out group-hover:translate-y-0 group-hover:translate-x-0 group-hover:opacity-100 z-20">
+          <svg class="inline-block w-2 h-2" viewBox="0 0 512 512" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z" />
+          </svg>
+        </span>
+      `;
+
+      document.querySelectorAll(".arrow-animation").forEach(el => {
+        el.innerHTML = iconHTML;
+      });
+    });
+  </script>
 
 
 </body>
