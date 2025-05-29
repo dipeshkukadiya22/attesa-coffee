@@ -12,12 +12,15 @@
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
 
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <title>Home - Attesa Coffee</title>
   <link href="./src/style.css" rel="stylesheet">
 </head>
 
 <body class="bg-brand-primary">
-  <nav class="py-4 relative text-white bg-black/50 backdrop-blur-lg">
+  <nav class="py-4 relative text-[#EDE8E1] bg-black/50 backdrop-blur-lg z-5">
     <div class="container mx-auto flex items-center justify-between">
       <div class="font-bold text-xl w-[20%]">
         <a href="index.html">
@@ -35,7 +38,7 @@
       </ul>
       <div class="flex justify-end items-center text-base w-[20%]">
         <div>
-          <a href="#" class="p-2 border border-white px-4 rounded-lg">Sign In</a>
+          <a href="#" class="p-2 border text-[#EDE8E1] border-[#D7D0C4] px-4 rounded-lg">Sign In</a>
         </div>
       </div>
     </div>
@@ -45,27 +48,116 @@
     <!-- Your main content here -->
 
     <!-- Hero Banner Slider  -->
-    <div class="w-full min-h-screen bg-[url(/src/images/banner-1.jpg)] bg-cover bg-no-repeat mt-[-85px]">
-      <div class="container mx-auto px-4 py-8">
 
+
+    <div class="w-full mt-[-85px]">
+
+      <div class="swiper mySwiper w-full h-[714px]">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div
+            class="swiper-slide bg-[url(/src/images/banner-1.jpg)] bg-cover bg-no-repeat flex items-center justify-center text-white content-end">
+            <div class="container mx-auto px-4 py-20">
+              <div class="flex flex-col items-start justify-end space-y-2 w-sm">
+                <div>
+                  <h1 class="text-5xl font-medium mb-2 leading-16">Looking for Green Coffee?</h1>
+                  <p class="text-base mb-6 text-white font-light w-76">We have coffees from around the world, to savour
+                    your taste
+                    buds.</p>
+                </div>
+                <div>
+                  <a href="#"
+                    class="inline-block text-sm bg-white/20 text-white border border-[#D7D0C4] px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md">
+                    Our Coffee
+                    <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                      class="inline-block ml-1 align-middle" fill="white">
+                      <path
+                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div
+            class="swiper-slide bg-[url(/src/images/banner-2.jpg)] bg-cover bg-no-repeat flex items-center justify-center text-white content-end">
+            <div class="container mx-auto px-4 py-20">
+              <div class="flex flex-col items-start justify-end space-y-2 w-120">
+                <div>
+                  <h1 class="text-5xl font-medium mb-2 leading-16">From Bean to Cup: A Journey of Flavor</h1>
+                  <p class="text-base mb-6 text-white w-74">discover the rich origins of our ethically sourced coffee
+                    beans.</p>
+                </div>
+                <div>
+                  <a href="#"
+                    class="inline-block text-sm bg-white/20 text-white border border-[#D7D0C4] px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md">
+                    Origins
+                    <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                      class="inline-block ml-1 align-middle" fill="white">
+                      <path
+                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div
+            class="swiper-slide bg-[url(/src/images/banner-3.jpg)] bg-cover bg-no-repeat flex items-center justify-center text-white content-end">
+            <div class="container mx-auto px-4 py-20">
+              <div class="flex flex-col items-start justify-end space-y-2 w-sm">
+                <div>
+                  <h1 class="text-5xl font-medium mb-2 leading-16">Are you looking for samples?</h1>
+                  <p class="text-base mb-6 text-white w-76">find out your perfect bean.</p>
+                </div>
+                <div>
+                  <a href="#"
+                    class="inline-block text-sm bg-white/20 text-white border border-[#D7D0C4] px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md">
+                    Order Samples
+                    <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                      class="inline-block ml-1 align-middle" fill="white">
+                      <path
+                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
       </div>
+
+
     </div>
 
     <!-- Join Vision -->
-    <div class="container mx-auto px-4 py-8">
-      <div class="grid grid-cols-2 gap-18 align-middle items-center">
+    <div class="container mx-auto px-4 py-12">
+      <div class="grid grid-cols-2 align-middle items-center">
         <div>
           <img src="/src/images/home-vision.png" alt="Vision" class="w-full h-auto rounded-lg shadow-lg">
         </div>
-        <div class="text-center mx-auto w-2xl">
-          <h2 class="text-5xl text-brand-primary mb-4 leading-14">Coffee, a bond between the hands growing it & the
+        <div class="inline-flex flex-col justify-center items-center text-center">
+          <h2 class="text-4xl text-brand-primary mb-4 w-md leading-12">Coffee, a bond between the hands growing it & the
             roasters
             bringing it to life.</h2>
-          <p class="text-base mb-6 leading-7">At Attesa, we believe the journey from farm to cup should be as
-            transparent as the
+          <p class="text-base mb-6 leading-7 w-lg">At Attesa, we believe the journey from farm to cup should be as
+            <span class="text-brand-primary font-semibold">transparent</span> as the
             brew itself. That’s why we partner directly with smallholders and cooperatives—<span
               class="text-brand-primary font-semibold">eliminating middlemen, ensuring fair prices</span>, and giving
-            you full traceability on every lot. </p>
+            you full traceability on every lot.
+          </p>
           <a href="#"
             class="inline-block bg-brand-secondary text-white border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
             Join The Vision
@@ -82,7 +174,7 @@
 
     <!-- Loose Beans -->
     <div
-      class="bg-brand-secondary bg-[url(/src/images/bg-group-3.svg)] bg-cover bg-no-repeat bg-top h-[343px] my-10 content-center">
+      class="bg-brand-secondary bg-[url(/src/images/BG-Frame-1618869025.svg)] bg-cover bg-bottom bg-no-repeat h-[343px] my-10 content-center">
       <div class="container mx-auto px-4 my-8">
         <div class="flex flex-col justify-center items-center text-[#EDE8E1] space-y-6">
           <h3 class="text-7xl font-extrabold italic capitalize">loose beans, big dreams</h3>
@@ -107,7 +199,7 @@
     <div class="relative container mx-auto px-4 py-14 space-y-8 z-[99] bg-[#F0EAE3]">
       <div class="flex flex-col items-center text-center space-y-4">
         <h3 class="text-4xl font-semibold text-brand-primary">Lineup for the Roast</h3>
-        <p>From standout varietals to diverse cup profiles, each lot is sourced with precision.</p>
+        <p class="text-xl">From standout varietals to diverse cup profiles, each lot is sourced with precision.</p>
       </div>
       <div class="overflow-x-auto bg-[#F5EADE] p-2 border border-[#DBC4A7] rounded">
         <table
@@ -123,70 +215,85 @@
           </thead>
           <tbody>
             <tr>
-              <td>Brazil</td>
+              <td class="flag brazil-flag">Brazil</td>
               <td>Fine Cup 14/16 Santos</td>
               <td>Blend</td>
               <td>chocolate, nutty</td>
               <td>-</td>
             </tr>
             <tr>
-              <td>Brazil</td>
+              <td class="flag colombia-flag">Colombia</td>
               <td>Fine Cup 14/16 Santos</td>
               <td>Blend</td>
               <td>chocolate, nutty</td>
               <td>-</td>
             </tr>
             <tr>
-              <td>Brazil</td>
+              <td class="flag brazil-flag">Brazil</td>
               <td>Fine Cup 14/16 Santos</td>
               <td>Blend</td>
               <td>chocolate, nutty</td>
               <td>-</td>
             </tr>
             <tr>
-              <td>Brazil</td>
-              <td>Fine Cup 14/16 Santos</td>
-              <td>Blend</td>
-              <td>chocolate, nutty</td>
-              <td>86.75</td>
-            </tr>
-            <tr>
-              <td>Brazil</td>
+              <td class="flag colombia-flag">Colombia</td>
               <td>Fine Cup 14/16 Santos</td>
               <td>Blend</td>
               <td>chocolate, nutty</td>
               <td>-</td>
             </tr>
             <tr>
-              <td>Brazil</td>
+              <td class="flag brazil-flag">Brazil</td>
               <td>Fine Cup 14/16 Santos</td>
               <td>Blend</td>
               <td>chocolate, nutty</td>
               <td>-</td>
             </tr>
             <tr>
-              <td>Brazil</td>
+              <td class="flag colombia-flag">Colombia</td>
               <td>Fine Cup 14/16 Santos</td>
               <td>Blend</td>
               <td>chocolate, nutty</td>
               <td>-</td>
             </tr>
             <tr>
-              <td>Brazil</td>
+              <td class="flag brazil-flag">Brazil</td>
               <td>Fine Cup 14/16 Santos</td>
               <td>Blend</td>
               <td>chocolate, nutty</td>
               <td>-</td>
             </tr>
+            <tr>
+              <td class="flag colombia-flag">Colombia</td>
+              <td>Fine Cup 14/16 Santos</td>
+              <td>Blend</td>
+              <td>chocolate, nutty</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="flag brazil-flag">Brazil</td>
+              <td>Fine Cup 14/16 Santos</td>
+              <td>Blend</td>
+              <td>chocolate, nutty</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="flag colombia-flag">Colombia</td>
+              <td>Fine Cup 14/16 Santos</td>
+              <td>Blend</td>
+              <td>chocolate, nutty</td>
+              <td>-</td>
+            </tr>
+
           </tbody>
         </table>
       </div>
 
       <div
-        class="relative flex justify-center items-center space-x-4 pt-[80px] mt-[-96px] bg-[linear-gradient(to_top,_#F0EAE3_30%,_#f0eae34d_100%)]">
+        class="relative flex justify-center items-center space-x-4 pt-[80px] mt-[-96px] bg-[linear-gradient(to_top,_#F0EAE3_30%,_#f0eae34d_100%)] backdrop-blur-[1.1px]">
         <a href="#"
           class="inline-block bg-transparent text-[#86A161] border border-[#648930] px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
-          Know More
+          View All
           <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
             class="inline-block ml-1 align-middle" fill="#86A161">
             <path
@@ -196,7 +303,7 @@
         </a>
         <a href="#"
           class="inline-block bg-brand-secondary text-white border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
-          Get Prices
+          Login for Pricing
           <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
             class="inline-block ml-2 align-middle" fill="white">
             <path
@@ -246,7 +353,7 @@
 
     <!--Season Section-->
     <div
-      class="w-full h-[512px] bg-[url(/src/images/Banner-Seasonality-Calendar-2.jpg)] bg-cover bg-no-repeat bg-bottom flex justify-center items-center text-center">
+      class="skyanimation w-full h-[540px] bg-[url(/src/images/SUL-DE-MINAS-4_land-1-min.png)] bg-cover bg-no-repeat bg-position-[0_20%] flex justify-center items-center text-center">
       <div class="container mx-auto px-4 py-20 space-y-4">
         <h3 class="text-5xl font-semibold text-[#46433E]">When Seasons Turn, Beans Return.</h3>
         <p class="tracking-wide">Never miss a harvest window — plan your roasts with precision.</p>
@@ -282,13 +389,401 @@
       </div>
     </div> -->
 
+    <!-- Keep in Touch -->
+    <div class="container mx-auto px-14 py-20">
+      <div class="grid grid-cols-2 align-middle items-center bg-[#FFF1E2] rounded-lg">
+        <div>
+          <img src="/src/images/home-vision.png" alt="Vision" class="w-full h-auto">
+        </div>
+        <div class="text-left mx-auto p-12 space-y-4">
+          <p class="flex items-center gap-2 mb-4 text[#46433E]">
+            <span class=""><img src="/src/images/right-arrow-icon.svg" class="w-3"></span>
+            <span class="text-xs">Subscribe to the Newsletter</span>
+          </p>
+          <h2 class="text-4xl font-semibold text-brand-primary  mb-4">Let’s Keep in Touch</h2>
+          <ul class="list-disc space-y-2 pl-6">
+            <li>Early access to new harvests.</li>
+            <li>Curated stories, sourcing updates, and behind-the-scenes glimpses.</li>
+            <li>Latest spot availability, pricing trends, and exclusive offer updates.</li>
+          </ul>
+          <form class="flex flex-col gap-y-4 max-w-md"></form>
+          <input type="text" name="name" placeholder="Name (optional)"
+            class="px-3 py-2 rounded-lg text-sm border border-[#898277] w-full">
+          <div class="relative border border-[#898277] rounded-lg">
+            <input type="email" name="email" placeholder="Email" required class="px-3 py-2 rounded-lg text-sm w-full">
+          </div>
+          <button type="submit"
+            class="bg-brand-secondary text-white px-4 py-1 rounded-lg hover:bg-brand-primary transition-colors duration-200 cursor-pointer">
+            Subscribe
+            <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+              class="inline-block ml-1 align-middle" fill="white">
+              <path
+                d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+              </path>
+            </svg>
+          </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image Accordion Section -->
+    <div class="px-4 py-16">
+      <div id="image-accordion" class="flex flex-row gap-4 h-[620px]">
+        <!-- Accordion Item 1 (Open by default) -->
+        <div
+          class="group relative flex-1 transition-[flex] duration-500 overflow-hidden rounded-lg cursor-pointer bg-cover bg-center bg-[url('/src/images/aco-img-1.jpg')] items-start"
+          onclick="openAccordion(0)">
+          <!-- Black overlay -->
+          <div class="absolute inset-0 bg-black/50 z-0"></div>
+          <div class="absolute left-[6rem] bottom-0 h-full flex items-end z-10">
+            <h2 class="text-5xl font-bold text-[#F0EAE3] rotate-[-90deg] origin-left whitespace-nowrap uppercase">
+              asia</h2>
+          </div>
+          <div id="accordion-content-0"
+            class="absolute inset-0 flex flex-col justify-between items-start text-[#F0EAE3] opacity-100 pointer-events-auto transition-opacity duration-500 px-48 py-6 space-y-6 z-10">
+
+            <div>
+              <div class="flex flex-row justify-between items-center mb-4 space-x-4">
+
+                <!-- Flag and Country Name 1 -->
+                <a href="#" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
+                  <div class="flex items-center space-x-2 p-1">
+                    <img src="/src/images/flags/india.svg" alt="India" class="w-6 h-6">
+                    <span class="text-[#A38764]">India</span>
+                  </div>
+                  <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
+                    <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                      class="inline-block align-middle" fill="white">
+                      <path
+                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                      </path>
+                    </svg>
+                  </div>
+                </a>
+
+                <!-- Flag and Country Name 2 -->
+                <a href="#" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
+                  <div class="flex items-center space-x-2 p-1">
+                    <img src="/src/images/flags/kenya.svg" alt="India" class="w-6 h-6">
+                    <span class="text-[#A38764]">Kenya</span>
+                  </div>
+                  <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
+                    <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                      class="inline-block align-middle" fill="white">
+                      <path
+                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                      </path>
+                    </svg>
+                  </div>
+                </a>
+
+                <!-- Flag and Country Name 3 -->
+                <a href="#" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
+                  <div class="flex items-center space-x-2 p-1">
+                    <img src="/src/images/flags/rwanda.svg" alt="India" class="w-6 h-6">
+                    <span class="text-[#A38764]">Rwanda</span>
+                  </div>
+                  <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
+                    <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                      class="inline-block align-middle" fill="white">
+                      <path
+                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                      </path>
+                    </svg>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+
+            <div class="space-y-6">
+              <h3 class="text-5xl font-semibold leading-14 w-4xl">Asian coffees are known for their bold body and low
+                acidity
+                —
+                perfect for espresso blends.</h3>
+              <a href="#"
+                class="inline-block bg-brand-secondary text-white border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+                Explore all origins
+                <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                  class="inline-block ml-2 align-middle" fill="white">
+                  <path
+                    d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <!-- Accordion Item 2 -->
+        <div
+          class="group relative flex-1 transition-[flex] duration-500 overflow-hidden rounded-lg cursor-pointer bg-cover bg-center bg-[url('/src/images/aco-img-2.jpg')] items-start"
+          onclick="openAccordion(1)">
+          <!-- Black overlay -->
+          <div class="absolute inset-0 bg-black/50 z-0"></div>
+          <div class="absolute left-[6rem] bottom-0 h-full flex items-end z-10">
+            <h2 class="text-5xl font-bold text-[#F0EAE3] rotate-[-90deg] origin-left whitespace-nowrap uppercase">
+              central america</h2>
+          </div>
+          <div id="accordion-content-1"
+            class="absolute inset-0 flex flex-col justify-between items-start text-[#F0EAE3] opacity-100 pointer-events-auto transition-opacity duration-500 px-48 py-6 space-y-6 z-10">
+
+            <div>
+              <div class="flex flex-row justify-between items-center mb-4 space-x-4">
+
+                <!-- Flag and Country Name 1 -->
+                <a href="#" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
+                  <div class="flex items-center space-x-2 p-1">
+                    <img src="/src/images/flags/india.svg" alt="India" class="w-6 h-6">
+                    <span class="text-[#A38764]">India</span>
+                  </div>
+                  <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
+                    <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                      class="inline-block align-middle" fill="white">
+                      <path
+                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                      </path>
+                    </svg>
+                  </div>
+                </a>
+
+                <!-- Flag and Country Name 2 -->
+                <a href="#" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
+                  <div class="flex items-center space-x-2 p-1">
+                    <img src="/src/images/flags/kenya.svg" alt="India" class="w-6 h-6">
+                    <span class="text-[#A38764]">Kenya</span>
+                  </div>
+                  <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
+                    <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                      class="inline-block align-middle" fill="white">
+                      <path
+                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                      </path>
+                    </svg>
+                  </div>
+                </a>
+
+                <!-- Flag and Country Name 3 -->
+                <a href="#" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
+                  <div class="flex items-center space-x-2 p-1">
+                    <img src="/src/images/flags/rwanda.svg" alt="India" class="w-6 h-6">
+                    <span class="text-[#A38764]">Rwanda</span>
+                  </div>
+                  <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
+                    <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                      class="inline-block align-middle" fill="white">
+                      <path
+                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                      </path>
+                    </svg>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+
+            <div class="space-y-6">
+              <h3 class="text-5xl font-semibold leading-14 w-4xl">Asian coffees are known for their bold body and low
+                acidity
+                —
+                perfect for espresso blends.</h3>
+              <a href="#"
+                class="inline-block bg-brand-secondary text-white border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+                Explore all origins
+                <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                  class="inline-block ml-2 align-middle" fill="white">
+                  <path
+                    d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <!-- Accordion Item 3 -->
+        <div
+          class="group relative flex-1 transition-[flex] duration-500 overflow-hidden rounded-lg cursor-pointer bg-cover bg-center bg-[url('/src/images/aco-img-3.jpg')] items-start"
+          onclick="openAccordion(2)">
+          <!-- Black overlay -->
+          <div class="absolute inset-0 bg-black/50 z-0"></div>
+          <div class="absolute left-[6rem] bottom-0 h-full flex items-end z-10">
+            <h2 class="text-5xl font-bold text-[#F0EAE3] rotate-[-90deg] origin-left whitespace-nowrap uppercase">
+              south america</h2>
+          </div>
+          <div id="accordion-content-2"
+            class="absolute inset-0 flex flex-col justify-between items-start text-[#F0EAE3] opacity-100 pointer-events-auto transition-opacity duration-500 px-48 py-6 space-y-6 z-10">
+
+            <div>
+              <div class="flex flex-row justify-between items-center mb-4 space-x-4">
+
+                <!-- Flag and Country Name 1 -->
+                <a href="#" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
+                  <div class="flex items-center space-x-2 p-1">
+                    <img src="/src/images/flags/india.svg" alt="India" class="w-6 h-6">
+                    <span class="text-[#A38764]">India</span>
+                  </div>
+                  <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
+                    <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                      class="inline-block align-middle" fill="white">
+                      <path
+                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                      </path>
+                    </svg>
+                  </div>
+                </a>
+
+                <!-- Flag and Country Name 2 -->
+                <a href="#" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
+                  <div class="flex items-center space-x-2 p-1">
+                    <img src="/src/images/flags/kenya.svg" alt="India" class="w-6 h-6">
+                    <span class="text-[#A38764]">Kenya</span>
+                  </div>
+                  <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
+                    <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                      class="inline-block align-middle" fill="white">
+                      <path
+                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                      </path>
+                    </svg>
+                  </div>
+                </a>
+
+                <!-- Flag and Country Name 3 -->
+                <a href="#" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
+                  <div class="flex items-center space-x-2 p-1">
+                    <img src="/src/images/flags/rwanda.svg" alt="India" class="w-6 h-6">
+                    <span class="text-[#A38764]">Rwanda</span>
+                  </div>
+                  <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
+                    <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                      class="inline-block align-middle" fill="white">
+                      <path
+                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                      </path>
+                    </svg>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+
+            <div class="space-y-6">
+              <h3 class="text-5xl font-semibold leading-14 w-4xl">Asian coffees are known for their bold body and low
+                acidity
+                —
+                perfect for espresso blends.</h3>
+              <a href="#"
+                class="inline-block bg-brand-secondary text-white border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+                Explore all origins
+                <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                  class="inline-block ml-2 align-middle" fill="white">
+                  <path
+                    d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <!-- Accordion Item 4 -->
+        <div
+          class="group relative flex-1 transition-[flex] duration-500 overflow-hidden rounded-lg cursor-pointer bg-cover bg-center bg-[url('/src/images/aco-img-4.jpg')] items-start"
+          onclick="openAccordion(3)">
+          <!-- Black overlay -->
+          <div class="absolute inset-0 bg-black/50 z-0"></div>
+          <div class="absolute left-[6rem] bottom-0 h-full flex items-end z-10">
+            <h2 class="text-5xl font-bold text-[#F0EAE3] rotate-[-90deg] origin-left whitespace-nowrap uppercase">
+              africa</h2>
+          </div>
+          <div id="accordion-content-3"
+            class="absolute inset-0 flex flex-col justify-between items-start text-[#F0EAE3] opacity-100 pointer-events-auto transition-opacity duration-500 px-48 py-6 space-y-6 z-10">
+
+            <div>
+              <div class="flex flex-row justify-between items-center mb-4 space-x-4">
+
+                <!-- Flag and Country Name 1 -->
+                <a href="#" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
+                  <div class="flex items-center space-x-2 p-1">
+                    <img src="/src/images/flags/india.svg" alt="India" class="w-6 h-6">
+                    <span class="text-[#A38764]">India</span>
+                  </div>
+                  <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
+                    <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                      class="inline-block align-middle" fill="white">
+                      <path
+                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                      </path>
+                    </svg>
+                  </div>
+                </a>
+
+                <!-- Flag and Country Name 2 -->
+                <a href="#" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
+                  <div class="flex items-center space-x-2 p-1">
+                    <img src="/src/images/flags/kenya.svg" alt="India" class="w-6 h-6">
+                    <span class="text-[#A38764]">Kenya</span>
+                  </div>
+                  <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
+                    <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                      class="inline-block align-middle" fill="white">
+                      <path
+                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                      </path>
+                    </svg>
+                  </div>
+                </a>
+
+                <!-- Flag and Country Name 3 -->
+                <a href="#" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
+                  <div class="flex items-center space-x-2 p-1">
+                    <img src="/src/images/flags/rwanda.svg" alt="India" class="w-6 h-6">
+                    <span class="text-[#A38764]">Rwanda</span>
+                  </div>
+                  <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
+                    <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                      class="inline-block align-middle" fill="white">
+                      <path
+                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                      </path>
+                    </svg>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+
+            <div class="space-y-6">
+              <h3 class="text-5xl font-semibold leading-14 w-4xl">Asian coffees are known for their bold body and low
+                acidity
+                —
+                perfect for espresso blends.</h3>
+              <a href="#"
+                class="inline-block bg-brand-secondary text-white border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+                Explore all origins
+                <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                  class="inline-block ml-2 align-middle" fill="white">
+                  <path
+                    d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 
     <!-- Blogs -->
-    <div class="container mx-auto px-4 py-14 space-y-8">
+    <div class="container mx-auto px-4 pb-14 space-y-8">
       <div class="flex flex-col items-center text-center space-y-2">
-        <h3 class="text-4xl font-semibold text-brand-primary">Blog</h3>
-        <p>Your go‑to resource for industry insights, farm‑to‑cup stories, and B2B market analysis.</p>
+        <h3 class="text-4xl font-semibold text-brand-primary">Blogs</h3>
+        <p class="text-xl">Your go‑to resource for industry insights, farm‑to‑cup stories, and B2B market analysis.</p>
       </div>
       <div>
         <div class="grid grid-cols-3 divide-x divide-[#8E8D8B] border-y border-[#8E8D8B]">
@@ -298,7 +793,7 @@
             <div>
               <p class="flex items-center gap-2 mb-2">
                 <span class=""><img src="/src/images/right-arrow-icon.svg" class="w-3"></span>
-                <span class="text-xs">May 21, 2025</span>
+                <span class="text-xs">Coffee 101</span>
               </p>
               <h4 class="text-base font-semibold uppercase">The Art of Roasting: From Green to Gold</h4>
             </div>
@@ -318,7 +813,7 @@
             <div>
               <p class="flex items-center gap-2 mb-2">
                 <span class=""><img src="/src/images/right-arrow-icon.svg" class="w-3"></span>
-                <span class="text-xs">May 21, 2025</span>
+                <span class="text-xs">The Roast</span>
               </p>
               <h4 class="text-base font-semibold uppercase">The Art of Roasting: From Green to Gold</h4>
             </div>
@@ -338,7 +833,7 @@
             <div>
               <p class="flex items-center gap-2 mb-2">
                 <span class=""><img src="/src/images/right-arrow-icon.svg" class="w-3"></span>
-                <span class="text-xs">May 21, 2025</span>
+                <span class="text-xs">The Harvest</span>
               </p>
               <h4 class="text-base font-semibold uppercase">The Art of Roasting: From Green to Gold</h4>
             </div>
@@ -359,14 +854,37 @@
 
     </div>
 
-    <footer class="bg-[url(/src/images/footer-vector-9.svg)] bg-size-[600px] bg-no-repeat bg-left-center border-t-2 border-[#BAAE9F]">
-      <div class="container mx-auto px-4 py-8">
-        <div class="flex flex-row justify-between items-center text-[#3C3A37] py-8">
+    <!-- Instagram -->
+    <div class="container mx-auto px-4 py-14">
+      <div class="flex flex-col items-center text-center space-y-2 mb-8">
+        <h3 class="text-4xl font-semibold text-brand-primary">Snapshots of the Source</h3>
+        <p class="w-2xl text-xl">Follow our feed for real‑time updates on new arrivals, sustainability efforts, and
+          coffee community highlights.</p>
+      </div>
+      <div class="grid grid-cols-4 gap-4">
+        <img src="/src/images/insta-img-1.jpg" alt="Instagram 1" class="w-full h-64 object-cover rounded-lg">
+        <img src="/src/images/insta-img-2.jpg" alt="Instagram 2" class="w-full h-64 object-cover rounded-lg">
+        <img src="/src/images/insta-img-1.jpg" alt="Instagram 3" class="w-full h-64 object-cover rounded-lg">
+        <img src="/src/images/insta-img-2.jpg" alt="Instagram 4" class="w-full h-64 object-cover rounded-lg">
+      </div>
+      <div class="flex flex-col items-center text-center py-8">
+        <a href="#"
+          class="inline-block bg-brand-secondary text-[#F0EAE3] border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+          Explore on instagram
+          <img src="/src/images/instagram-icon.svg" alt="Instagram" class="inline-block ml-2 align-middle w-4 h-4">
+        </a>
+      </div>
+    </div>
 
-          <div class="w-2/5">
+    <footer
+      class="bg-[url(/src/images/footer-vector-9.svg)] bg-contain bg-no-repeat bg-left-center border-t-2 border-[#BAAE9F]">
+      <div class="container mx-auto px-4 py-8">
+        <div class="flex flex-row justify-between text-[#3C3A37] py-8">
+
+          <div class="w-1/3">
             <img src="/src/images/logo-white.svg" alt="Logo" class="inline-block w-36 mb-4">
           </div>
-          <div class="w-3/5">
+          <div class="w-2/3">
             <div class="flex flex-row justify-between items-start">
               <div class="w-1/3">
                 <h4 class="uppercase text-base font-semibold mb-4">Terms</h4>
@@ -391,17 +909,52 @@
               <div class="w-1/3">
                 <div class="flex flex-col">
                   <h4 class="uppercase text-base font-semibold mb-2 w-46">From lush estates to your coffee plates</h4>
-                  <p class="text-sm">Subscribe for deep dives on bean highs, pricing ties, and shipping-wise advisories!</p>
+                  <p class="text-sm">Subscribe for deep dives on bean highs, pricing ties, and shipping-wise advisories!
+                  </p>
+                </div>
+                <div>
+                  <form class="flex flex-col gap-y-2 mt-4">
+                    <input type="text" placeholder="Name"
+                      class="px-3 py-2 rounded-lg bg-[#F0EAE3] text-sm border border-[#3C3A37]">
+                    <div class="relative border border-[#3C3A37] rounded-lg">
+                      <input type="email" placeholder="Email" class="px-3 py-2 rounded-lg bg-[#F0EAE3] text-sm w-full">
+                      <button type="submit" class="absolute cursor-pointer right-2 top-1/2 transform -translate-y-1/2">
+                        <svg height="8" width="8" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                          fill="#3C3A37">
+                          <path
+                            d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                          </path>
+                        </svg>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div class="text-sm flex flex-row gap-x-2 py-6">
+                  <a href="#" class="">
+                    <div class="inline-flex justify-center items-center p-2 rounded-full bg-[#575450]">
+                      <img src="/src/images/linkedin-icon.svg" alt="LinkedIn" class="inline-block w-4">
+                    </div>
+                  </a>
+                  <a href="#" class="">
+                    <div class="inline-flex justify-center items-center p-2 rounded-full bg-[#575450]">
+                      <img src="/src/images/instagram-icon.svg" alt="Instagram" class="inline-block w-4">
+                    </div>
+                  </a>
+                  <a href="#" class="">
+                    <div class="inline-flex justify-center items-center p-2 rounded-full bg-[#575450]">
+                      <img src="/src/images/facebook-icon.svg" alt="Facebook" class="inline-block w-4">
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-        
+
         </div>
         <div class="flex flex-row justify-between items-center py-4">
           <p class="text-sm text-[#F0EAE3]">© Attesa B.V. 2025 . All rights reserved.</p>
           <p class="text-sm">
-            Powered by: 
+            Powered by:
             <a href="https://teque7.com" target="_blank" rel="noopener noreferrer">
               <img src="/src/images/t7.png" alt="TEQUE7" class="inline-block w-16">
             </a>
@@ -409,6 +962,55 @@
         </div>
       </div>
     </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <!-- Custom Accordion Script -->
+    <script>
+      function openAccordion(index) {
+        const total = 4;
+        for (let i = 0; i < total; i++) {
+          const content = document.getElementById(`accordion-content-${i}`);
+          const parent = content.parentElement;
+          if (i === index) {
+            content.classList.remove('opacity-0', 'pointer-events-none');
+            content.classList.add('opacity-100', 'pointer-events-auto');
+            parent.classList.add('border-brand-primary');
+            parent.classList.remove('border-transparent');
+            parent.classList.add('flex-[6]');
+            parent.classList.remove('flex-1');
+          } else {
+            content.classList.add('opacity-0', 'pointer-events-none');
+            content.classList.remove('opacity-100', 'pointer-events-auto');
+            parent.classList.remove('border-brand-primary');
+            parent.classList.add('border-transparent');
+            parent.classList.remove('flex-[6]');
+            parent.classList.add('flex-1');
+          }
+        }
+      }
+      // Open first by default
+      window.addEventListener('DOMContentLoaded', () => openAccordion(0));
+    </script>
+
 
 </body>
 
