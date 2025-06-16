@@ -2,7 +2,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        rethink: ['"Rethink Sans"', 'sans-serif'],
+        heading: ['"Rethink Sans"', 'sans-serif'],
+        body: ['Inter', 'sans-serif'],
       },
     },
   },

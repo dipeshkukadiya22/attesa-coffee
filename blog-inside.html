@@ -1,0 +1,358 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>Blog Inside - Attesa Coffee</title>
+    <link href="./src/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-brand-primary">
+    <nav id="main-nav"
+        class="sticky top-0 transition-all duration-500 ease-in-out py-4 text-[#EDE8E1] bg-black/50 backdrop-blur-lg z-99">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <div class="font-bold text-xl w-[20%]">
+                <a href="index.html">
+                    <img src="/src/images/Attesa-svg-logo.svg" alt="Logo" class="inline-block w-30">
+                </a>
+            </div>
+            <ul class="flex justify-center items-center space-x-8 w-[80%]">
+                <li><a href="#" class="p-2">About</a></li>
+                <li><a href="#" class="p-2">Origins</a></li>
+                <li><a href="#" class="p-2">Our Coffee</a></li>
+                <li><a href="#" class="p-2">Beans by kg</a></li>
+                <li><a href="#" class="p-2">Blog</a></li>
+                <li><a href="#" class="p-2">Contact</a></li>
+            </ul>
+            <div class="flex justify-end items-center text-base w-[20%]">
+                <div class="flex items-center space-x-4">
+                    <a href="#" id="sign-in-btn"
+                        class="py-1 border text-[#EDE8E1] border-[#D7D0C4] px-4 rounded-lg transition-colors duration-500">
+                        Login
+                    </a>
+
+                    <a href="#"
+                        class="inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+                        Sign Up
+                        <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512"
+                            xmlns="http://www.w3.org/2000/svg" class="inline-block ml-2 align-middle" fill="white">
+                            <path
+                                d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Your main content here -->
+    <div class="mt-[-85px]">
+
+
+        <!-- Hero Banner  -->
+        <div class="w-full">
+            <div
+                class="flex items-end bg-[url(/src/images/our-coffee-frame-1618868879.jpg)] bg-cover bg-no-repeat bg-bottom justify-center text-[#F0EAE3] h-[460px] ">
+
+            </div>
+        </div>
+
+        <!-- Origin Details Section -->
+        <div class="container mx-auto py-20 px-4">
+
+            <!-- Origin Details 1 -->
+            <div class="grid grid-cols-3 items-stretch border-y border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full">
+                <div class="p-6 h-full">
+                    <!-- Left content -->
+                    <div class="space-y-6 text-right">
+                        <h3 class="text-3xl text-brand-primary capitalize">At Attesa Coffee, every cup tells a story — and it
+                            starts long before the roast.</h3>
+                        <p class="flex items-center justify-end gap-2 mb-2">
+                            <span class=""><img src="/src/images/footer-link-icon.svg" class="w-3"></span>
+                            <span class="text-xs font-medium">Posted by Maddi Britton</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-span-2 p-6 h-full">
+                    <!-- Right content -->
+                    <div class="space-y-4 blog-content">
+                        <p>At Attesa Coffee, we don’t just serve coffee — we serve stories. Behind every cup lies a
+                            journey across continents, through communities, and into your hands with care.</p>
+                        <p>We began our journey in Amsterdam with a simple question: What would coffee look like if we
+                            put relationships at the center? </p>
+                        <p>That question led us far — to the red, sun-kissed soils of East Africa, the misty mountains
+                            of Central America, and the volcanic slopes of Indonesia. What we found wasn’t just coffee.
+                            It was a deep, resilient network of farmers, families, and traditions — each bean holding a
+                            legacy waiting to be told.</p>
+
+                        <h4 class="font-semibold mt-10 mb-4">From Origin to Amsterdam — A Transparent Journey</h4>
+                        <p>We work directly with producers in over 10 countries. These aren’t just suppliers; they’re
+                            partners. Every farm we source from practices responsible, sustainable growing, often passed
+                            down through generations. From selective hand-picking to drying beds and fermentation
+                            techniques, we witness these methods firsthand — ensuring the coffee is not only delicious
+                            but also fairly and ethically sourced.</p>
+                        <p>We believe traceability is non-negotiable. You should know where your coffee comes from, who
+                            grew it, and how. That’s why each Attesa lot comes with full transparency — from farm
+                            location to processing method, even tasting notes and harvest year.</p>
+
+                        <h4 class="font-semibold mt-10 mb-4">Roasted for Character, Not Uniformity</h4>
+                        <p>Our roastery in Amsterdam isn’t a production line — it’s a creative studio. Every bean is
+                            profiled and cupped meticulously. We don’t roast to mask flaws. We roast to amplify origin. 
+                            That means letting the blueberry pop in a natural Yirgacheffe, preserving the crisp citrus
+                            of a washed Guatemalan, or coaxing out that rich hazelnut in a Brazilian lot.</p>
+                        <p>We roast small batches, often experimenting with roast curves, airflows, and charge temps to
+                            bring out complexity without compromise. There’s no one-size-fits-all here — just a
+                            commitment to craftsmanship.</p>
+
+                        <h4 class="font-semibold mt-10 mb-4">Brewing Community, Not Just Coffee</h4>
+                        <p>Coffee isn’t just a product. It’s a shared experience. Whether it’s sipped in a quiet moment,
+                            shared with a friend, or brewed behind a bar — it connects people.</p>
+                        <p>That’s why we invest in more than beans. We invest in people.</p>
+                        <p>We host regular cuppings and training sessions in our roastery, and offer origin trip
+                            opportunities to baristas and wholesale partners. Because we believe that the more we all
+                            understand coffee, the more meaning we can pour into every cup.</p>
+                        <p>And for our customers — from the home brewer to the third-wave café — we’re here to guide,
+                            educate, and inspire. Through workshops, tasting guides, and this blog, we’re building an
+                            open, curious coffee culture rooted in transparency and trust.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Blog Post -->
+            <div>
+                <div class="grid grid-cols-3 divide-x divide-[#D7D0C4] border-b border-[#D7D0C4]">
+
+                    <!-- Blog 1 -->
+                    <div class="p-6 space-y-6">
+                        <div>
+                            <p class="flex items-center gap-2 mb-2">
+                                <span class=""><img src="/src/images/right-arrow-icon.svg" class="w-3"></span>
+                                <span class="text-xs">Coffee 101</span>
+                            </p>
+                            <h4 class="text-base font-semibold uppercase">The Art of Roasting: From Green to Gold</h4>
+                        </div>
+                        <div>
+                            <img src="/src/images/IMG_20240222_150238_514.jpg" alt="Blog 1"
+                                class="w-full h-80 object-cover rounded-lg">
+                        </div>
+                        <div>
+                            <p class="text-gray-600 mt-2 text-sm">Explore the nuances of roasting and how it transforms
+                                green beans
+                                into the
+                                perfect cup.</p>
+                        </div>
+                    </div>
+
+                    <!-- Blog 2 -->
+                    <div class="p-6 space-y-6">
+                        <div>
+                            <p class="flex items-center gap-2 mb-2">
+                                <span class=""><img src="/src/images/right-arrow-icon.svg" class="w-3"></span>
+                                <span class="text-xs">The Roast</span>
+                            </p>
+                            <h4 class="text-base font-semibold uppercase">The Art of Roasting: From Green to Gold</h4>
+                        </div>
+                        <div>
+                            <img src="/src/images/IMG_20240222_150238_514.jpg" alt="Blog 1"
+                                class="w-full h-80 object-cover rounded-lg">
+                        </div>
+                        <div>
+                            <p class="text-gray-600 mt-2 text-sm">Explore the nuances of roasting and how it transforms
+                                green beans
+                                into the
+                                perfect cup.</p>
+                        </div>
+                    </div>
+
+                    <!-- Blog 3 -->
+                    <div class="p-6 space-y-6">
+                        <div>
+                            <p class="flex items-center gap-2 mb-2">
+                                <span class=""><img src="/src/images/right-arrow-icon.svg" class="w-3"></span>
+                                <span class="text-xs">The Harvest</span>
+                            </p>
+                            <h4 class="text-base font-semibold uppercase">The Art of Roasting: From Green to Gold</h4>
+                        </div>
+                        <div>
+                            <img src="/src/images/IMG_20240222_150238_514.jpg" alt="Blog 1"
+                                class="w-full h-80 object-cover rounded-lg">
+                        </div>
+                        <div>
+                            <p class="text-gray-600 mt-2 text-sm">Explore the nuances of roasting and how it transforms
+                                green beans
+                                into the
+                                perfect cup.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <footer
+        class="bg-[url(/src/images/footer-vector-9.svg)] bg-contain bg-no-repeat bg-left-center border-t-2 border-[#BAAE9F]">
+        <div class="container mx-auto px-4 py-8">
+            <div class="flex flex-row justify-between text-[#3C3A37] py-8">
+
+                <div class="w-1/3">
+                    <img src="/src/images/logo-white.svg" alt="Logo" class="inline-block w-36 mb-4">
+                </div>
+                <div class="w-2/3">
+                    <div class="flex flex-row justify-between items-start">
+                        <div class="w-1/3">
+                            <h4 class="uppercase text-base font-semibold mb-4">Terms</h4>
+                            <div class="text-sm flex flex-col gap-y-2">
+                                <a href="#" class="link-with-icon">Privacy Policy</a>
+                                <a href="#" class="link-with-icon">Shipping Policy</a>
+                                <a href="#" class="link-with-icon">Terms & Conditions</a>
+                            </div>
+                        </div>
+
+                        <div class="w-1/3">
+                            <h4 class="uppercase text-base font-semibold mb-2">Contact</h4>
+                            <div class="text-sm flex flex-col gap-y-2">
+                                <a href="#" class="link-with-icon">theattesacoffee@gmail.com</a>
+                                <a href="#" class="link-with-icon">+31 64 420 7299</a>
+                                <a href="#" class="link-with-icon inline-flex">Entrada 569,<br>
+                                    1115 SE Duivendrecht,<br>
+                                    The Netherlands</a>
+                            </div>
+                        </div>
+
+                        <div class="w-1/3">
+                            <div class="flex flex-col">
+                                <h4 class="uppercase text-base font-semibold mb-2 w-46">From lush estates to your coffee
+                                    plates</h4>
+                                <p class="text-sm">Subscribe for deep dives on bean highs, pricing ties, and
+                                    shipping-wise advisories!
+                                </p>
+                            </div>
+                            <div>
+                                <form class="flex flex-col gap-y-2 mt-4">
+                                    <input type="text" placeholder="Name"
+                                        class="px-3 py-2 rounded-lg bg-[#F0EAE3] text-sm border border-[#3C3A37]">
+                                    <div class="relative border border-[#3C3A37] rounded-lg">
+                                        <input type="email" placeholder="Email"
+                                            class="px-3 py-2 rounded-lg bg-[#F0EAE3] text-sm w-full">
+                                        <button type="submit"
+                                            class="absolute cursor-pointer right-2 top-1/2 transform -translate-y-1/2">
+                                            <svg height="8" width="8" viewBox="0 0 512 512"
+                                                xmlns="http://www.w3.org/2000/svg" fill="#3C3A37">
+                                                <path
+                                                    d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="text-sm flex flex-row gap-x-2 py-6">
+                                <a href="#" class="">
+                                    <div class="inline-flex justify-center items-center p-2 rounded-full bg-[#575450]">
+                                        <img src="/src/images/linkedin-icon.svg" alt="LinkedIn"
+                                            class="inline-block w-4">
+                                    </div>
+                                </a>
+                                <a href="#" class="">
+                                    <div class="inline-flex justify-center items-center p-2 rounded-full bg-[#575450]">
+                                        <img src="/src/images/instagram-icon.svg" alt="Instagram"
+                                            class="inline-block w-4">
+                                    </div>
+                                </a>
+                                <a href="#" class="">
+                                    <div class="inline-flex justify-center items-center p-2 rounded-full bg-[#575450]">
+                                        <img src="/src/images/facebook-icon.svg" alt="Facebook"
+                                            class="inline-block w-4">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex flex-row justify-between items-center py-4">
+                <p class="text-sm text-[#F0EAE3]">© Attesa B.V. 2025 . All rights reserved.</p>
+                <p class="text-sm">
+                    Powered by:
+                    <a href="https://teque7.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/src/images/t7.png" alt="TEQUE7" class="inline-block w-16">
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Sticky Navigation Script -->
+    <script>
+        const nav = document.getElementById('main-nav');
+        const signInBtn = document.getElementById('sign-in-btn');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                // Nav styles
+                nav.classList.add('bg-[#F5EADE]', 'text-[#3B3D34]', 'shadow-md');
+                nav.classList.remove('bg-black/50', 'text-[#EDE8E1]');
+
+                // Sign In button styles
+                signInBtn.classList.add('text-[#3B3D34]', 'border-[#3B3D34]');
+                signInBtn.classList.remove('text-[#EDE8E1]', 'border-[#D7D0C4]');
+            } else {
+                // Nav styles revert
+                nav.classList.remove('bg-[#F5EADE]', 'text-[#3B3D34]', 'shadow-md');
+                nav.classList.add('bg-black/50', 'text-[#EDE8E1]');
+
+                // Sign In button revert
+                signInBtn.classList.remove('text-[#3B3D34]', 'border-[#3B3D34]');
+                signInBtn.classList.add('text-[#EDE8E1]', 'border-[#D7D0C4]');
+            }
+        });
+    </script>
+
+
+    <!-- Icon Animation Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const iconHTML = `
+        <span class="absolute inset-0 transition-all duration-300 ease-in-out group-hover:-translate-y-2 group-hover:translate-x-2 group-hover:opacity-0 z-10">
+          <svg class="inline-block w-2 h-2" viewBox="0 0 512 512" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z" />
+          </svg>
+        </span>
+        <span class="absolute inset-0 translate-y-2 -translate-x-2 opacity-0 transition-all duration-300 ease-in-out group-hover:translate-y-0 group-hover:translate-x-0 group-hover:opacity-100 z-20">
+          <svg class="inline-block w-2 h-2" viewBox="0 0 512 512" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z" />
+          </svg>
+        </span>
+      `;
+
+            document.querySelectorAll(".arrow-animation").forEach(el => {
+                el.innerHTML = iconHTML;
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,446 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>Our Coffee - Attesa Coffee</title>
+    <link href="./src/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-brand-primary">
+    <nav id="main-nav" class="sticky top-0 transition-all duration-500 ease-in-out py-4 z-99 bg-[#F0EAE3] border-b border-[#BAAE9F]">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <div class="font-bold text-xl w-[20%]">
+                <a href="index.html">
+                    <img src="/src/images/Attesa-svg-logo.svg" alt="Logo" class="inline-block w-30">
+                </a>
+            </div>
+            <ul class="flex justify-center items-center space-x-8 w-[80%]">
+                <li><a href="#" class="p-2">About</a></li>
+                <li><a href="#" class="p-2">Origins</a></li>
+                <li><a href="#" class="p-2">Our Coffee</a></li>
+                <li><a href="#" class="p-2">Beans by kg</a></li>
+                <li><a href="#" class="p-2">Blog</a></li>
+                <li><a href="#" class="p-2">Contact</a></li>
+            </ul>
+            <div class="flex justify-end items-center text-base w-[20%]">
+                <div class="flex items-center space-x-4">
+                    <a href="#" id="sign-in-btn"
+                        class="p-2 border text-[#46433E] px-4 rounded-lg transition-colors duration-500">
+                        Sign In
+                    </a>
+
+                    <a href="#"
+                        class="inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+                        Sign Up
+                        <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512"
+                            xmlns="http://www.w3.org/2000/svg" class="inline-block ml-2 align-middle"
+                            fill="white">
+                            <path
+                                d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Your main content here -->
+    <div class="">
+        
+
+        <!-- Hero Banner  -->
+        <!-- <div class="w-full">
+            <div
+                class="flex items-end bg-[url(/src/images/our-coffee-frame-1618868879.jpg)] bg-cover bg-no-repeat bg-bottom justify-center text-[#F0EAE3] content-end h-[600px] ">
+                <div class="container mx-auto px-4 py-20">
+                    <div class="flex flex-col items-start justify-end space-y-2 w-sm">
+                        <div>
+                            <h1 class="text-5xl font-medium mb-2 leading-16">Find your next favourite coffee </h1>
+                            <p class="text-base mb-6 text-[#F0EAE3] font-light w-76">Explore our carefully selected range of green coffees — from standout microlots to trusted, high-quality blends. </p>
+                        </div>
+                        <div>
+                            <a href="#"
+                                class="relative inline-block text-sm bg-white/20 text-[#F0EAE3] border border-[#D7D0C4] px-4 py-1 pr-7 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md overflow-hidden">
+                                Sign In
+                                <div class="arrow-animation absolute top-1 right-1 w-4 h-4"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Table Section -->
+        <div class="relative container mx-auto px-4 py-14 space-y-8 z-[10] bg-[#F0EAE3]">
+            <div class="flex flex-col items-center text-center space-y-4">
+                <h3 class="text-4xl font-semibold text-brand-primary">Explore our curated coffee offerings</h3>
+                <p class="text-xl w-2xl">We offer a diverse range of green coffees — from traceable microlots and specialty selections to consistent, high-quality blends. 
+                </p>
+                <a href="#"
+                    class="relative bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary flex items-center">
+                    Download Offerlist
+                    <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block ml-2 align-middle">
+                        <path
+                            d="M4.18761 9.81055L7.71786 6.2803C7.7875 6.21066 7.84273 6.128 7.88042 6.03702C7.9181 5.94604 7.9375 5.84852 7.9375 5.75005C7.9375 5.65157 7.9181 5.55406 7.88042 5.46308C7.84273 5.3721 7.7875 5.28943 7.71786 5.2198C7.64823 5.15016 7.56556 5.09493 7.47458 5.05724C7.3836 5.01956 7.28609 5.00016 7.18761 5.00016C7.08914 5.00016 6.99162 5.01956 6.90064 5.05724C6.80966 5.09493 6.727 5.15016 6.65736 5.2198L4.93761 6.93955L4.93761 1.25005C4.93761 1.05113 4.8586 0.860368 4.71794 0.719716C4.57729 0.579063 4.38653 0.500046 4.18761 0.500046C3.9887 0.500046 3.79794 0.579063 3.65728 0.719716C3.51663 0.860367 3.43761 1.05113 3.43761 1.25005L3.43761 6.93955L1.71786 5.2198C1.64837 5.14991 1.56575 5.09445 1.47475 5.0566C1.38375 5.01875 1.28617 4.99927 1.18761 4.99927C1.08906 4.99927 0.991474 5.01875 0.900474 5.0566C0.809474 5.09445 0.726853 5.14991 0.657363 5.2198C0.51676 5.36044 0.437774 5.55117 0.437774 5.75005C0.437774 5.94892 0.51676 6.13965 0.657363 6.2803L4.18761 9.81055Z"
+                            fill="#EDE8E1" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Filter and Search Bar -->
+            <div class="flex justify-between items-center mb-4">
+                <div class="flex space-x-2 items-center">
+                    <div class="font-semibold text-base text-[#3B3D34]">
+                        Filters:
+                    </div>
+                    <!-- Origin Dropdown -->
+                    <div class="relative">
+                        <select
+                            class="appearance-none px-3 py-2 pr-8 border border-[#E6D0B6] rounded-lg bg-[#F6F1EB] font-semibold text-sm">
+                            <option value="">Origin</option>
+                            <option value="brazil">Brazil</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="ethiopia">Ethiopia</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-2 flex items-center px-2">
+                            <svg width="10" height="10" viewBox="0 0 6 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.99998 7.75781L5.82428 4.93351C5.87999 4.8778 5.92418 4.81166 5.95433 4.73888C5.98448 4.66609 6 4.58808 6 4.50929C6 4.43051 5.98448 4.3525 5.95433 4.27971C5.92418 4.20692 5.87999 4.14079 5.82428 4.08508C5.76858 4.02937 5.70244 3.98518 5.62965 3.95503C5.55687 3.92488 5.47885 3.90936 5.40007 3.90936C5.32128 3.90936 5.24327 3.92488 5.17049 3.95503C5.0977 3.98518 5.03156 4.02937 4.97585 4.08508L3.6 5.46093L3.6 0.909163C3.6 0.750027 3.53679 0.597409 3.42426 0.484883C3.31174 0.372357 3.15912 0.30914 2.99998 0.30914C2.84085 0.30914 2.68823 0.372357 2.5757 0.484883C2.46318 0.597408 2.39996 0.750027 2.39996 0.909163L2.39996 5.46093L1.02411 4.08508C0.968516 4.02917 0.902417 3.98479 0.829614 3.95452C0.756811 3.92424 0.678742 3.90865 0.599894 3.90865C0.521046 3.90865 0.442977 3.92424 0.370174 3.95452C0.297372 3.98479 0.231272 4.02917 0.175678 4.08508C0.0631917 4.1976 2.97904e-07 4.35019 2.83995e-07 4.50929C2.70085e-07 4.6684 0.0631917 4.82099 0.175678 4.93351L2.99998 7.75781Z"
+                                    fill="#3B3D34" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Process Dropdown -->
+                    <div class="relative">
+                        <select
+                            class="appearance-none px-3 py-2 pr-8 border border-[#E6D0B6] rounded-lg bg-[#F6F1EB] font-semibold text-sm">
+                            <option value="">Process</option>
+                            <option value="natural">Natural</option>
+                            <option value="washed">Washed</option>
+                            <option value="honey">Honey</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-2 flex items-center px-2">
+                            <svg width="10" height="10" viewBox="0 0 6 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.99998 7.75781L5.82428 4.93351C5.87999 4.8778 5.92418 4.81166 5.95433 4.73888C5.98448 4.66609 6 4.58808 6 4.50929C6 4.43051 5.98448 4.3525 5.95433 4.27971C5.92418 4.20692 5.87999 4.14079 5.82428 4.08508C5.76858 4.02937 5.70244 3.98518 5.62965 3.95503C5.55687 3.92488 5.47885 3.90936 5.40007 3.90936C5.32128 3.90936 5.24327 3.92488 5.17049 3.95503C5.0977 3.98518 5.03156 4.02937 4.97585 4.08508L3.6 5.46093L3.6 0.909163C3.6 0.750027 3.53679 0.597409 3.42426 0.484883C3.31174 0.372357 3.15912 0.30914 2.99998 0.30914C2.84085 0.30914 2.68823 0.372357 2.5757 0.484883C2.46318 0.597408 2.39996 0.750027 2.39996 0.909163L2.39996 5.46093L1.02411 4.08508C0.968516 4.02917 0.902417 3.98479 0.829614 3.95452C0.756811 3.92424 0.678742 3.90865 0.599894 3.90865C0.521046 3.90865 0.442977 3.92424 0.370174 3.95452C0.297372 3.98479 0.231272 4.02917 0.175678 4.08508C0.0631917 4.1976 2.97904e-07 4.35019 2.83995e-07 4.50929C2.70085e-07 4.6684 0.0631917 4.82099 0.175678 4.93351L2.99998 7.75781Z"
+                                    fill="#3B3D34" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- SCA Dropdown -->
+                    <div class="relative">
+                        <select
+                            class="appearance-none px-3 py-2 pr-8 border border-[#E6D0B6] rounded-lg bg-[#F6F1EB] font-semibold text-sm">
+                            <option value="">SCA</option>
+                            <option value="90-100">90-100</option>
+                            <option value="85-89">85-89</option>
+                            <option value="80-84">80-84</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-2 flex items-center px-2">
+                            <svg width="10" height="10" viewBox="0 0 6 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.99998 7.75781L5.82428 4.93351C5.87999 4.8778 5.92418 4.81166 5.95433 4.73888C5.98448 4.66609 6 4.58808 6 4.50929C6 4.43051 5.98448 4.3525 5.95433 4.27971C5.92418 4.20692 5.87999 4.14079 5.82428 4.08508C5.76858 4.02937 5.70244 3.98518 5.62965 3.95503C5.55687 3.92488 5.47885 3.90936 5.40007 3.90936C5.32128 3.90936 5.24327 3.92488 5.17049 3.95503C5.0977 3.98518 5.03156 4.02937 4.97585 4.08508L3.6 5.46093L3.6 0.909163C3.6 0.750027 3.53679 0.597409 3.42426 0.484883C3.31174 0.372357 3.15912 0.30914 2.99998 0.30914C2.84085 0.30914 2.68823 0.372357 2.5757 0.484883C2.46318 0.597408 2.39996 0.750027 2.39996 0.909163L2.39996 5.46093L1.02411 4.08508C0.968516 4.02917 0.902417 3.98479 0.829614 3.95452C0.756811 3.92424 0.678742 3.90865 0.599894 3.90865C0.521046 3.90865 0.442977 3.92424 0.370174 3.95452C0.297372 3.98479 0.231272 4.02917 0.175678 4.08508C0.0631917 4.1976 2.97904e-07 4.35019 2.83995e-07 4.50929C2.70085e-07 4.6684 0.0631917 4.82099 0.175678 4.93351L2.99998 7.75781Z"
+                                    fill="#3B3D34" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="relative">
+                    <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
+                        <svg class="h-5 w-5 text-[#3B3D34]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </span>
+                    <input type="text" placeholder="Search"
+                        class="pl-10 pr-4 py-2 border border-[#D9C8B4] rounded-lg bg-[#F6F1EB] placeholder:[#9E9485] placeholder:font-semibold text-sm w-72">
+                </div>
+            </div>
+
+            <div class="overflow-x-auto bg-[#F5EADE] p-2 border border-[#DBC4A7] rounded-lg">
+                <table
+                    class="standard-tbl table-auto min-w-full text-left border border-[#BAAE9F] border-collapse rounded-lg overflow-hidden relative">
+                    <thead>
+                        <tr>
+                            <th>Origin</th>
+                            <th>Producer</th>
+                            <th>Type</th>
+                            <th>Process</th>
+                            <th>Varietal</th>
+                            <th>Year</th>
+                            <th>Bags</th>
+                            <th>Status</th>
+                            <th>SCA</th>
+                            <th>Sensory profile</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="flag brazil-flag">Brazil</td>
+                            <td>Casa Blend</td>
+                            <td>Arabica</td>
+                            <td>Natural</td>
+                            <td>Blend</td>
+                            <td>2024</td>
+                            <td>126 Bags (59 Kg)</td>
+                            <td>Spot</td>
+                            <td>91</td>
+                            <td>Caramel, Chocolate, Sweet Balanced</td>
+                        </tr>
+                        <tr>
+                            <td class="flag brazil-flag">Brazil</td>
+                            <td>Casa Blend</td>
+                            <td>Arabica</td>
+                            <td>Natural</td>
+                            <td>Blend</td>
+                            <td>2024</td>
+                            <td>126 Bags (59 Kg)</td>
+                            <td>Spot</td>
+                            <td>91</td>
+                            <td>Caramel, Chocolate, Sweet Balanced</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Loose Beans  -->
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-2 align-middle items-stretch space-x-4">
+                <div class="inline-flex flex-col justify-center items-center text-center bg-[#6F894D] rounded-lg h-full">
+                    <h2 class="text-5xl font-bold italic capitalize text-brand-primary mb-4 w-md leading-14 text-[#EDE8E1] ">Need less than a full bag? </h2>
+                    <p class="text-base mb-6 leading-7 w-sm text-[#EDE8E1]">
+                        Order green coffee by the kilo — perfect for home roasters and micro roasteries.
+                    </p>
+                    <a href="#"
+                        class="relative inline-block text-sm bg-white/20 text-[#F0EAE3] border border-[#D7D0C4] px-4 py-1 pr-7 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md overflow-hidden">
+                        Shop by KG
+                        <div class="arrow-animation absolute top-1 right-1 w-4 h-4"></div>
+                    </a>
+                </div>
+                <div class="h-full relative">
+                    <img src="/src/images/New-Banner-Seasonality-Calendar.jpg" alt="Vision" class="w-full rounded-lg">
+                    <div class="absolute top-14 left-[-44px] right-0">
+                        <img src="/src/images/Frame-1618869036.png" alt="Vision" class="w-28">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Keep in Touch -->
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-2 align-middle items-center bg-[#FFF1E2] rounded-lg">
+                <div>
+                    <img src="/src/images/home-vision.png" alt="Vision" class="w-full h-auto">
+                </div>
+                <div class="text-left mx-auto p-12 space-y-4">
+                    <p class="flex items-center gap-2 mb-4 text[#46433E]">
+                        <span class=""><img src="/src/images/right-arrow-icon.svg" class="w-3"></span>
+                        <span class="text-xs">Subscribe to the Newsletter</span>
+                    </p>
+                    <h2 class="text-4xl font-semibold text-brand-primary  mb-4">Let’s keep in touch. </h2>
+
+                    <p>Join our coffee list </p>
+                    <ul class="list-disc space-y-2 pl-6">
+                        <li>Early preorder access,</li>
+                        <li>Stories and sourcing updates </li>
+                        <li>Latest spot availability, pricing trends, and exclusive offers</li>
+                    </ul>
+                    <form class="flex flex-col gap-y-4 max-w-md"></form>
+                    <input type="text" name="name" placeholder="Name (optional)"
+                        class="px-3 py-2 rounded-lg text-sm border border-[#898277] w-full">
+                    <div class="relative border border-[#898277] rounded-lg">
+                        <input type="email" name="email" placeholder="Email" required
+                            class="px-3 py-2 rounded-lg text-sm w-full">
+                    </div>
+                    <button type="submit"
+                        class="bg-brand-secondary text-white px-4 py-1 rounded-lg hover:bg-brand-primary transition-colors duration-200 cursor-pointer">
+                        Subscribe
+                        <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512"
+                            xmlns="http://www.w3.org/2000/svg" class="inline-block ml-1 align-middle" fill="white">
+                            <path
+                                d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                            </path>
+                        </svg>
+                    </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <footer
+        class="bg-[url(/src/images/footer-vector-9.svg)] bg-contain bg-no-repeat bg-left-center border-t-2 border-[#BAAE9F]">
+        <div class="container mx-auto px-4 py-8">
+            <div class="flex flex-row justify-between text-[#3C3A37] py-8">
+
+                <div class="w-1/3">
+                    <img src="/src/images/logo-white.svg" alt="Logo" class="inline-block w-36 mb-4">
+                </div>
+                <div class="w-2/3">
+                    <div class="flex flex-row justify-between items-start">
+                        <div class="w-1/3">
+                            <h4 class="uppercase text-base font-semibold mb-4">Terms</h4>
+                            <div class="text-sm flex flex-col gap-y-2">
+                                <a href="#" class="link-with-icon">Privacy Policy</a>
+                                <a href="#" class="link-with-icon">Shipping Policy</a>
+                                <a href="#" class="link-with-icon">Terms & Conditions</a>
+                            </div>
+                        </div>
+
+                        <div class="w-1/3">
+                            <h4 class="uppercase text-base font-semibold mb-2">Contact</h4>
+                            <div class="text-sm flex flex-col gap-y-2">
+                                <a href="#" class="link-with-icon">theattesacoffee@gmail.com</a>
+                                <a href="#" class="link-with-icon">+31 64 420 7299</a>
+                                <a href="#" class="link-with-icon inline-flex">Entrada 569,<br>
+                                    1115 SE Duivendrecht,<br>
+                                    The Netherlands</a>
+                            </div>
+                        </div>
+
+                        <div class="w-1/3">
+                            <div class="flex flex-col">
+                                <h4 class="uppercase text-base font-semibold mb-2 w-46">From lush estates to your coffee
+                                    plates</h4>
+                                <p class="text-sm">Subscribe for deep dives on bean highs, pricing ties, and
+                                    shipping-wise advisories!
+                                </p>
+                            </div>
+                            <div>
+                                <form class="flex flex-col gap-y-2 mt-4">
+                                    <input type="text" placeholder="Name"
+                                        class="px-3 py-2 rounded-lg bg-[#F0EAE3] text-sm border border-[#3C3A37]">
+                                    <div class="relative border border-[#3C3A37] rounded-lg">
+                                        <input type="email" placeholder="Email"
+                                            class="px-3 py-2 rounded-lg bg-[#F0EAE3] text-sm w-full">
+                                        <button type="submit"
+                                            class="absolute cursor-pointer right-2 top-1/2 transform -translate-y-1/2">
+                                            <svg height="8" width="8" viewBox="0 0 512 512"
+                                                xmlns="http://www.w3.org/2000/svg" fill="#3C3A37">
+                                                <path
+                                                    d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="text-sm flex flex-row gap-x-2 py-6">
+                                <a href="#" class="">
+                                    <div class="inline-flex justify-center items-center p-2 rounded-full bg-[#575450]">
+                                        <img src="/src/images/linkedin-icon.svg" alt="LinkedIn"
+                                            class="inline-block w-4">
+                                    </div>
+                                </a>
+                                <a href="#" class="">
+                                    <div class="inline-flex justify-center items-center p-2 rounded-full bg-[#575450]">
+                                        <img src="/src/images/instagram-icon.svg" alt="Instagram"
+                                            class="inline-block w-4">
+                                    </div>
+                                </a>
+                                <a href="#" class="">
+                                    <div class="inline-flex justify-center items-center p-2 rounded-full bg-[#575450]">
+                                        <img src="/src/images/facebook-icon.svg" alt="Facebook"
+                                            class="inline-block w-4">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex flex-row justify-between items-center py-4">
+                <p class="text-sm text-[#F0EAE3]">© Attesa B.V. 2025 . All rights reserved.</p>
+                <p class="text-sm">
+                    Powered by:
+                    <a href="https://teque7.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/src/images/t7.png" alt="TEQUE7" class="inline-block w-16">
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Sticky Navigation Script -->
+    <script>
+      const nav = document.getElementById('main-nav');
+      const signInBtn = document.getElementById('sign-in-btn');
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) {
+          // Nav styles
+          nav.classList.add('bg-[#F5EADE]', 'text-[#3B3D34]', 'shadow-md');
+          nav.classList.remove('bg-[#F0EAE3]', 'text-[#46433E]', 'border-b', 'border-transparent');
+
+          // Sign In button styles
+          signInBtn.classList.add('text-[#3B3D34]', 'border-[#D7D0C4]');
+          signInBtn.classList.remove('text-[#46433E]', 'border-[#D7D0C4]');
+        } else {
+          // Nav styles revert
+          nav.classList.remove('bg-[#F5EADE]', 'text-[#3B3D34]', 'shadow-md');
+          nav.classList.add('bg-[#F0EAE3]', 'text-[#46433E]', 'border-b', 'border-[#BAAE9F]');
+
+          // Sign In button revert
+          signInBtn.classList.remove('text-[#3B3D34]', 'border-[#D7D0C4]');
+          signInBtn.classList.add('text-[#46433E]', 'border-[#D7D0C4]');
+        }
+      });
+    </script>
+
+
+    <!-- Icon Animation Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const iconHTML = `
+        <span class="absolute inset-0 transition-all duration-300 ease-in-out group-hover:-translate-y-2 group-hover:translate-x-2 group-hover:opacity-0 z-10">
+          <svg class="inline-block w-2 h-2" viewBox="0 0 512 512" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z" />
+          </svg>
+        </span>
+        <span class="absolute inset-0 translate-y-2 -translate-x-2 opacity-0 transition-all duration-300 ease-in-out group-hover:translate-y-0 group-hover:translate-x-0 group-hover:opacity-100 z-20">
+          <svg class="inline-block w-2 h-2" viewBox="0 0 512 512" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z" />
+          </svg>
+        </span>
+      `;
+
+            document.querySelectorAll(".arrow-animation").forEach(el => {
+                el.innerHTML = iconHTML;
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

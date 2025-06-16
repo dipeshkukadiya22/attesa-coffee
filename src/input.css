@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Inter:wght@300;400;700&display=swap');
+
 @import "tailwindcss";
 
 @layer base {
@@ -16,6 +18,27 @@
         font-style: normal;
         font-weight: 300;
         color: #42453C;
+    }
+    .rethink-font {
+        font-family: "Rethink Sans", sans-serif;
+        font-style: normal;
+    }
+    .rethink-font p{
+        font-family: "Rethink Sans", sans-serif;
+        font-style: normal;
+    }
+    .inter-font {
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+    }
+
+    .blog-content p {
+        font-family: "Rethink Sans", sans-serif;
+        font-style: normal;
+    }
+    .about-content p {
+        font-family: "Rethink Sans", sans-serif;
+        font-style: normal;
     }
 }   
 
@@ -51,6 +74,13 @@
     }
     .flag{
         @apply items-center;
+    }
+    .india-flag::before {
+        content: '';
+        @apply inline-block w-4 h-4 mr-2 align-middle;
+        background-image: url('/src/images/flags/india.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
     }
     .brazil-flag::before {
         content: '';
@@ -88,6 +118,21 @@
             background-position: -4000px 0px;
         }
     }
+    .origin-tbl td {
+        @apply border-0 border-b border-[#BAAE9F];
+    }
+    .origin-tbl tr:last-child td {
+        @apply border-0;
+    }
+    .origin-tbl tr td:first-child {
+        @apply font-semibold;
+        font-family: "Rethink Sans", sans-serif;
+    }
+    .contact-tbl td {
+        @apply border-0 border-b border-[#BAAE9F];
+        font-family: "Rethink Sans", sans-serif;
+    }
+
 }
 
 @layer utilities{
