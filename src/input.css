@@ -105,9 +105,9 @@
         width: 100%;
         height: 100%;
         background-position: 0px 0px;
-        background-size: 4000px;
+        background-size: 5600px;
         background-repeat: repeat-x;
-        background-image: url('/src/images/banner-sky-min.png');
+        background-image: url('/src/images/clounds.png');
         animation: animatedCloudBackground 80s linear infinite;
     }
     @keyframes animatedCloudBackground {

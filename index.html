@@ -21,26 +21,45 @@
 
 <body class="bg-brand-primary">
   <nav id="main-nav"
-    class="sticky top-0 transition-all duration-500 ease-in-out py-4 text-[#EDE8E1] bg-black/50 backdrop-blur-lg z-99">
+    class="sticky top-0 py-4 text-[#EDE8E1] bg-black/50 backdrop-blur-lg z-99">
     <div class="container mx-auto px-4 flex items-center justify-between">
       <div class="font-bold text-xl w-[20%]">
         <a href="index.html">
-          <img src="/src/images/logo.svg" alt="Logo" class="inline-block w-30">
+          <img src="/src/images/Attesa-svg-logo.svg" alt="Logo" class="inline-block w-30">
         </a>
       </div>
-      <ul class="flex justify-center items-center space-x-8 w-[80%]">
+      <ul class="flex justify-center items-center space-x-6 w-[80%]">
         <li><a href="#" class="p-2">About</a></li>
         <li><a href="#" class="p-2">Origins</a></li>
         <li><a href="#" class="p-2">Our Coffee</a></li>
-        <li><a href="#" class="p-2">Beans by kg</a></li>
-        <li><a href="#" class="p-2">Blog</a></li>
+        <li class="relative group">
+          <a href="#" class="p-2">Micro shop</a>
+
+          <!-- Tooltip -->
+          <div
+            class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-4 py-2 rounded-lg bg-[#f5eade] border border-[#BAAE9F] shadow-lg backdrop-blur-md text-sm text-[#3B3D34] opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50 whitespace-nowrap">
+            <!-- Arrow -->
+            <div
+              class="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 rotate-45 bg-[#f5eade] border-t border-l border-[#BAAE9F]">
+            </div>
+
+            Smaller quantities of green coffee
+          </div>
+        </li>
+        <li><a href="#" class="p-2">Insights</a></li>
         <li><a href="#" class="p-2">Contact</a></li>
       </ul>
       <div class="flex justify-end items-center text-base w-[20%]">
-        <div>
+        <div class="flex items-center space-x-4">
           <a href="#" id="sign-in-btn"
-            class="p-2 border text-[#EDE8E1] border-[#D7D0C4] px-4 rounded-lg transition-colors duration-500">
-            Sign In
+            class="py-1 border text-[#EDE8E1] px-4 rounded-lg">
+            Login
+          </a>
+
+          <a href="#"
+            class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+            Sign Up
+            <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
           </a>
         </div>
       </div>
@@ -60,20 +79,19 @@
 
           <!-- Slide 1 -->
           <div
-            class="swiper-slide bg-[url(/src/images/banner-1.jpg)] bg-cover bg-no-repeat flex items-center justify-center text-white content-end">
+            class="swiper-slide bg-[url(/src/images/banner-1.jpg)] bg-cover bg-no-repeat flex items-center justify-center text-[#EDE8E1] content-end">
             <div class="container mx-auto px-4 py-20">
               <div class="flex flex-col items-start justify-end space-y-2 w-sm">
                 <div>
-                  <h1 class="text-5xl font-medium mb-2 leading-16">Looking for Green Coffee?</h1>
-                  <p class="text-base mb-6 text-white font-light w-76">We have coffees from around the world, to savour
-                    your taste
-                    buds.</p>
+                  <h1 class="text-6xl font-semibold mb-4 leading-16 text-[#EDE8E1]">Looking for green coffee?</h1>
+                  <p class="text-base mb-6 text-[#EDE8E1] font-light w-76">Discover traceable, freshly harvested coffees
+                    from origins across the globe.</p>
                 </div>
                 <div>
                   <a href="#"
-                    class="relative inline-block text-sm bg-white/20 text-white border border-[#D7D0C4] px-4 py-1 pr-6 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md overflow-hidden">
-                    Our Coffee
-                    <div class="arrow-animation absolute top-1 right-1 w-4 h-4"></div>
+                    class="relative inline-block text-sm bg-white/20 text-[#EDE8E1] border border-[#D7D0C4] px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md overflow-hidden">
+                    Explore Our Coffees
+                    <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
                   </a>
                 </div>
               </div>
@@ -82,19 +100,19 @@
 
           <!-- Slide 2 -->
           <div
-            class="swiper-slide bg-[url(/src/images/banner-2.jpg)] bg-cover bg-no-repeat flex items-center justify-center text-white content-end">
+            class="swiper-slide bg-[url(/src/images/banner-2.jpg)] bg-cover bg-no-repeat flex items-center justify-center text-[#EDE8E1] content-end">
             <div class="container mx-auto px-4 py-20">
-              <div class="flex flex-col items-start justify-end space-y-2 w-120">
+              <div class="flex flex-col items-start justify-end space-y-2 w-sm">
                 <div>
-                  <h1 class="text-5xl font-medium mb-2 leading-16">From Bean to Cup: A Journey of Flavor</h1>
-                  <p class="text-base mb-6 text-white w-74">discover the rich origins of our ethically sourced coffee
-                    beans.</p>
+                  <h1 class="text-6xl font-semibold mb-4 leading-16 text-[#EDE8E1]">Every coffee has a story</h1>
+                  <p class="text-base mb-6 text-[#EDE8E1] w-74">See where our coffees grow, when they’re harvested, and
+                    what makes each region unique.</p>
                 </div>
                 <div>
                   <a href="#"
-                    class="relative inline-block text-sm bg-white/20 text-white border border-[#D7D0C4] px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md overflow-hidden pr-6">
+                    class="relative inline-block text-sm bg-white/20 text-[#EDE8E1] border border-[#D7D0C4] px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md overflow-hidden">
                     Origins
-                    <div class="arrow-animation absolute top-1 right-1 w-4 h-4"></div>
+                    <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
                   </a>
                 </div>
               </div>
@@ -103,18 +121,20 @@
 
           <!-- Slide 3 -->
           <div
-            class="swiper-slide bg-[url(/src/images/banner-3.jpg)] bg-cover bg-no-repeat flex items-center justify-center text-white content-end">
+            class="swiper-slide bg-[url(/src/images/banner-3.jpg)] bg-cover bg-no-repeat flex items-center justify-center text-[#F0EAE3] content-end">
             <div class="container mx-auto px-4 py-20">
-              <div class="flex flex-col items-start justify-end space-y-2 w-sm">
+              <div class="flex flex-col items-start justify-end space-y-2 w-lg">
                 <div>
-                  <h1 class="text-5xl font-medium mb-2 leading-16">Are you looking for samples?</h1>
-                  <p class="text-base mb-6 text-white w-76">find out your perfect bean.</p>
+                  <h1 class="text-6xl font-semibold mb-4 leading-16 text-[#EDE8E1]">Looking for the right green coffee?
+                  </h1>
+                  <p class="text-base mb-6 text-[#EDE8E1] w-76">Order free samples and find the perfect match for your
+                    roastery.</p>
                 </div>
                 <div>
                   <a href="#"
-                    class="relative inline-block text-sm bg-white/20 text-white border border-[#D7D0C4] px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md pr-6">
-                    Order Samples
-                    <div class="arrow-animation absolute top-1 right-1 w-4 h-4"></div>
+                    class="relative inline-block text-sm bg-white/20 text-[#EDE8E1] border border-[#D7D0C4] px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md">
+                    Order samples
+                    <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
                   </a>
                 </div>
               </div>
@@ -134,34 +154,24 @@
     <div class="container mx-auto px-4 py-12">
       <div class="grid grid-cols-2 align-middle items-center">
         <div>
-          <img src="/src/images/home-vision.png" alt="Vision" class="w-full h-auto rounded-lg shadow-lg">
+          <img src="/src/images/home-vision.png" alt="Vision" class="w-full h-auto rounded-lg">
         </div>
         <div class="inline-flex flex-col justify-center items-center text-center">
-          <h2 class="text-4xl font-semibold text-brand-primary mb-4 w-md leading-12">Coffee, a bond between the hands growing it & the
-            roasters
-            bringing it to life.</h2>
-          <p class="text-base mb-6 leading-7 w-lg">At Attesa, we believe the journey from farm to cup should be as
-            <span class="text-brand-primary font-semibold">transparent</span> as the
-            brew itself. That’s why we partner directly with smallholders and cooperatives—<span
-              class="text-brand-primary font-semibold">eliminating middlemen, ensuring fair prices</span>, and giving
-            you full traceability on every lot.
+          <h2 class="text-5xl font-semibold text-brand-primary mb-4 w-lg leading-14">Who we are – and why it matters</h2>
+          <p class="text-base mb-6 leading-7 w-lg">We’re more than just importers. We work hand in hand with various farms across
+            <span class="text-brand-primary font-semibold">14 origins to bring roasters traceable, sustainable</span>  sustainable, high-quality green coffee. Discover how we source, who we work with, and why transparency drives everything we do. Learn more about our approach
           </p>
           <a href="#"
-            class="bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary flex items-center">
-            Join The Vision
-            <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
-              class="inline-block ml-2 align-middle" fill="#EDE8E1">
-              <path
-                d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
-              </path>
-            </svg>
+            class="relative bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary flex items-center">
+            About Us
+            <div class="arrow-animation absolute top-1 right-4 w-4 h-4 leading-[1.4]"></div>
           </a>
         </div>
       </div>
     </div>
 
-    <!-- Loose Beans -->
-    <div
+    <!-- Micro shop -->
+    <!-- <div
       class="bg-[#6F894D] bg-[url(/src/images/BG-Frame-1618869025.svg)] bg-cover bg-bottom bg-no-repeat h-[343px] my-10 content-center">
       <div class="container mx-auto px-4 my-8">
         <div class="flex flex-col justify-center items-center text-[#EDE8E1] space-y-6">
@@ -181,17 +191,38 @@
           </a>
         </div>
       </div>
+    </div> -->
+    <div class="container mx-auto px-4 py-12">
+      <div class="grid grid-cols-2 align-middle items-stretch space-x-4">
+        <div class="inline-flex flex-col justify-center items-center text-center bg-[#6F894D] rounded-lg h-full">
+          <h2 class="text-5xl font-bold italic capitalize text-brand-primary mb-4 w-md leading-14 text-[#EDE8E1] ">Need less than a full bag? </h2>
+          <p class="text-base mb-6 leading-7 w-sm text-[#EDE8E1]">
+            Order green coffee by the kilo — perfect for home roasters and micro roasteries
+          </p>
+          <a href="#"
+            class="relative inline-block text-sm bg-white/20 text-[#F0EAE3] border border-[#D7D0C4] px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md overflow-hidden">
+            Shop by KG
+            <div class="arrow-animation absolute top-1 right-3 w-4 h-4 leading-[1.2]"></div>
+          </a>
+        </div>
+        <div class="h-full relative">
+          <img src="/src/images/New-Banner-Seasonality-Calendar.jpg" alt="Vision" class="w-full rounded-lg">
+          <div class="absolute top-14 left-[-44px] right-0">
+            <img src="/src/images/Frame-1618869036.png" alt="Vision" class="w-28">
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Table Section -->
     <div class="relative container mx-auto px-4 py-14 space-y-8 z-[10] bg-[#F0EAE3]">
       <div class="flex flex-col items-center text-center space-y-4">
-        <h3 class="text-4xl font-semibold text-brand-primary">Lineup for the Roast</h3>
+        <h3 class="text-5xl font-semibold text-brand-primary">Lineup for the Roast</h3>
         <p class="text-xl">From standout varietals to diverse cup profiles, each lot is sourced with precision.</p>
       </div>
       <div class="overflow-x-auto bg-[#F5EADE] p-2 border border-[#DBC4A7] rounded-lg">
         <table
-          class="standard-tbl table-auto min-w-full text-left border border-[#BAAE9F] border-collapse rounded-lg overflow-hidden">
+          class="standard-tbl table-auto min-w-full text-left border border-[#8E8D8B] border-collapse rounded-lg overflow-hidden">
           <thead>
             <tr>
               <th>Origin</th>
@@ -290,7 +321,7 @@
           </svg>
         </a>
         <a href="#"
-          class="inline-block bg-brand-secondary text-white border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+          class="inline-block bg-brand-secondary text-[#F0EAE3] border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
           Login for Pricing
           <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
             class="inline-block ml-2 align-middle" fill="white">
@@ -313,23 +344,18 @@
       </div>
 
       <div class="relative container mx-auto h-[600px] content-end px-4 py-20">
-        <div class="flex flex-row justify-between text-white items-end">
-          <div class="text-left w-60">
-            <h3 class="text-4xl font-semibold">The right lot for your roast.</h3>
+        <div class="flex flex-row justify-between text-[#F0EAE3] items-end">
+          <div class="text-left w-80">
+            <h3 class="text-5xl font-semibold leading-15 text-[#EDE8E1]">The right lot for your roast</h3>
           </div>
-          <div class="text-right w-56 space-y-5">
-            <p class="text-xl font-extralight text-white">
-              Explore specs, harvest notes, and availability in our offer list.
+          <div class="text-right w-70 space-y-5">
+            <p class="text-xl font-extralight text-[#EDE8E1]">
+              Browse our full offer list — with sensory notes, harvest info, and real-time availability
             </p>
             <a href="#"
-              class="inline-block bg-white/20 text-white border border-[#D7D0C4] px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+              class="relative inline-block text-sm bg-white/20 text-[#EDE8E1] border border-[#D7D0C4] px-4 py-1 pr-8 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md">
               Know More
-              <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
-                class="inline-block ml-1 align-middle" fill="white">
-                <path
-                  d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
-                </path>
-              </svg>
+              <div class="arrow-animation absolute top-1 right-4 w-4 h-4 leading-[1.2]"></div>
             </a>
           </div>
         </div>
@@ -338,92 +364,15 @@
     </div>
 
 
-
-    <!--Season Section-->
-    <div
-      class="skyanimation w-full h-[540px] bg-[url(/src/images/SUL-DE-MINAS-4_land-1-min.png)] bg-cover bg-no-repeat bg-position-[0_20%] flex justify-center items-center text-center">
-      <div class="container mx-auto px-4 py-20 space-y-4">
-        <h3 class="text-5xl font-semibold text-[#46433E]">When Seasons Turn, Beans Return.</h3>
-        <p class="tracking-wide">Never miss a harvest window — plan your roasts with precision.</p>
-        <a href="#"
-          class="inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary mt-8">
-          Join the List
-          <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
-            class="inline-block ml-2 align-middle" fill="white">
-            <path
-              d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
-            </path>
-          </svg>
-        </a>
-      </div>
-    </div>
-
-    <!-- Good Hand -->
-    <!-- <div class="bg-brand-secondary">
-      <div class="container mx-auto px-4 my-8">
-        <div class="flex flex-row justify-center items-center">
-          <div class="w-2/5">
-            <img src="/src/images/Group-6.svg" alt="Good Hand"
-              class="w-full h-[632px] ">
-          </div>
-          <div class="w-3/5">
-            <h3 class="text-4xl font-semibold text-white mt-8">In good hands</h3>
-            <p class="text-white text-base mt-4">At Attesa, we believe in the power of good hands. Our coffee is sourced from
-              smallholder farmers who pour their heart and soul into every bean. By choosing Attesa, you’re not just
-              getting exceptional coffee—you’re supporting a community that values quality, sustainability, and fair
-              trade.</p>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- Keep in Touch -->
-    <div class="container mx-auto px-14 py-20">
-      <div class="grid grid-cols-2 align-middle items-center bg-[#FFF1E2] rounded-lg">
-        <div>
-          <img src="/src/images/home-vision.png" alt="Vision" class="w-full h-auto">
-        </div>
-        <div class="text-left mx-auto p-12 space-y-4">
-          <p class="flex items-center gap-2 mb-4 text[#46433E]">
-            <span class=""><img src="/src/images/right-arrow-icon.svg" class="w-3"></span>
-            <span class="text-xs">Subscribe to the Newsletter</span>
-          </p>
-          <h2 class="text-4xl font-semibold text-brand-primary  mb-4">Let’s Keep in Touch</h2>
-          <ul class="list-disc space-y-2 pl-6">
-            <li>Early access to new harvests.</li>
-            <li>Curated stories, sourcing updates, and behind-the-scenes glimpses.</li>
-            <li>Latest spot availability, pricing trends, and exclusive offer updates.</li>
-          </ul>
-          <form class="flex flex-col gap-y-4 max-w-md">
-          <input type="text" name="name" placeholder="Name (optional)"
-            class="px-3 py-2 rounded-lg text-sm border border-[#898277] w-full">
-          <div class="relative border border-[#898277] rounded-lg">
-            <input type="email" name="email" placeholder="Email" required class="px-3 py-2 rounded-lg text-sm w-full">
-          </div>
-          <button type="submit"
-            class="bg-brand-secondary text-white px-4 py-1 rounded-lg hover:bg-brand-primary transition-colors duration-200 cursor-pointer">
-            Subscribe
-            <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
-              class="inline-block ml-1 align-middle" fill="white">
-              <path
-                d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
-              </path>
-            </svg>
-          </button>
-          </form>
-        </div>
-      </div>
-    </div>
-
     <!-- Image Accordion Section -->
     <div class="px-4 py-16">
-      <div id="image-accordion" class="flex flex-row gap-2 h-[620px]">
+      <div id="image-accordion" class="flex flex-row gap-2 h-[680px]">
         <!-- Accordion Item 1 (Open by default) -->
         <div
-          class="group relative flex-1 transition-[flex] duration-500 overflow-hidden rounded-lg cursor-pointer bg-cover bg-center bg-[url('/src/images/aco-img-1.jpg')] items-start"
+          class="group relative flex-1 transition-[flex] duration-500 overflow-hidden rounded-lg bg-cover bg-center bg-[url('/src/images/aco-img-1.jpg')] items-start"
           onclick="openAccordion(0)">
           <!-- Black overlay -->
-          <div class="absolute inset-0 bg-black/50 z-0"></div>
+          <div class="absolute inset-0 bg-[#000]/50 z-0"></div>
           <div class="absolute left-[6rem] bottom-0 h-full flex items-end z-10">
             <h2 class="text-5xl font-bold text-[#F0EAE3] rotate-[-90deg] origin-left whitespace-nowrap uppercase">
               asia</h2>
@@ -486,19 +435,11 @@
             </div>
 
             <div class="space-y-6">
-              <h3 class="text-5xl font-semibold leading-14 w-4xl">Asian coffees are known for their bold body and low
-                acidity
-                —
-                perfect for espresso blends.</h3>
+              <h3 class="text-4xl font-semibold leading-14 w-4xl">Asia offers diverse coffee styles—from India’s estate-grown arabica to Indonesia’s unique island varieties. Vietnam leads in robusta farming, while other countries blend tradition and modern techniques in processing.</h3>
               <a href="#"
-                class="inline-block bg-brand-secondary text-white border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+                class="relative inline-block bg-brand-secondary text-[#F0EAE3] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
                 Explore all origins
-                <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
-                  class="inline-block ml-2 align-middle" fill="white">
-                  <path
-                    d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
-                  </path>
-                </svg>
+                <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.2]"></div>
               </a>
             </div>
 
@@ -506,10 +447,10 @@
         </div>
         <!-- Accordion Item 2 -->
         <div
-          class="group relative flex-1 transition-[flex] duration-500 overflow-hidden rounded-lg cursor-pointer bg-cover bg-center bg-[url('/src/images/aco-img-2.jpg')] items-start"
+          class="group relative flex-1 transition-[flex] duration-500 overflow-hidden rounded-lg bg-cover bg-center bg-[url('/src/images/aco-img-2.jpg')] items-start"
           onclick="openAccordion(1)">
           <!-- Black overlay -->
-          <div class="absolute inset-0 bg-black/50 z-0"></div>
+          <div class="absolute inset-0 bg-[#000]/50 z-0"></div>
           <div class="absolute left-[6rem] bottom-0 h-full flex items-end z-10">
             <h2 class="text-5xl font-bold text-[#F0EAE3] rotate-[-90deg] origin-left whitespace-nowrap uppercase">
               central america</h2>
@@ -572,19 +513,11 @@
             </div>
 
             <div class="space-y-6">
-              <h3 class="text-5xl font-semibold leading-14 w-4xl">Asian coffees are known for their bold body and low
-                acidity
-                —
-                perfect for espresso blends.</h3>
+              <h3 class="text-4xl font-semibold leading-14 w-4xl">Known for its coffee traditions and smallholder farms, countries like Guatemala, Honduras, and Costa Rica have strong infrastructure and cooperative models. High-elevation growing, traceability, and lot separation support diverse sourcing.</h3>
               <a href="#"
-                class="inline-block bg-brand-secondary text-white border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+                class="relative inline-block bg-brand-secondary text-[#F0EAE3] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
                 Explore all origins
-                <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
-                  class="inline-block ml-2 align-middle" fill="white">
-                  <path
-                    d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
-                  </path>
-                </svg>
+                <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.2]"></div>
               </a>
             </div>
 
@@ -592,10 +525,10 @@
         </div>
         <!-- Accordion Item 3 -->
         <div
-          class="group relative flex-1 transition-[flex] duration-500 overflow-hidden rounded-lg cursor-pointer bg-cover bg-center bg-[url('/src/images/aco-img-3.jpg')] items-start"
+          class="group relative flex-1 transition-[flex] duration-500 overflow-hidden rounded-lg bg-cover bg-center bg-[url('/src/images/aco-img-3.jpg')] items-start"
           onclick="openAccordion(2)">
           <!-- Black overlay -->
-          <div class="absolute inset-0 bg-black/50 z-0"></div>
+          <div class="absolute inset-0 bg-[#000]/50 z-0"></div>
           <div class="absolute left-[6rem] bottom-0 h-full flex items-end z-10">
             <h2 class="text-5xl font-bold text-[#F0EAE3] rotate-[-90deg] origin-left whitespace-nowrap uppercase">
               south america</h2>
@@ -658,19 +591,11 @@
             </div>
 
             <div class="space-y-6">
-              <h3 class="text-5xl font-semibold leading-14 w-4xl">Asian coffees are known for their bold body and low
-                acidity
-                —
-                perfect for espresso blends.</h3>
+              <h3 class="text-4xl font-semibold leading-14 w-4xl">A key coffee growing region led by Brazil’s large-scale farms and Colombia’s quality focus. Mix of family plots and commercial estates, with solid export systems offering volume, consistency, and reliable logistics.</h3>
               <a href="#"
-                class="inline-block bg-brand-secondary text-white border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+                class="relative inline-block bg-brand-secondary text-[#F0EAE3] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
                 Explore all origins
-                <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
-                  class="inline-block ml-2 align-middle" fill="white">
-                  <path
-                    d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
-                  </path>
-                </svg>
+                <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.2]"></div>
               </a>
             </div>
 
@@ -678,10 +603,10 @@
         </div>
         <!-- Accordion Item 4 -->
         <div
-          class="group relative flex-1 transition-[flex] duration-500 overflow-hidden rounded-lg cursor-pointer bg-cover bg-center bg-[url('/src/images/aco-img-4.jpg')] items-start"
+          class="group relative flex-1 transition-[flex] duration-500 overflow-hidden rounded-lg bg-cover bg-center bg-[url('/src/images/aco-img-4.jpg')] items-start"
           onclick="openAccordion(3)">
           <!-- Black overlay -->
-          <div class="absolute inset-0 bg-black/50 z-0"></div>
+          <div class="absolute inset-0 bg-[#000]/50 z-0"></div>
           <div class="absolute left-[6rem] bottom-0 h-full flex items-end z-10">
             <h2 class="text-5xl font-bold text-[#F0EAE3] rotate-[-90deg] origin-left whitespace-nowrap uppercase">
               africa</h2>
@@ -744,19 +669,11 @@
             </div>
 
             <div class="space-y-6">
-              <h3 class="text-5xl font-semibold leading-14 w-4xl">Asian coffees are known for their bold body and low
-                acidity
-                —
-                perfect for espresso blends.</h3>
+              <h3 class="text-4xl font-semibold leading-14 w-4xl">The birthplace of coffee, with Ethiopia and Kenya as highlights. Mostly small farms processed in washing stations or cooperatives. Traditional cultivation and processing methods remain central, supported by local knowledge.</h3>
               <a href="#"
-                class="inline-block bg-brand-secondary text-white border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+                class="relative inline-block bg-brand-secondary text-[#F0EAE3] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
                 Explore all origins
-                <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
-                  class="inline-block ml-2 align-middle" fill="white">
-                  <path
-                    d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
-                  </path>
-                </svg>
+                <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.2]"></div>
               </a>
             </div>
 
@@ -766,12 +683,49 @@
     </div>
 
 
+    <!--Season Section-->
+    <div
+      class="skyanimation w-full h-[540px] bg-[url(/src/images/SUL-DE-MINAS-4_land-1-min.png)] bg-cover bg-no-repeat bg-position-[0_20%] flex justify-center items-center text-center">
+      <div class="container mx-auto px-4 py-20 space-y-4">
+        <h3 class="text-5xl font-semibold text-[#46433E]">When Seasons Turn, Beans Return.</h3>
+        <p class="tracking-wide font-medium">Never miss a harvest window — plan your roasts with precision.</p>
+        <a href="#"
+          class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary mt-8">
+          Join the List
+          <div class="arrow-animation absolute top-1 right-3 w-4 h-4 leading-[1.2]"></div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Good Hand -->
+    <!-- <div class="bg-brand-secondary">
+      <div class="container mx-auto px-4 my-8">
+        <div class="flex flex-row justify-center items-center">
+          <div class="w-2/5">
+            <img src="/src/images/Group-6.svg" alt="Good Hand"
+              class="w-full h-[632px] ">
+          </div>
+          <div class="w-3/5">
+            <h3 class="text-4xl font-semibold text-[#F0EAE3] mt-8">In good hands</h3>
+            <p class="text-[#F0EAE3] text-base mt-4">At Attesa, we believe in the power of good hands. Our coffee is sourced from
+              smallholder farmers who pour their heart and soul into every bean. By choosing Attesa, you’re not just
+              getting exceptional coffee—you’re supporting a community that values quality, sustainability, and fair
+              trade.</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    
+
+
 
     <!-- Blogs -->
-    <div class="container mx-auto px-4 pb-14 space-y-8">
-      <div class="flex flex-col items-center text-center space-y-2">
-        <h3 class="text-4xl font-semibold text-brand-primary">Blogs</h3>
-        <p class="text-xl">Your go‑to resource for industry insights, farm‑to‑cup stories, and B2B market analysis.</p>
+    <div class="container mx-auto px-4 py-20 space-y-8">
+      <div class="flex flex-col items-center text-center space-y-4">
+        <h3 class="text-5xl font-semibold text-brand-primary">Insights</h3>
+        <p class="text-xl">Your source for in-depth coffee analysis & origin reports</p>
+        <p class="text-xl w-2xl">Explore insights on market dynamics, sourcing trends, and farm-level developments. Stay informed, from the origin to the offer sheet.</p>
       </div>
       <div>
         <div class="grid grid-cols-3 divide-x divide-[#8E8D8B] border-y border-[#8E8D8B]">
@@ -840,14 +794,9 @@
 
         <div class="flex flex-col items-center text-center space-y-2">
           <a href="#"
-            class="inline-block bg-brand-secondary text-white border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary mt-8">
+            class="relative inline-block bg-brand-secondary text-[#F0EAE3] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary mt-8">
             Read More
-            <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
-              class="inline-block ml-2 align-middle" fill="white">
-              <path
-                d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
-              </path>
-            </svg>
+            <div class="arrow-animation absolute top-1 right-4 w-4 h-4 leading-[1.2]"></div>
           </a>
         </div>
 
@@ -857,11 +806,10 @@
     </div>
 
     <!-- Instagram -->
-    <div class="container mx-auto px-4 py-14">
+    <div class="container mx-auto px-4 py-8">
       <div class="flex flex-col items-center text-center space-y-2 mb-8">
-        <h3 class="text-4xl font-semibold text-brand-primary">Snapshots of the Source</h3>
-        <p class="w-2xl text-xl">Follow our feed for real‑time updates on new arrivals, sustainability efforts, and
-          coffee community highlights.</p>
+        <h3 class="text-4xl font-semibold text-brand-primary">Always fresh updates — follow us on Instagram</h3>
+        <p class="w-2xl text-xl">Stay in the know with real-time news on new arrivals, sustainability efforts, and coffee community highlights — straight from the source.</p>
       </div>
       <div class="grid grid-cols-4 gap-4">
         <img src="/src/images/insta-img-1.jpg" alt="Instagram 1" class="w-full h-64 object-cover rounded-lg">
@@ -877,6 +825,38 @@
         </a>
       </div>
     </div>
+
+
+    <!-- Keep in Touch -->
+    <div class="container mx-auto px-14 py-20">
+      <div class="grid grid-cols-2 align-middle items-center bg-[#FFF1E2] rounded-lg">
+        <div>
+          <img src="/src/images/home-vision.png" alt="Vision" class="w-full h-auto">
+        </div>
+        <div class="text-left mx-auto p-12 space-y-4">
+          <p class="flex items-center gap-2 mb-4 text[#46433E]">
+            <span class=""><img src="/src/images/right-arrow-icon.svg" class="w-3"></span>
+            <span class="text-xs">Be first to know about new coffees</span>
+          </p>
+          <h2 class="text-4xl font-semibold text-brand-primary capitalize mb-4">preorders & spot offers</h2>
+          <p>Stay ahead of the harvest. Get updates on fresh arrivals, exclusive spot deals, and upcoming preorders – delivered straight to your inbox.</p>
+          <form class="space-y-3 max-w-md">
+            <input type="text" name="name" placeholder="Name (optional)"
+              class="px-3 py-2 rounded-lg text-sm border border-[#898277] w-full">
+            <div class="relative border border-[#898277] rounded-lg">
+              <input type="email" name="email" placeholder="Email" required class="px-3 py-2 rounded-lg text-sm w-full">
+            </div>
+            <a href="#"
+              class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+              Join the Newsletter
+              <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    
 
     <footer
       class="bg-[url(/src/images/footer-vector-9.svg)] bg-contain bg-no-repeat bg-left-center border-t-2 border-[#BAAE9F]">
@@ -1022,45 +1002,45 @@
       window.addEventListener('scroll', () => {
         if (window.scrollY > 10) {
           // Nav styles
-          nav.classList.add('bg-[#F5EADE]', 'text-[#3B3D34]', 'shadow-md');
+          nav.classList.add('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
           nav.classList.remove('bg-black/50', 'text-[#EDE8E1]');
 
           // Sign In button styles
-          signInBtn.classList.add('text-[#3B3D34]', 'border-[#3B3D34]');
-          signInBtn.classList.remove('text-[#EDE8E1]', 'border-[#D7D0C4]');
+          signInBtn.classList.add('text-[#3B3D34]', 'border', 'border-[#D7D0C4]');
+          signInBtn.classList.remove('text-[#EDE8E1]');
         } else {
           // Nav styles revert
-          nav.classList.remove('bg-[#F5EADE]', 'text-[#3B3D34]', 'shadow-md');
+          nav.classList.remove('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
           nav.classList.add('bg-black/50', 'text-[#EDE8E1]');
 
           // Sign In button revert
-          signInBtn.classList.remove('text-[#3B3D34]', 'border-[#3B3D34]');
-          signInBtn.classList.add('text-[#EDE8E1]', 'border-[#D7D0C4]');
+          signInBtn.classList.remove('text-[#3B3D34]');
+          signInBtn.classList.add('text-[#EDE8E1]');
         }
       });
     </script>
-    
+
 
     <!-- Icon Animation Script -->
     <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const iconHTML = `
+      document.addEventListener("DOMContentLoaded", () => {
+        const iconHTML = `
         <span class="absolute inset-0 transition-all duration-300 ease-in-out group-hover:-translate-y-2 group-hover:translate-x-2 group-hover:opacity-0 z-10">
-          <svg class="inline-block w-2 h-2" viewBox="0 0 512 512" fill="white" xmlns="http://www.w3.org/2000/svg">
-            <path d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z" />
-          </svg>
+            <svg class="inline-block w-2 h-2" width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.47945 0.19454L2.48692 0.19454C2.38845 0.194539 2.29093 0.213935 2.19995 0.251621C2.10897 0.289306 2.02631 0.344542 1.95667 0.414176C1.88704 0.483809 1.8318 0.566476 1.79412 0.657456C1.75643 0.748437 1.73704 0.845949 1.73704 0.944426C1.73704 1.0429 1.75643 1.14042 1.79412 1.2314C1.8318 1.32238 1.88704 1.40504 1.95667 1.47468C2.02631 1.54431 2.10897 1.59955 2.19995 1.63723C2.29093 1.67492 2.38845 1.69431 2.48692 1.69431L4.91902 1.69431L0.895932 5.7174C0.75528 5.85805 0.676262 6.04882 0.676262 6.24773C0.676262 6.44664 0.75528 6.6374 0.895932 6.77806C1.03658 6.91871 1.22735 6.99773 1.42626 6.99773C1.62517 6.99773 1.81594 6.91871 1.95659 6.77806L5.97968 2.75497L5.97968 5.18707C5.97939 5.28562 5.9986 5.38326 6.03618 5.47437C6.07377 5.56548 6.12899 5.64826 6.19868 5.71795C6.26837 5.78764 6.35115 5.84286 6.44226 5.88045C6.53337 5.91803 6.63101 5.93724 6.72956 5.93695C6.92844 5.93692 7.11916 5.85791 7.25978 5.71728C7.4004 5.57666 7.47942 5.38594 7.47945 5.18707L7.47945 0.19454Z" fill="#F0EAE3"/>
+            </svg>
         </span>
         <span class="absolute inset-0 translate-y-2 -translate-x-2 opacity-0 transition-all duration-300 ease-in-out group-hover:translate-y-0 group-hover:translate-x-0 group-hover:opacity-100 z-20">
-          <svg class="inline-block w-2 h-2" viewBox="0 0 512 512" fill="white" xmlns="http://www.w3.org/2000/svg">
-            <path d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z" />
-          </svg>
+            <svg class="inline-block w-2 h-2" width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.47945 0.19454L2.48692 0.19454C2.38845 0.194539 2.29093 0.213935 2.19995 0.251621C2.10897 0.289306 2.02631 0.344542 1.95667 0.414176C1.88704 0.483809 1.8318 0.566476 1.79412 0.657456C1.75643 0.748437 1.73704 0.845949 1.73704 0.944426C1.73704 1.0429 1.75643 1.14042 1.79412 1.2314C1.8318 1.32238 1.88704 1.40504 1.95667 1.47468C2.02631 1.54431 2.10897 1.59955 2.19995 1.63723C2.29093 1.67492 2.38845 1.69431 2.48692 1.69431L4.91902 1.69431L0.895932 5.7174C0.75528 5.85805 0.676262 6.04882 0.676262 6.24773C0.676262 6.44664 0.75528 6.6374 0.895932 6.77806C1.03658 6.91871 1.22735 6.99773 1.42626 6.99773C1.62517 6.99773 1.81594 6.91871 1.95659 6.77806L5.97968 2.75497L5.97968 5.18707C5.97939 5.28562 5.9986 5.38326 6.03618 5.47437C6.07377 5.56548 6.12899 5.64826 6.19868 5.71795C6.26837 5.78764 6.35115 5.84286 6.44226 5.88045C6.53337 5.91803 6.63101 5.93724 6.72956 5.93695C6.92844 5.93692 7.11916 5.85791 7.25978 5.71728C7.4004 5.57666 7.47942 5.38594 7.47945 5.18707L7.47945 0.19454Z" fill="#F0EAE3"/>
+            </svg>
         </span>
       `;
 
-      document.querySelectorAll(".arrow-animation").forEach(el => {
-        el.innerHTML = iconHTML;
+        document.querySelectorAll(".arrow-animation").forEach(el => {
+          el.innerHTML = iconHTML;
+        });
       });
-    });
     </script>
 
 

@@ -38,15 +38,10 @@
                     </a>
 
                     <a href="#"
-                        class="inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
-                        Sign Up
-                        <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512"
-                            xmlns="http://www.w3.org/2000/svg" class="inline-block ml-2 align-middle" fill="white">
-                            <path
-                                d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
-                            </path>
-                        </svg>
-                    </a>
+                    class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+                    Sign Up
+                    <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
+                </a>
                 </div>
             </div>
         </div>
@@ -517,28 +512,28 @@
 
     <!-- Sticky Navigation Script -->
     <script>
-        const nav = document.getElementById('main-nav');
-        const signInBtn = document.getElementById('sign-in-btn');
+      const nav = document.getElementById('main-nav');
+      const signInBtn = document.getElementById('sign-in-btn');
 
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 10) {
-                // Nav styles
-                nav.classList.add('bg-[#F5EADE]', 'text-[#3B3D34]', 'shadow-md');
-                nav.classList.remove('bg-black/50', 'text-[#EDE8E1]');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) {
+          // Nav styles
+          nav.classList.add('bg-[#F0EAE3]', 'text-[#3B3D34]', 'shadow-md');
+          nav.classList.remove('bg-black/50', 'text-[#EDE8E1]');
 
-                // Sign In button styles
-                signInBtn.classList.add('text-[#3B3D34]', 'border-[#3B3D34]');
-                signInBtn.classList.remove('text-[#EDE8E1]', 'border-[#D7D0C4]');
-            } else {
-                // Nav styles revert
-                nav.classList.remove('bg-[#F5EADE]', 'text-[#3B3D34]', 'shadow-md');
-                nav.classList.add('bg-black/50', 'text-[#EDE8E1]');
+          // Sign In button styles
+          signInBtn.classList.add('text-[#3B3D34]', 'border-[#D7D0C4]');
+          signInBtn.classList.remove('text-[#EDE8E1]', 'border-[#D7D0C4]');
+        } else {
+          // Nav styles revert
+          nav.classList.remove('bg-[#F0EAE3]', 'text-[#3B3D34]', 'shadow-md');
+          nav.classList.add('bg-black/50', 'text-[#EDE8E1]');
 
-                // Sign In button revert
-                signInBtn.classList.remove('text-[#3B3D34]', 'border-[#3B3D34]');
-                signInBtn.classList.add('text-[#EDE8E1]', 'border-[#D7D0C4]');
-            }
-        });
+          // Sign In button revert
+          signInBtn.classList.remove('text-[#3B3D34]', 'border-[#D7D0C4]');
+          signInBtn.classList.add('text-[#EDE8E1]', 'border-[#D7D0C4]');
+        }
+      });
     </script>
 
 
