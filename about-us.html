@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Rethink+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Rethink+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
 
+    <link rel="icon" type="image/svg+xml" href="/src/images/favicon.png">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -14,34 +17,46 @@
 </head>
 
 <body class="bg-brand-primary">
-    <nav id="main-nav"
-        class="sticky top-0 transition-all duration-500 ease-in-out py-4 text-[#EDE8E1] bg-black/50 backdrop-blur-lg z-99">
+    <nav id="main-nav" class="sticky top-0 py-4 text-[#EDE8E1] bg-black/50 backdrop-blur-lg z-99">
         <div class="container mx-auto px-4 flex items-center justify-between">
             <div class="font-bold text-xl w-[20%]">
                 <a href="index.html">
                     <img src="/src/images/Attesa-svg-logo.svg" alt="Logo" class="inline-block w-30">
                 </a>
             </div>
-            <ul class="flex justify-center items-center space-x-8 w-[80%]">
+            <ul class="flex justify-center items-center space-x-6 w-[80%]">
                 <li><a href="#" class="p-2">About</a></li>
                 <li><a href="#" class="p-2">Origins</a></li>
                 <li><a href="#" class="p-2">Our Coffee</a></li>
-                <li><a href="#" class="p-2">Beans by kg</a></li>
-                <li><a href="#" class="p-2">Blog</a></li>
+                <li class="relative group">
+                    <a href="#" class="p-2">Micro shop</a>
+
+                    <!-- Tooltip -->
+                    <div
+                        class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-4 py-2 rounded-lg bg-[#f5eade] border border-[#BAAE9F] shadow-lg backdrop-blur-md text-sm text-[#3B3D34] opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50 whitespace-nowrap">
+                        <!-- Arrow -->
+                        <div
+                            class="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 rotate-45 bg-[#f5eade] border-t border-l border-[#BAAE9F]">
+                        </div>
+
+                        Smaller quantities of green coffee
+                    </div>
+                </li>
+                <li><a href="#" class="p-2">Insights</a></li>
                 <li><a href="#" class="p-2">Contact</a></li>
             </ul>
             <div class="flex justify-end items-center text-base w-[20%]">
                 <div class="flex items-center space-x-4">
                     <a href="#" id="sign-in-btn"
-                        class="py-1 border text-[#EDE8E1] border-[#D7D0C4] px-4 rounded-lg transition-colors duration-500">
+                        class="py-1 border text-[#EDE8E1] px-4 rounded-lg hover:bg-[#86A161] hover:border-[#648930]">
                         Login
                     </a>
 
                     <a href="#"
-                    class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
-                    Sign Up
-                    <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
-                </a>
+                        class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+                        Sign Up
+                        <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -199,7 +214,7 @@
                                 <h4 class="flex text-base font-semibold flag india-flag">Nishit Tanna</h4>
                             </div>
                             <div>
-                                <span class="text-xs">Coffee Preference</span>   
+                                <span class="text-xs">Coffee Preference</span>
                                 <p class="font-medium">Caramel macchiato</p>
                             </div>
                         </div>
@@ -224,7 +239,7 @@
                                 <h4 class="flex text-base font-semibold flag india-flag">Juliana Chavez</h4>
                             </div>
                             <div>
-                                <span class="text-xs">Coffee Preference</span>   
+                                <span class="text-xs">Coffee Preference</span>
                                 <p class="font-medium">Floral cold brew</p>
                             </div>
                         </div>
@@ -249,7 +264,7 @@
                                 <h4 class="flex text-base font-semibold flag india-flag">Tomek Woronowicz</h4>
                             </div>
                             <div>
-                                <span class="text-xs">Coffee Preference</span>   
+                                <span class="text-xs">Coffee Preference</span>
                                 <p class="font-medium">Iced Americano</p>
                             </div>
                         </div>
@@ -278,7 +293,7 @@
                                 <h4 class="flex text-base font-semibold flag india-flag">Satish Rane</h4>
                             </div>
                             <div>
-                                <span class="text-xs">Coffee Preference</span>   
+                                <span class="text-xs">Coffee Preference</span>
                                 <p class="font-medium">Vanilla oat latte</p>
                             </div>
                         </div>
@@ -303,13 +318,13 @@
                                 <h4 class="flex text-base font-semibold flag india-flag">Shivangi Gandhi</h4>
                             </div>
                             <div>
-                                <span class="text-xs">Coffee Preference</span>   
+                                <span class="text-xs">Coffee Preference</span>
                                 <p class="font-medium">Flat white</p>
                             </div>
                         </div>
                         <div class="flex flex-col gap-y-2">
                             <span class="text-xs">Fun Fact</span>
-                            <p class="font-medium">Enjoys painting landscapes in her free time	</p>
+                            <p class="font-medium">Enjoys painting landscapes in her free time </p>
                         </div>
                         <div>
                             <img src="/src/images/Shivangi-Gandhi-image.jpg" alt="Shivangi Gandhi"
@@ -328,7 +343,7 @@
                                 <h4 class="flex text-base font-semibold flag india-flag">Paramjeet Kour </h4>
                             </div>
                             <div>
-                                <span class="text-xs">Coffee Preference</span>   
+                                <span class="text-xs">Coffee Preference</span>
                                 <p class="font-medium">Bold drip coffee</p>
                             </div>
                         </div>
@@ -357,7 +372,7 @@
                                 <h4 class="flex text-base font-semibold flag india-flag">Nolwenn Moussy</h4>
                             </div>
                             <div>
-                                <span class="text-xs">Coffee Preference</span>   
+                                <span class="text-xs">Coffee Preference</span>
                                 <p class="font-medium">Hazelnut cappuccino</p>
                             </div>
                         </div>
@@ -374,8 +389,7 @@
                     <!-- Image -->
                     <div class="bg-[#EFE8DC]">
                         <div class="flex justify-center items-center h-full">
-                            <img src="/src/images/Tem-Group-6.png" 
-                                class="w-full h-[432px] object-cover">
+                            <img src="/src/images/Tem-Group-6.png" class="w-full h-[432px] object-cover">
                         </div>
                     </div>
 
@@ -390,13 +404,13 @@
                                 <h4 class="flex text-base font-semibold flag india-flag">Denis Shukri</h4>
                             </div>
                             <div>
-                                <span class="text-xs">Coffee Preference</span>   
+                                <span class="text-xs">Coffee Preference</span>
                                 <p class="font-medium">Mocha & almond milk</p>
                             </div>
                         </div>
                         <div class="flex flex-col gap-y-2">
                             <span class="text-xs">Fun Fact</span>
-                            <p class="font-medium">Plays jazz saxophone on weekends	</p>
+                            <p class="font-medium">Plays jazz saxophone on weekends </p>
                         </div>
                         <div>
                             <img src="/src/images/Denis-Shukri-image.jpg" alt="Denis Shukri"
@@ -515,23 +529,27 @@
       const nav = document.getElementById('main-nav');
       const signInBtn = document.getElementById('sign-in-btn');
 
+      // Add hover effect on page load
+      signInBtn.classList.add('hover:text-[#EDE8E1]');
+
+
       window.addEventListener('scroll', () => {
         if (window.scrollY > 10) {
           // Nav styles
-          nav.classList.add('bg-[#F0EAE3]', 'text-[#3B3D34]', 'shadow-md');
+          nav.classList.add('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
           nav.classList.remove('bg-black/50', 'text-[#EDE8E1]');
 
           // Sign In button styles
-          signInBtn.classList.add('text-[#3B3D34]', 'border-[#D7D0C4]');
-          signInBtn.classList.remove('text-[#EDE8E1]', 'border-[#D7D0C4]');
+          signInBtn.classList.add('text-[#3B3D34]', 'border', 'border-[#D7D0C4]');
+          signInBtn.classList.remove('text-[#EDE8E1]');
         } else {
           // Nav styles revert
-          nav.classList.remove('bg-[#F0EAE3]', 'text-[#3B3D34]', 'shadow-md');
-          nav.classList.add('bg-black/50', 'text-[#EDE8E1]');
+          nav.classList.remove('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
+          nav.classList.add('bg-black/50', 'text-[#EDE8E1]' );
 
           // Sign In button revert
-          signInBtn.classList.remove('text-[#3B3D34]', 'border-[#D7D0C4]');
-          signInBtn.classList.add('text-[#EDE8E1]', 'border-[#D7D0C4]');
+          signInBtn.classList.remove('text-[#3B3D34]');
+          signInBtn.classList.add('text-[#EDE8E1]');
         }
       });
     </script>

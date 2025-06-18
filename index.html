@@ -12,6 +12,8 @@
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
 
+  <link rel="icon" type="image/svg+xml" href="/src/images/favicon.png">
+    
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -52,7 +54,7 @@
       <div class="flex justify-end items-center text-base w-[20%]">
         <div class="flex items-center space-x-4">
           <a href="#" id="sign-in-btn"
-            class="py-1 border text-[#EDE8E1] px-4 rounded-lg">
+            class="py-1 border text-[#EDE8E1] px-4 rounded-lg hover:bg-[#86A161] hover:border-[#648930]">
             Login
           </a>
 
@@ -90,7 +92,7 @@
                 <div>
                   <a href="#"
                     class="relative inline-block text-sm bg-white/20 text-[#EDE8E1] border border-[#D7D0C4] px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md overflow-hidden">
-                    Explore Our Coffees
+                    Explore our coffees
                     <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
                   </a>
                 </div>
@@ -159,11 +161,11 @@
         <div class="inline-flex flex-col justify-center items-center text-center">
           <h2 class="text-5xl font-semibold text-brand-primary mb-4 w-lg leading-14">Who we are – and why it matters</h2>
           <p class="text-base mb-6 leading-7 w-lg">We’re more than just importers. We work hand in hand with various farms across
-            <span class="text-brand-primary font-semibold">14 origins to bring roasters traceable, sustainable</span>  sustainable, high-quality green coffee. Discover how we source, who we work with, and why transparency drives everything we do. Learn more about our approach
+            <span class="text-brand-primary font-semibold">14 origins to bring roasters traceable,</span>  sustainable, high-quality green coffee. Discover how we source, who we work with, and why transparency drives everything we do.
           </p>
           <a href="#"
-            class="relative bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary flex items-center">
-            About Us
+            class="relative bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary flex items-center normal-case">
+            About our approach
             <div class="arrow-animation absolute top-1 right-4 w-4 h-4 leading-[1.4]"></div>
           </a>
         </div>
@@ -795,7 +797,7 @@
         <div class="flex flex-col items-center text-center space-y-2">
           <a href="#"
             class="relative inline-block bg-brand-secondary text-[#F0EAE3] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary mt-8">
-            Read More
+            Read more
             <div class="arrow-animation absolute top-1 right-4 w-4 h-4 leading-[1.2]"></div>
           </a>
         </div>
@@ -808,8 +810,8 @@
     <!-- Instagram -->
     <div class="container mx-auto px-4 py-8">
       <div class="flex flex-col items-center text-center space-y-2 mb-8">
-        <h3 class="text-4xl font-semibold text-brand-primary">Always fresh updates — follow us on Instagram</h3>
-        <p class="w-2xl text-xl">Stay in the know with real-time news on new arrivals, sustainability efforts, and coffee community highlights — straight from the source.</p>
+        <h3 class="text-4xl font-semibold text-brand-primary mb-4">Always fresh updates — follow us on Instagram</h3>
+        <p class="w-4xl text-xl">Stay in the know with real-time news on new arrivals, sustainability efforts, and coffee community highlights — straight from the source.</p>
       </div>
       <div class="grid grid-cols-4 gap-4">
         <img src="/src/images/insta-img-1.jpg" alt="Instagram 1" class="w-full h-64 object-cover rounded-lg">
@@ -999,6 +1001,10 @@
       const nav = document.getElementById('main-nav');
       const signInBtn = document.getElementById('sign-in-btn');
 
+      // Add hover effect on page load
+      signInBtn.classList.add('hover:text-[#EDE8E1]');
+
+
       window.addEventListener('scroll', () => {
         if (window.scrollY > 10) {
           // Nav styles
@@ -1011,7 +1017,7 @@
         } else {
           // Nav styles revert
           nav.classList.remove('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
-          nav.classList.add('bg-black/50', 'text-[#EDE8E1]');
+          nav.classList.add('bg-black/50', 'text-[#EDE8E1]' );
 
           // Sign In button revert
           signInBtn.classList.remove('text-[#3B3D34]');
