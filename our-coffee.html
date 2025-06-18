@@ -12,6 +12,8 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
 
+    <link rel="icon" type="image/svg+xml" href="/src/images/favicon.png">
+
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -21,7 +23,7 @@
 
 <body class="bg-brand-primary">
     <nav id="main-nav"
-        class="sticky top-0 transition-all duration-500 ease-in-out py-4 z-99 bg-[#F0EAE3] border-b border-[#BAAE9F]">
+        class="sticky top-0 py-4 z-99 bg-[#F0EAE3] border-b border-[#BAAE9F]">
         <div class="container mx-auto px-4 flex items-center justify-between">
             <div class="font-bold text-xl w-[20%]">
                 <a href="index.html">
@@ -32,26 +34,34 @@
                 <li><a href="#" class="p-2">About</a></li>
                 <li><a href="#" class="p-2">Origins</a></li>
                 <li><a href="#" class="p-2">Our Coffee</a></li>
-                <li><a href="#" class="p-2">Beans by kg</a></li>
-                <li><a href="#" class="p-2">Blog</a></li>
+                <li class="relative group">
+                    <a href="#" class="p-2">Micro shop</a>
+
+                    <!-- Tooltip -->
+                    <div
+                        class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-4 py-2 rounded-lg bg-[#f5eade] border border-[#BAAE9F] shadow-lg backdrop-blur-md text-sm text-[#3B3D34] opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50 whitespace-nowrap">
+                        <!-- Arrow -->
+                        <div
+                            class="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 rotate-45 bg-[#f5eade] border-t border-l border-[#BAAE9F]">
+                        </div>
+
+                        Smaller quantities of green coffee
+                    </div>
+                </li>
+                <li><a href="#" class="p-2">Insights</a></li>
                 <li><a href="#" class="p-2">Contact</a></li>
             </ul>
             <div class="flex justify-end items-center text-base w-[20%]">
                 <div class="flex items-center space-x-4">
                     <a href="#" id="sign-in-btn"
-                        class="p-2 border text-[#46433E] px-4 rounded-lg transition-colors duration-500">
-                        Sign In
+                        class="py-1 border border-[#D7D0C4] text-[#46433E] px-4 rounded-lg hover:bg-[#86A161] hover:border-[#648930]">
+                        Login
                     </a>
 
                     <a href="#"
-                        class="inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+                        class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
                         Sign Up
-                        <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512"
-                            xmlns="http://www.w3.org/2000/svg" class="inline-block ml-2 align-middle" fill="white">
-                            <path
-                                d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
-                            </path>
-                        </svg>
+                        <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
                     </a>
                 </div>
             </div>
@@ -390,31 +400,38 @@
     </footer>
 
 
+
     <!-- Sticky Navigation Script -->
     <script>
-        const nav = document.getElementById('main-nav');
-        const signInBtn = document.getElementById('sign-in-btn');
+      //const nav = document.getElementById('main-nav');
+      const signInBtn = document.getElementById('sign-in-btn');
 
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 10) {
-                // Nav styles
-                nav.classList.add('bg-[#F5EADE]', 'text-[#3B3D34]', 'shadow-md');
-                nav.classList.remove('bg-[#F0EAE3]', 'text-[#46433E]', 'border-b', 'border-transparent');
+      // Add hover effect on page load
+      signInBtn.classList.add('hover:text-[#EDE8E1]');
 
-                // Sign In button styles
-                signInBtn.classList.add('text-[#3B3D34]', 'border-[#D7D0C4]');
-                signInBtn.classList.remove('text-[#46433E]', 'border-[#D7D0C4]');
-            } else {
-                // Nav styles revert
-                nav.classList.remove('bg-[#F5EADE]', 'text-[#3B3D34]', 'shadow-md');
-                nav.classList.add('bg-[#F0EAE3]', 'text-[#46433E]', 'border-b', 'border-[#BAAE9F]');
 
-                // Sign In button revert
-                signInBtn.classList.remove('text-[#3B3D34]', 'border-[#D7D0C4]');
-                signInBtn.classList.add('text-[#46433E]', 'border-[#D7D0C4]');
-            }
-        });
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) {
+          // Nav styles
+          nav.classList.add('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
+          nav.classList.remove('bg-[#F0EAE3]', 'text-[#46433E]');
+
+          // Sign In button styles
+          signInBtn.classList.add('text-[#3B3D34]', 'border', 'border-[#D7D0C4]');
+          signInBtn.classList.remove('text-[#EDE8E1]');
+        } else {
+          // Nav styles revert
+          nav.classList.remove('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
+          nav.classList.add('bg-[#F0EAE3]', 'text-[#46433E]' );
+
+          // Sign In button revert
+          signInBtn.classList.remove('text-[#3B3D34]');
+          signInBtn.classList.add('text-[#3B3D34]');
+        }
+      });
     </script>
+
+
 
 
     <!-- Icon Animation Script -->
