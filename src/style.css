@@ -288,6 +288,12 @@
   .left-\[-44px\] {
     left: -44px;
   }
+  .left-\[6rem\] {
+    left: 6rem;
+  }
+  .left-\[6vh\] {
+    left: 6vh;
+  }
   .left-\[10vh\] {
     left: 10vh;
   }
