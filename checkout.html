@@ -1,0 +1,723 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" type="image/svg+xml" href="/src/images/favicon.png">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>Checkout - Attesa Coffee</title>
+    <link href="./src/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-brand-primary">
+    <nav id="main-nav" class="sticky top-0 py-4 z-99 bg-[#F0EAE3] border-b border-[#BAAE9F]">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <div class="font-bold text-xl w-[20%]">
+                <a href="index.html">
+                    <img src="/src/images/Attesa-svg-logo.svg" alt="Logo" class="inline-block w-30">
+                </a>
+            </div>
+            <ul class="flex justify-center items-center space-x-6 w-[80%]">
+                <li><a href="#" class="p-2">About</a></li>
+                <li><a href="#" class="p-2">Origins</a></li>
+                <li><a href="#" class="p-2">Our Coffee</a></li>
+                <li class="relative group">
+                    <a href="#" class="p-2">Micro shop</a>
+
+                    <!-- Tooltip -->
+                    <div
+                        class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-4 py-2 rounded-lg bg-[#f5eade] border border-[#BAAE9F] shadow-lg backdrop-blur-md text-sm text-[#3B3D34] opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50 whitespace-nowrap">
+                        <!-- Arrow -->
+                        <div
+                            class="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 rotate-45 bg-[#f5eade] border-t border-l border-[#BAAE9F]">
+                        </div>
+
+                        Smaller quantities of green coffee
+                    </div>
+                </li>
+                <li><a href="#" class="p-2">Insights</a></li>
+                <li><a href="#" class="p-2">Contact</a></li>
+            </ul>
+            <div class="flex justify-end items-center text-base w-[20%]">
+                <div class="flex items-center space-x-4">
+                    <a href="#" id="sign-in-btn"
+                        class="py-1 border border-[#D7D0C4] text-[#46433E] px-4 rounded-lg hover:bg-[#86A161] hover:border-[#648930]">
+                        Login
+                    </a>
+
+                    <a href="#"
+                        class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+                        Sign Up
+                        <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Your main content here -->
+    <div class="">
+
+
+
+        <!-- Checkout Section -->
+        <div class="relative container mx-auto px-4 py-14 space-y-8 z-[10] bg-[#F0EAE3]">
+
+            <div class="flex flex-row p-10 rounded-xl gap-10">
+                <div class="w-3/5">
+                    <!-- Checkout Form -->
+                    <form class="space-y-10">
+
+                        <!-- Contact Section -->
+                        <div class="space-y-6">
+                            <h4 class="text-lg font-semibold text-brand-primary mb-2">Contact</h4>
+                            <div class="flex flex-col gap-4">
+                                <label class="flex flex-col text-left">
+                                    <input type="email" required
+                                        class="px-3 py-2 border border-[#BAAE9F] rounded-lg bg-[#F0EAE3] focus:outline-none focus:ring-2 focus:ring-brand-secondary"
+                                        placeholder="you@email.com">
+                                </label>
+                                <label class="inline-flex items-center gap-2 text-sm">
+                                    <input type="checkbox" class="accent-green-700 bg-brand-secondary" checked>
+                                    Email me with news and offers
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Delivery Section -->
+                        <div class="space-y-6">
+                            <h4 class="text-lg font-semibold text-brand-primary mb-2">Delivery</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <label class="flex flex-col col-span-2">
+                                    <span class="mb-1 text-sm font-medium">Country/Region</span>
+                                    <select required id="shipping-country"
+                                        class="px-3 py-2 border border-[#BAAE9F] rounded-lg bg-[#F0EAE3]">
+                                        <option value="">Select country</option>
+                                        <option value="NL">Netherlands</option>
+                                        <option value="DE">Germany</option>
+                                        <option value="BE">Belgium</option>
+                                        <option value="FR">France</option>
+                                        <option value="US">United States</option>
+                                        <option value="IN">India</option>
+                                        <option value="GB">United Kingdom</option>
+                                        <option value="IT">Italy</option>
+                                        <option value="ES">Spain</option>
+                                        <option value="CA">Canada</option>
+                                        <option value="AU">Australia</option>
+                                        <option value="JP">Japan</option>
+                                        <option value="CN">China</option>
+                                        <option value="BR">Brazil</option>
+                                        <option value="ZA">South Africa</option>
+                                        <option value="RU">Russia</option>
+                                        <option value="MX">Mexico</option>
+                                        <option value="SG">Singapore</option>
+                                        <option value="AE">United Arab Emirates</option>
+                                        <option value="CH">Switzerland</option>
+                                        <option value="SE">Sweden</option>
+                                        <option value="NO">Norway</option>
+                                        <option value="DK">Denmark</option>
+                                        <option value="FI">Finland</option>
+                                        <option value="IE">Ireland</option>
+                                        <option value="PL">Poland</option>
+                                        <option value="PT">Portugal</option>
+                                        <option value="GR">Greece</option>
+                                        <option value="TR">Turkey</option>
+                                        <option value="AR">Argentina</option>
+                                        <option value="CL">Chile</option>
+                                        <option value="CO">Colombia</option>
+                                        <option value="NZ">New Zealand</option>
+                                        <option value="KR">South Korea</option>
+                                        <option value="MY">Malaysia</option>
+                                        <option value="TH">Thailand</option>
+                                        <option value="ID">Indonesia</option>
+                                        <option value="PH">Philippines</option>
+                                        <option value="SA">Saudi Arabia</option>
+                                        <option value="EG">Egypt</option>
+                                        <option value="IL">Israel</option>
+                                        <option value="AT">Austria</option>
+                                        <option value="CZ">Czech Republic</option>
+                                        <option value="HU">Hungary</option>
+                                        <option value="RO">Romania</option>
+                                        <option value="SK">Slovakia</option>
+                                        <option value="BG">Bulgaria</option>
+                                        <option value="HR">Croatia</option>
+                                        <option value="SI">Slovenia</option>
+                                        <option value="LU">Luxembourg</option>
+                                        <option value="EE">Estonia</option>
+                                        <option value="LT">Lithuania</option>
+                                        <option value="LV">Latvia</option>
+                                        <!-- Add more countries as needed -->
+                                    </select>
+                                </label>
+                                <label class="flex flex-col">
+                                    <span class="mb-1 text-sm font-medium">First name</span>
+                                    <input type="text" required
+                                        class="px-3 py-2 border border-[#BAAE9F] rounded-lg bg-[#F0EAE3]"
+                                        placeholder="First name">
+                                </label>
+                                <label class="flex flex-col">
+                                    <span class="mb-1 text-sm font-medium">Last name</span>
+                                    <input type="text" required
+                                        class="px-3 py-2 border border-[#BAAE9F] rounded-lg bg-[#F0EAE3]"
+                                        placeholder="Last name">
+                                </label>
+                                <label class="flex flex-col col-span-2">
+                                    <span class="mb-1 text-sm font-medium">Address</span>
+                                    <input type="text" required
+                                        class="px-3 py-2 border border-[#BAAE9F] rounded-lg bg-[#F0EAE3]"
+                                        placeholder="Street address">
+                                </label>
+                                <label class="flex flex-col">
+                                    <span class="mb-1 text-sm font-medium">City</span>
+                                    <input type="text" required
+                                        class="px-3 py-2 border border-[#BAAE9F] rounded-lg bg-[#F0EAE3]"
+                                        placeholder="City">
+                                </label>
+                                <label class="flex flex-col">
+                                    <span class="mb-1 text-sm font-medium">State</span>
+                                    <select required id="shipping-state"
+                                        class="px-3 py-2 border border-[#BAAE9F] rounded-lg bg-[#F0EAE3]" disabled>
+                                        <option value="">Select state</option>
+                                    </select>
+                                </label>
+                                <label class="flex flex-col">
+                                    <span class="mb-1 text-sm font-medium">Postal code</span>
+                                    <input type="text" required
+                                        class="px-3 py-2 border border-[#BAAE9F] rounded-lg bg-[#F0EAE3]"
+                                        placeholder="1234 AB">
+                                </label>
+                                <label class="flex flex-col">
+                                    <span class="mb-1 text-sm font-medium">Phone number</span>
+                                    <input type="tel" required
+                                        class="px-3 py-2 border border-[#BAAE9F] rounded-lg bg-[#F0EAE3]"
+                                        placeholder="+31 6 12345678">
+                                </label>
+                            </div>
+                            <label class="inline-flex items-center gap-2 text-sm">
+                                <input type="checkbox" class="accent-brand-secondary">
+                                Save this information for next time
+                            </label>
+                        </div>
+
+                        <!-- Shipping Method Section -->
+                        <div class="space-y-6">
+                            <h4 class="text-lg font-semibold text-brand-primary mb-2">Shipping method</h4>
+                            <div class="flex flex-col gap-3">
+                                <label class="flex items-center gap-3">
+                                    <input type="radio" name="shipping" checked class="accent-brand-secondary">
+                                    <span>Free Shipping (3-5 business days)</span>
+                                </label>
+                                <label class="flex items-center gap-3">
+                                    <input type="radio" name="shipping" class="accent-brand-secondary">
+                                    <span>Express Shipping (1-2 business days) — ₹49</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Billing Address Section -->
+                        <div class="space-y-6">
+                            <h4 class="text-lg font-semibold text-brand-primary mb-2">Billing address</h4>
+                            <div class="flex flex-col gap-3">
+                                <label class="flex items-center gap-3">
+                                    <input type="radio" name="billing" value="same" checked
+                                        class="accent-brand-secondary"
+                                        onclick="document.getElementById('billing-fields').classList.add('hidden')">
+                                    <span>Same as shipping address</span>
+                                </label>
+                                <label class="flex items-center gap-3">
+                                    <input type="radio" name="billing" value="different" class="accent-brand-secondary"
+                                        onclick="document.getElementById('billing-fields').classList.remove('hidden')">
+                                    <span>Use a different billing address</span>
+                                </label>
+                            </div>
+                            <div id="billing-fields" class="hidden mt-6">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <label class="flex flex-col col-span-2">
+                                        <span class="mb-1 text-sm font-medium">Country/Region</span>
+                                        <select id="billing-country"
+                                            class="px-3 py-2 border border-[#BAAE9F] rounded-lg bg-[#F0EAE3]">
+                                            <option value="">Select country</option>
+                                            <option value="NL">Netherlands</option>
+                                            <option value="DE">Germany</option>
+                                            <option value="BE">Belgium</option>
+                                            <option value="FR">France</option>
+                                            <option value="US">United States</option>
+                                            <option value="IN">India</option>
+                                            <option value="GB">United Kingdom</option>
+                                            <option value="IT">Italy</option>
+                                            <option value="ES">Spain</option>
+                                            <option value="CA">Canada</option>
+                                            <option value="AU">Australia</option>
+                                            <option value="JP">Japan</option>
+                                            <option value="CN">China</option>
+                                            <option value="BR">Brazil</option>
+                                            <option value="ZA">South Africa</option>
+                                            <option value="RU">Russia</option>
+                                            <option value="MX">Mexico</option>
+                                            <option value="SG">Singapore</option>
+                                            <option value="AE">United Arab Emirates</option>
+                                            <option value="CH">Switzerland</option>
+                                            <option value="SE">Sweden</option>
+                                            <option value="NO">Norway</option>
+                                            <option value="DK">Denmark</option>
+                                            <option value="FI">Finland</option>
+                                            <option value="IE">Ireland</option>
+                                            <option value="PL">Poland</option>
+                                            <option value="PT">Portugal</option>
+                                            <option value="GR">Greece</option>
+                                            <option value="TR">Turkey</option>
+                                            <option value="AR">Argentina</option>
+                                            <option value="CL">Chile</option>
+                                            <option value="CO">Colombia</option>
+                                            <option value="NZ">New Zealand</option>
+                                            <option value="KR">South Korea</option>
+                                            <option value="MY">Malaysia</option>
+                                            <option value="TH">Thailand</option>
+                                            <option value="ID">Indonesia</option>
+                                            <option value="PH">Philippines</option>
+                                            <option value="SA">Saudi Arabia</option>
+                                            <option value="EG">Egypt</option>
+                                            <option value="IL">Israel</option>
+                                            <option value="AT">Austria</option>
+                                            <option value="CZ">Czech Republic</option>
+                                            <option value="HU">Hungary</option>
+                                            <option value="RO">Romania</option>
+                                            <option value="SK">Slovakia</option>
+                                            <option value="BG">Bulgaria</option>
+                                            <option value="HR">Croatia</option>
+                                            <option value="SI">Slovenia</option>
+                                            <option value="LU">Luxembourg</option>
+                                            <option value="EE">Estonia</option>
+                                            <option value="LT">Lithuania</option>
+                                            <option value="LV">Latvia</option>
+                                        </select>
+                                    </label>
+                                    <label class="flex flex-col">
+                                        <span class="mb-1 text-sm font-medium">First name</span>
+                                        <input type="text"
+                                            class="px-3 py-2 border border-[#BAAE9F] rounded-lg bg-[#F0EAE3]"
+                                            placeholder="First name">
+                                    </label>
+                                    <label class="flex flex-col">
+                                        <span class="mb-1 text-sm font-medium">Last name</span>
+                                        <input type="text"
+                                            class="px-3 py-2 border border-[#BAAE9F] rounded-lg bg-[#F0EAE3]"
+                                            placeholder="Last name">
+                                    </label>
+                                    <label class="flex flex-col col-span-2">
+                                        <span class="mb-1 text-sm font-medium">Address</span>
+                                        <input type="text"
+                                            class="px-3 py-2 border border-[#BAAE9F] rounded-lg bg-[#F0EAE3]"
+                                            placeholder="Street address">
+                                    </label>
+                                    <label class="flex flex-col">
+                                        <span class="mb-1 text-sm font-medium">City</span>
+                                        <input type="text"
+                                            class="px-3 py-2 border border-[#BAAE9F] rounded-lg bg-[#F0EAE3]"
+                                            placeholder="City">
+                                    </label>
+                                    <label class="flex flex-col">
+                                        <span class="mb-1 text-sm font-medium">State</span>
+                                        <select id="billing-state"
+                                            class="px-3 py-2 border border-[#BAAE9F] rounded-lg bg-[#F0EAE3]" disabled>
+                                            <option value="">Select state</option>
+                                        </select>
+                                    </label>
+                                    <label class="flex flex-col">
+                                        <span class="mb-1 text-sm font-medium">Postal code</span>
+                                        <input type="text"
+                                            class="px-3 py-2 border border-[#BAAE9F] rounded-lg bg-[#F0EAE3]"
+                                            placeholder="1234 AB">
+                                    </label>
+                                    <label class="flex flex-col">
+                                        <span class="mb-1 text-sm font-medium">Phone number</span>
+                                        <input type="tel"
+                                            class="px-3 py-2 border border-[#BAAE9F] rounded-lg bg-[#F0EAE3]"
+                                            placeholder="+31 6 12345678">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-end">
+                            <button type="submit"
+                                class="w-full bg-brand-secondary text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-primary transition-colors duration-200">
+                                Continue to payment
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="sticky top-0 px-10 py-6 w-2/5 bg-gradient-to-t from-[#FFF3E5] via-[#FFF4E5] to-[#FFF3E5]">2
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Origin Section -->
+
+
+
+    </div>
+
+
+    <footer
+        class="bg-[url(/src/images/footer-vector-9.svg)] bg-contain bg-no-repeat bg-left-center border-t-2 border-[#BAAE9F]">
+        <div class="container mx-auto px-4 py-8">
+            <div class="flex flex-row justify-between text-[#3C3A37] py-8">
+
+                <div class="w-1/3">
+                    <img src="/src/images/logo-white.svg" alt="Logo" class="inline-block w-36 mb-4">
+                </div>
+                <div class="w-2/3">
+                    <div class="flex flex-row justify-between items-start">
+                        <div class="w-1/3">
+                            <h4 class="uppercase text-base font-semibold mb-4">Terms</h4>
+                            <div class="text-sm flex flex-col gap-y-2">
+                                <a href="#" class="link-with-icon">Privacy Policy</a>
+                                <a href="#" class="link-with-icon">Shipping Policy</a>
+                                <a href="#" class="link-with-icon">Terms & Conditions</a>
+                            </div>
+                        </div>
+
+                        <div class="w-1/3">
+                            <h4 class="uppercase text-base font-semibold mb-2">Contact</h4>
+                            <div class="text-sm flex flex-col gap-y-2">
+                                <a href="#" class="link-with-icon">theattesacoffee@gmail.com</a>
+                                <a href="#" class="link-with-icon">+31 64 420 7299</a>
+                                <a href="#" class="link-with-icon inline-flex">Entrada 569,<br>
+                                    1115 SE Duivendrecht,<br>
+                                    The Netherlands</a>
+                            </div>
+                        </div>
+
+                        <div class="w-1/3">
+                            <div class="flex flex-col">
+                                <h4 class="uppercase text-base font-semibold mb-2 w-46">From lush estates to your coffee
+                                    plates</h4>
+                                <p class="text-sm">Subscribe for deep dives on bean highs, pricing ties, and
+                                    shipping-wise advisories!
+                                </p>
+                            </div>
+                            <div>
+                                <form class="flex flex-col gap-y-2 mt-4">
+                                    <input type="text" placeholder="Name"
+                                        class="px-3 py-2 rounded-lg bg-[#F0EAE3] text-sm border border-[#3C3A37]">
+                                    <div class="relative border border-[#3C3A37] rounded-lg">
+                                        <input type="email" placeholder="Email"
+                                            class="px-3 py-2 rounded-lg bg-[#F0EAE3] text-sm w-full">
+                                        <button type="submit"
+                                            class="absolute cursor-pointer right-2 top-1/2 transform -translate-y-1/2">
+                                            <svg height="8" width="8" viewBox="0 0 512 512"
+                                                xmlns="http://www.w3.org/2000/svg" fill="#3C3A37">
+                                                <path
+                                                    d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="text-sm flex flex-row gap-x-2 py-6">
+                                <a href="#" class="">
+                                    <div class="inline-flex justify-center items-center p-2 rounded-full bg-[#575450]">
+                                        <img src="/src/images/linkedin-icon.svg" alt="LinkedIn"
+                                            class="inline-block w-4">
+                                    </div>
+                                </a>
+                                <a href="#" class="">
+                                    <div class="inline-flex justify-center items-center p-2 rounded-full bg-[#575450]">
+                                        <img src="/src/images/instagram-icon.svg" alt="Instagram"
+                                            class="inline-block w-4">
+                                    </div>
+                                </a>
+                                <a href="#" class="">
+                                    <div class="inline-flex justify-center items-center p-2 rounded-full bg-[#575450]">
+                                        <img src="/src/images/facebook-icon.svg" alt="Facebook"
+                                            class="inline-block w-4">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex flex-row justify-between items-center py-4">
+                <p class="text-sm text-[#F0EAE3]">© Attesa B.V. 2025 . All rights reserved.</p>
+                <p class="text-sm">
+                    Powered by:
+                    <a href="https://teque7.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/src/images/t7.png" alt="TEQUE7" class="inline-block w-16">
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Sticky Navigation Script -->
+    <script>
+        //const nav = document.getElementById('main-nav');
+        const signInBtn = document.getElementById('sign-in-btn');
+
+        // Add hover effect on page load
+        signInBtn.classList.add('hover:text-[#EDE8E1]');
+
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                // Nav styles
+                nav.classList.add('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
+                nav.classList.remove('bg-[#F0EAE3]', 'text-[#46433E]');
+
+                // Sign In button styles
+                signInBtn.classList.add('text-[#3B3D34]', 'border', 'border-[#D7D0C4]');
+                signInBtn.classList.remove('text-[#EDE8E1]');
+            } else {
+                // Nav styles revert
+                nav.classList.remove('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
+                nav.classList.add('bg-[#F0EAE3]', 'text-[#46433E]');
+
+                // Sign In button revert
+                signInBtn.classList.remove('text-[#3B3D34]');
+                signInBtn.classList.add('text-[#3B3D34]');
+            }
+        });
+    </script>
+
+
+
+    <!-- Icon Animation Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const iconHTML = `
+        <span class="absolute inset-0 transition-all duration-300 ease-in-out group-hover:-translate-y-2 group-hover:translate-x-2 group-hover:opacity-0 z-10">
+          <svg class="inline-block w-2 h-2" viewBox="0 0 512 512" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z" />
+          </svg>
+        </span>
+        <span class="absolute inset-0 translate-y-2 -translate-x-2 opacity-0 transition-all duration-300 ease-in-out group-hover:translate-y-0 group-hover:translate-x-0 group-hover:opacity-100 z-20">
+          <svg class="inline-block w-2 h-2" viewBox="0 0 512 512" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z" />
+          </svg>
+        </span>
+      `;
+
+            document.querySelectorAll(".arrow-animation").forEach(el => {
+                el.innerHTML = iconHTML;
+            });
+        });
+    </script>
+
+    <script>
+        // Toggle billing address fields
+        document.querySelectorAll('input[name="billing"]').forEach(radio => {
+            radio.addEventListener('change', function () {
+                const billingFields = document.getElementById('billing-fields');
+                if (this.value === 'different') {
+                    billingFields.classList.remove('hidden');
+                } else {
+                    billingFields.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+
+    <script>
+        const countryStates = {
+            NL: [
+                { value: "NH", text: "North Holland" },
+                { value: "ZH", text: "South Holland" },
+                { value: "UT", text: "Utrecht" },
+                { value: "GE", text: "Gelderland" },
+                { value: "GR", text: "Groningen" },
+                { value: "FR", text: "Friesland" },
+                { value: "DR", text: "Drenthe" },
+                { value: "OV", text: "Overijssel" },
+                { value: "FL", text: "Flevoland" },
+                { value: "NB", text: "North Brabant" },
+                { value: "LI", text: "Limburg" },
+                { value: "ZE", text: "Zeeland" }
+            ],
+            DE: [
+                { value: "BW", text: "Baden-Württemberg" },
+                { value: "BY", text: "Bavaria" },
+                { value: "BE", text: "Berlin" },
+                { value: "BB", text: "Brandenburg" },
+                { value: "HB", text: "Bremen" },
+                { value: "HH", text: "Hamburg" },
+                { value: "HE", text: "Hesse" },
+                { value: "MV", text: "Mecklenburg-Vorpommern" },
+                { value: "NI", text: "Lower Saxony" },
+                { value: "NW", text: "North Rhine-Westphalia" },
+                { value: "RP", text: "Rhineland-Palatinate" },
+                { value: "SL", text: "Saarland" },
+                { value: "SN", text: "Saxony" },
+                { value: "ST", text: "Saxony-Anhalt" },
+                { value: "SH", text: "Schleswig-Holstein" },
+                { value: "TH", text: "Thuringia" }
+            ],
+            BE: [
+                { value: "VAN", text: "Antwerp" },
+                { value: "VBR", text: "Flemish Brabant" },
+                { value: "WBR", text: "Walloon Brabant" },
+                { value: "VOV", text: "East Flanders" },
+                { value: "WHT", text: "Hainaut" },
+                { value: "WLG", text: "Liège" },
+                { value: "VLI", text: "Limburg" },
+                { value: "WLX", text: "Luxembourg" },
+                { value: "WNA", text: "Namur" },
+                { value: "VOV", text: "East Flanders" },
+                { value: "VWV", text: "West Flanders" }
+            ],
+            FR: [
+                { value: "IDF", text: "Île-de-France" },
+                { value: "NAQ", text: "Nouvelle-Aquitaine" },
+                { value: "ARA", text: "Auvergne-Rhône-Alpes" },
+                { value: "BFC", text: "Bourgogne-Franche-Comté" },
+                { value: "BRE", text: "Brittany" },
+                { value: "CVL", text: "Centre-Val de Loire" },
+                { value: "COR", text: "Corsica" },
+                { value: "GES", text: "Grand Est" },
+                { value: "HDF", text: "Hauts-de-France" },
+                { value: "NOR", text: "Normandy" },
+                { value: "OCC", text: "Occitanie" },
+                { value: "PDL", text: "Pays de la Loire" },
+                { value: "PAC", text: "Provence-Alpes-Côte d'Azur" }
+            ],
+            US: [
+                { value: "AL", text: "Alabama" },
+                { value: "AK", text: "Alaska" },
+                { value: "AZ", text: "Arizona" },
+                { value: "AR", text: "Arkansas" },
+                { value: "CA", text: "California" },
+                { value: "CO", text: "Colorado" },
+                { value: "CT", text: "Connecticut" },
+                { value: "DE", text: "Delaware" },
+                { value: "FL", text: "Florida" },
+                { value: "GA", text: "Georgia" },
+                { value: "HI", text: "Hawaii" },
+                { value: "ID", text: "Idaho" },
+                { value: "IL", text: "Illinois" },
+                { value: "IN", text: "Indiana" },
+                { value: "IA", text: "Iowa" },
+                { value: "KS", text: "Kansas" },
+                { value: "KY", text: "Kentucky" },
+                { value: "LA", text: "Louisiana" },
+                { value: "ME", text: "Maine" },
+                { value: "MD", text: "Maryland" },
+                { value: "MA", text: "Massachusetts" },
+                { value: "MI", text: "Michigan" },
+                { value: "MN", text: "Minnesota" },
+                { value: "MS", text: "Mississippi" },
+                { value: "MO", text: "Missouri" },
+                { value: "MT", text: "Montana" },
+                { value: "NE", text: "Nebraska" },
+                { value: "NV", text: "Nevada" },
+                { value: "NH", text: "New Hampshire" },
+                { value: "NJ", text: "New Jersey" },
+                { value: "NM", text: "New Mexico" },
+                { value: "NY", text: "New York" },
+                { value: "NC", text: "North Carolina" },
+                { value: "ND", text: "North Dakota" },
+                { value: "OH", text: "Ohio" },
+                { value: "OK", text: "Oklahoma" },
+                { value: "OR", text: "Oregon" },
+                { value: "PA", text: "Pennsylvania" },
+                { value: "RI", text: "Rhode Island" },
+                { value: "SC", text: "South Carolina" },
+                { value: "SD", text: "South Dakota" },
+                { value: "TN", text: "Tennessee" },
+                { value: "TX", text: "Texas" },
+                { value: "UT", text: "Utah" },
+                { value: "VT", text: "Vermont" },
+                { value: "VA", text: "Virginia" },
+                { value: "WA", text: "Washington" },
+                { value: "WV", text: "West Virginia" },
+                { value: "WI", text: "Wisconsin" },
+                { value: "WY", text: "Wyoming" }
+            ],
+            IN: [
+                { value: "AP", text: "Andhra Pradesh" },
+                { value: "AR", text: "Arunachal Pradesh" },
+                { value: "AS", text: "Assam" },
+                { value: "BR", text: "Bihar" },
+                { value: "CT", text: "Chhattisgarh" },
+                { value: "GA", text: "Goa" },
+                { value: "GJ", text: "Gujarat" },
+                { value: "HR", text: "Haryana" },
+                { value: "HP", text: "Himachal Pradesh" },
+                { value: "JH", text: "Jharkhand" },
+                { value: "KA", text: "Karnataka" },
+                { value: "KL", text: "Kerala" },
+                { value: "MP", text: "Madhya Pradesh" },
+                { value: "MH", text: "Maharashtra" },
+                { value: "MN", text: "Manipur" },
+                { value: "ML", text: "Meghalaya" },
+                { value: "MZ", text: "Mizoram" },
+                { value: "NL", text: "Nagaland" },
+                { value: "OR", text: "Odisha" },
+                { value: "PB", text: "Punjab" },
+                { value: "RJ", text: "Rajasthan" },
+                { value: "SK", text: "Sikkim" },
+                { value: "TN", text: "Tamil Nadu" },
+                { value: "TG", text: "Telangana" },
+                { value: "TR", text: "Tripura" },
+                { value: "UP", text: "Uttar Pradesh" },
+                { value: "UK", text: "Uttarakhand" },
+                { value: "WB", text: "West Bengal" },
+                { value: "AN", text: "Andaman and Nicobar Islands" },
+                { value: "CH", text: "Chandigarh" },
+                { value: "DN", text: "Dadra and Nagar Haveli and Daman and Diu" },
+                { value: "DL", text: "Delhi" },
+                { value: "JK", text: "Jammu and Kashmir" },
+                { value: "LA", text: "Ladakh" },
+                { value: "LD", text: "Lakshadweep" },
+                { value: "PY", text: "Puducherry" }
+            ]
+            // Add more countries and their states as needed
+        };
+
+        function updateStateDropdown(countrySelectId, stateSelectId) {
+            const country = document.getElementById(countrySelectId).value;
+            const stateSelect = document.getElementById(stateSelectId);
+            stateSelect.innerHTML = '<option value="">Select state</option>';
+            if (country && countryStates[country]) {
+                countryStates[country].forEach(state => {
+                    const opt = document.createElement('option');
+                    opt.value = state.value;
+                    opt.textContent = state.text;
+                    stateSelect.appendChild(opt);
+                });
+                stateSelect.disabled = false;
+            } else {
+                stateSelect.disabled = true;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('shipping-country').addEventListener('change', function () {
+                updateStateDropdown('shipping-country', 'shipping-state');
+            });
+            document.getElementById('billing-country').addEventListener('change', function () {
+                updateStateDropdown('billing-country', 'billing-state');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

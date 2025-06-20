@@ -11,6 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    
+    <link rel="icon" type="image/svg+xml" href="/src/images/favicon.png">
 
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -21,42 +23,50 @@
 
 <body class="bg-brand-primary">
     <nav id="main-nav"
-        class="sticky top-0 transition-all duration-500 ease-in-out py-4 text-[#EDE8E1] bg-black/50 backdrop-blur-lg z-99">
-        <div class="container mx-auto flex items-center justify-between">
-            <div class="font-bold text-xl w-[20%]">
-                <a href="index.html">
-                    <img src="/src/images/Attesa-svg-logo.svg" alt="Logo" class="inline-block w-30">
-                </a>
-            </div>
-            <ul class="flex justify-center items-center space-x-8 w-[80%]">
-                <li><a href="#" class="p-2">About</a></li>
-                <li><a href="#" class="p-2">Origins</a></li>
-                <li><a href="#" class="p-2">Our Coffee</a></li>
-                <li><a href="#" class="p-2">Beans by kg</a></li>
-                <li><a href="#" class="p-2">Blog</a></li>
-                <li><a href="#" class="p-2">Contact</a></li>
-            </ul>
-            <div class="flex justify-end items-center text-base w-[20%]">
-                <div class="flex items-center space-x-4">
-                    <a href="#" id="sign-in-btn"
-                        class="py-1 border text-[#EDE8E1] border-[#D7D0C4] px-4 rounded-lg transition-colors duration-500">
-                        Login
-                    </a>
+    class="sticky top-0 py-4 text-[#EDE8E1] bg-black/50 backdrop-blur-lg z-99">
+    <div class="container mx-auto px-4 flex items-center justify-between">
+      <div class="font-bold text-xl w-[20%]">
+        <a href="index.html">
+          <img src="/src/images/Attesa-svg-logo.svg" alt="Logo" class="inline-block w-30">
+        </a>
+      </div>
+      <ul class="flex justify-center items-center space-x-6 w-[80%]">
+        <li><a href="#" class="p-2">About</a></li>
+        <li><a href="#" class="p-2">Origins</a></li>
+        <li><a href="#" class="p-2">Our Coffee</a></li>
+        <li class="relative group">
+          <a href="#" class="p-2">Micro shop</a>
 
-                    <a href="#"
-                        class="inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
-                        Sign Up
-                        <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512"
-                            xmlns="http://www.w3.org/2000/svg" class="inline-block ml-2 align-middle" fill="white">
-                            <path
-                                d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
-                            </path>
-                        </svg>
-                    </a>
-                </div>
+          <!-- Tooltip -->
+          <div
+            class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-4 py-2 rounded-lg bg-[#f5eade] border border-[#BAAE9F] shadow-lg backdrop-blur-md text-sm text-[#3B3D34] opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50 whitespace-nowrap">
+            <!-- Arrow -->
+            <div
+              class="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 rotate-45 bg-[#f5eade] border-t border-l border-[#BAAE9F]">
             </div>
+
+            Smaller quantities of green coffee
+          </div>
+        </li>
+        <li><a href="#" class="p-2">Insights</a></li>
+        <li><a href="#" class="p-2">Contact</a></li>
+      </ul>
+      <div class="flex justify-end items-center text-base w-[20%]">
+        <div class="flex items-center space-x-4">
+          <a href="#" id="sign-in-btn"
+            class="py-1 border text-[#EDE8E1] px-4 rounded-lg hover:bg-[#86A161] hover:border-[#648930]">
+            Login
+          </a>
+
+          <a href="#"
+            class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+            Sign Up
+            <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
+          </a>
         </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
     <!-- Your main content here -->
     <div class="mt-[-85px]">
@@ -65,7 +75,7 @@
         <!-- Hero Banner  -->
         <div class="w-full">
             <div
-                class="flex items-end bg-[url(/src/images/Contact-Frame-1618868879.jpg)] bg-cover bg-no-repeat bg-bottom justify-center text-[#F0EAE3] content-end h-[640px] ">
+                class="flex items-end bg-[url(/src/images/contact-banner.jpg)] bg-cover bg-no-repeat bg-bottom justify-center text-[#F0EAE3] content-end h-[640px] ">
                 <div class="container mx-auto px-4 py-20">
                     <div class="flex flex-col items-start justify-end space-y-2 w-sm">
                         <div>
@@ -88,12 +98,8 @@
 
         <!-- Contact Form -->
         <div class="container mx-auto px-4 py-18">
-            <div class="grid grid-cols-2 align-middle gap-10">
+            <div class="grid grid-cols-2 align-middle items-center gap-10">
                 <div>
-                    <img src="/src/images/contact-meet-img.jpg" alt="Vision" class="w-full h-full object-cover rounded-lg">
-                </div>
-                <div class="inline-flex flex-col justify-center">
-
                     <div>
                         <p class="flex items-center gap-2 mb-3">
                             <span class=""><img src="/src/images/right-arrow-icon.svg" class="w-3"></span>
@@ -122,35 +128,46 @@
                             <p class="text-sm">Getting started is easy. Share a few details about your business, and we’ll take care of the rest — including sending a sample your way.</p>
                         </div>
                     </div>
+                </div>
+                <div class="inline-flex flex-col justify-center bg-[#F9EDE0] border-2 border-[#DBC4A7] py-8 px-10 rounded-2xl">
 
-                    <form class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl">
-                        <div>
+                    <h2 class="text-3xl font-semibold text-brand-primary mb-4 w-md leading-12">Fill the form</h2>
+
+                    <form action="send-contact.php" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl">
+                        <div class="flex flex-col gap-y-2">
+                            <label for="firstName" class="text-sm text-[#3C3A37]">First Name</label>
                             <input type="text" name="firstname" placeholder="First Name" required
-                                class="px-3 py-2 rounded-sm text-sm border border-[#898277] w-full">
+                                class="px-3 py-2 rounded-sm text-sm border border-[#BAAE9F] w-full">
                         </div>
-                        <div>
+                        <div class="flex flex-col gap-y-2">
+                            <label for="lastName" class="text-sm text-[#3C3A37]">Last Name</label>
                             <input type="text" name="lastname" placeholder="Last Name" required
-                                class="px-3 py-2 rounded-sm text-sm border border-[#898277] w-full">
+                                class="px-3 py-2 rounded-sm text-sm border border-[#BAAE9F] w-full">
                         </div>
-                        <div>
+                        <div class="flex flex-col gap-y-2 md:col-span-2">
+                            <label for="email" class="text-sm text-[#3C3A37]">Email</label>
                             <input type="email" name="email" placeholder="Email" required
-                                class="px-3 py-2 rounded-sm text-sm border border-[#898277] w-full">
+                                class="px-3 py-2 rounded-sm text-sm border border-[#BAAE9F] w-full">
                         </div>
-                        <div>
+                        <div class="flex flex-col gap-y-2 md:col-span-2">
+                            <label for="phoneNumber" class="text-sm text-[#3C3A37]">Phone Number</label>
                             <input type="tel" name="phone" placeholder="Phone"
-                                class="px-3 py-2 rounded-sm text-sm border border-[#898277] w-full">
+                                class="px-3 py-2 rounded-sm text-sm border border-[#BAAE9F] w-full">
                         </div>
-                        <div>
+                        <div class="flex flex-col gap-y-2 md:col-span-2">
+                            <label for="comapnytName" class="text-sm text-[#3C3A37]">Company Name</label>
                             <input type="text" name="company" placeholder="Company Name"
-                                class="px-3 py-2 rounded-sm text-sm border border-[#898277] w-full">
+                                class="px-3 py-2 rounded-sm text-sm border border-[#BAAE9F] w-full">
                         </div>
-                        <div>
+                        <div class="flex flex-col gap-y-2 md:col-span-2">
+                            <label for="VATnumber" class="text-sm text-[#3C3A37]">Company Name</label>
                             <input type="text" name="vat" placeholder="VAT Number"
-                                class="px-3 py-2 rounded-sm text-sm border border-[#898277] w-full">
+                                class="px-3 py-2 rounded-sm text-sm border border-[#BAAE9F] w-full">
                         </div>
-                        <div class="md:col-span-2">
+                        <div class="flex flex-col gap-y-2 md:col-span-2">
+                            <label for="message" class="text-sm text-[#3C3A37]">Message</label>
                             <textarea name="message" placeholder="Message" rows="4" required
-                                class="px-3 py-2 rounded-sm text-sm border border-[#898277] w-full"></textarea>
+                                class="px-3 py-2 rounded-sm text-sm border border-[#BAAE9F] w-full"></textarea>
                         </div>
                         <div class="md:col-span-2 flex justify-end">
                             <button type="submit"
