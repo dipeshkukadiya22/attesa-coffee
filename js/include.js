@@ -21,8 +21,7 @@ function includeHTML() {
   });
 }
 
-
-/* <!-- Sticky Navigation Script -->   */
+// Sticky Navigation Script
 function initStickyHeader() {
   const nav = document.getElementById('main-nav');
   const signInBtn = document.getElementById('sign-in-btn');
@@ -52,7 +51,7 @@ function initStickyHeader() {
   });
 }
 
-/* Icon Animation Script */
+// Icon Animation Script
 function injectArrowIcons() {
   const iconHTML = `
     <span class="absolute inset-0 transition-all duration-300 ease-in-out group-hover:-translate-y-2 group-hover:translate-x-2 group-hover:opacity-0 z-10">
@@ -73,3 +72,4 @@ function injectArrowIcons() {
 }
 
 document.addEventListener('DOMContentLoaded', includeHTML);
+

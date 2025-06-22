@@ -23,8 +23,73 @@
 
 <body class="bg-brand-primary">
   
-  <!-- Include Header -->
-  <div data-include="components/header.html"></div>
+ <nav id="main-nav" class="sticky top-0 py-4 text-[#EDE8E1] bg-black/50 backdrop-blur-lg z-50">
+  <div class="container mx-auto px-4 flex items-center justify-between">
+    <!-- Logo -->
+    <div class="font-bold text-xl w-auto">
+      <a href="index.html">
+        <img src="/src/images/Attesa-svg-logo.svg" alt="Logo" class="inline-block w-30">
+      </a>
+    </div>
+
+    <!-- Hamburger & Close (Mobile Only) -->
+    <div class="lg:hidden">
+      <button id="menu-open" class="text-[#EDE8E1] w-8 h-8" aria-label="Open Menu">
+        <!-- Hamburger SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <button id="menu-close" class="text-[#EDE8E1] w-8 h-8 hidden" aria-label="Close Menu">
+        <!-- Close SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul id="menu"
+      class="hidden lg:flex flex-col lg:flex-row justify-center items-center space-y-4 lg:space-y-0 lg:space-x-6 absolute lg:static top-full left-0 w-full lg:w-auto bg-black/90 lg:bg-transparent px-6 lg:px-0 py-6 lg:py-0 z-40 lg:z-auto">
+      <li><a href="/about-us.html" class="p-2 block">About</a></li>
+      <li><a href="#" class="p-2 block">Origins</a></li>
+      <li><a href="#" class="p-2 block">Our Coffee</a></li>
+      <li class="relative group">
+        <a href="#" class="p-2 block">Micro shop</a>
+        <!-- Tooltip -->
+        <div
+          class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-4 py-2 rounded-lg bg-[#f5eade] border border-[#BAAE9F] shadow-lg backdrop-blur-md text-sm text-[#3B3D34] opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50 whitespace-nowrap">
+          <div
+            class="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 rotate-45 bg-[#f5eade] border-t border-l border-[#BAAE9F]">
+          </div>
+          Smaller quantities of green coffee
+        </div>
+      </li>
+      <li><a href="#" class="p-2 block">Insights</a></li>
+      <li><a href="#" class="p-2 block">Contact</a></li>
+      <!-- Contact CTA for mobile -->
+      <li class="lg:hidden">
+        <a href="contact.html"
+          class="inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg hover:bg-brand-primary transition-colors duration-200">
+          Contact
+        </a>
+      </li>
+    </ul>
+
+    <!-- Desktop CTA -->
+    <div class="hidden lg:flex justify-end items-center text-base w-auto">
+      <a href="contact.html"
+        class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+        Contact
+        <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
+      </a>
+    </div>
+  </div>
+</nav>
+
+
 
   <div class="">
     <!-- Your main content here -->
@@ -889,7 +954,7 @@
 
 
       <!-- Sticky Navigation Script -->
-      <!-- <script>
+      <script>
         const nav = document.getElementById('main-nav');
         const signInBtn = document.getElementById('sign-in-btn');
 
@@ -921,11 +986,11 @@
             }
           }
         });
-      </script> -->
+      </script>
 
 
       <!-- Icon Animation Script -->
-      <!-- <script>
+      <script>
         document.addEventListener("DOMContentLoaded", () => {
           const iconHTML = `
           <span class="absolute inset-0 transition-all duration-300 ease-in-out group-hover:-translate-y-2 group-hover:translate-x-2 group-hover:opacity-0 z-10">
@@ -944,9 +1009,26 @@
             el.innerHTML = iconHTML;
           });
         });
-      </script> -->
+      </script>
 
+      <!-- JS Toggle -->
+      <script>
+        const menu = document.getElementById('menu');
+        const openBtn = document.getElementById('menu-open');
+        const closeBtn = document.getElementById('menu-close');
 
+        openBtn.addEventListener('click', () => {
+          menu.classList.remove('hidden');
+          openBtn.classList.add('hidden');
+          closeBtn.classList.remove('hidden');
+        });
+
+        closeBtn.addEventListener('click', () => {
+          menu.classList.add('hidden');
+          openBtn.classList.remove('hidden');
+          closeBtn.classList.add('hidden');
+        });
+      </script>
     
 
   </body>
