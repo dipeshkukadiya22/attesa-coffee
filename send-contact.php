@@ -3,25 +3,25 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php'; // If using Composer
+require 'vendor/autoload.php'; // Composer autoload for PHPMailer
 
 $mail = new PHPMailer(true);
 
 try {
-    // Server settings
+    // SMTP Settings
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'dipesh@teque7.com';     // Microsoft 365 email
-    $mail->Password   = 'mkgoobiheyeaqwra';                 // Or app password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;  // Required by Microsoft 365
+    $mail->Username   = 'dipesh.teque7@gmail.com'; // Your Gmail address
+    $mail->Password   = 'mkgoobiheyeaqwra';   // App password from Gmail
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 
-    // Sender and recipient
-    $mail->setFrom('dipesh@teque7.com', 'Attesa Coffee Contact');
-    $mail->addAddress('dipesh@teque7.com'); // where email will be received
+    // Sender and Receiver
+    $mail->setFrom('dipesh.teque7@gmail.com', 'Attesa Coffee Contact');
+    $mail->addAddress('dipesh@teque7.com'); // Receiver email
 
-    // Get form data
+    // Collect Form Data Securely
     $firstName = htmlspecialchars($_POST['firstname']);
     $lastName  = htmlspecialchars($_POST['lastname']);
     $email     = htmlspecialchars($_POST['email']);
@@ -30,9 +30,9 @@ try {
     $vat       = htmlspecialchars($_POST['vat']);
     $message   = htmlspecialchars($_POST['message']);
 
-    // Email content
+    // Email Content
     $mail->isHTML(true);
-    $mail->Subject = "New Contact from $firstName $lastName";
+    $mail->Subject = "New Contact Form Submission from $firstName $lastName";
     $mail->Body    = "
         <strong>Name:</strong> $firstName $lastName<br>
         <strong>Email:</strong> $email<br>
@@ -43,7 +43,7 @@ try {
     ";
 
     $mail->send();
-    echo "<script>alert('Message sent successfully.'); window.location.href = 'thank-you.html';</script>";
+    echo "<script>alert('Message sent successfully.'); window.location.href = 'index.html';</script>";
 } catch (Exception $e) {
     echo "<script>alert('Mailer Error: {$mail->ErrorInfo}'); history.back();</script>";
 }
