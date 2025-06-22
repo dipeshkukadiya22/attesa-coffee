@@ -310,9 +310,6 @@
   .z-\[10\] {
     z-index: 10;
   }
-  .z-\[99\] {
-    z-index: 99;
-  }
   .col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -1023,9 +1020,6 @@
   .bg-\[url\(\'\/src\/images\/aco-img-4\.jpg\'\)\] {
     background-image: url('/src/images/aco-img-4.jpg');
   }
-  .bg-\[url\(\/src\/images\/About-Us-Frame-1618868879\.jpg\)\] {
-    background-image: url(/src/images/About-Us-Frame-1618868879.jpg);
-  }
   .bg-\[url\(\/src\/images\/BG-Frame-1618869025\.svg\)\] {
     background-image: url(/src/images/BG-Frame-1618869025.svg);
   }
@@ -1038,9 +1032,6 @@
   .bg-\[url\(\/src\/images\/Careers-Frame-1618868879\.jpg\)\] {
     background-image: url(/src/images/Careers-Frame-1618868879.jpg);
   }
-  .bg-\[url\(\/src\/images\/Contact-Frame-1618868879\.jpg\)\] {
-    background-image: url(/src/images/Contact-Frame-1618868879.jpg);
-  }
   .bg-\[url\(\/src\/images\/For_about_us_page_banner__upscaled\.jpg\)\] {
     background-image: url(/src/images/For_about_us_page_banner__upscaled.jpg);
   }
@@ -1049,15 +1040,6 @@
   }
   .bg-\[url\(\/src\/images\/SUL-DE-MINAS-4_land-1-min\.png\)\] {
     background-image: url(/src/images/SUL-DE-MINAS-4_land-1-min.png);
-  }
-  .bg-\[url\(\/src\/images\/banner-1\.jpg\)\] {
-    background-image: url(/src/images/banner-1.jpg);
-  }
-  .bg-\[url\(\/src\/images\/banner-2\.jpg\)\] {
-    background-image: url(/src/images/banner-2.jpg);
-  }
-  .bg-\[url\(\/src\/images\/banner-3\.jpg\)\] {
-    background-image: url(/src/images/banner-3.jpg);
   }
   .bg-\[url\(\/src\/images\/contact-banner\.jpg\)\] {
     background-image: url(/src/images/contact-banner.jpg);
@@ -1132,9 +1114,6 @@
   .p-12 {
     padding: calc(var(--spacing) * 12);
   }
-  .p-20 {
-    padding: calc(var(--spacing) * 20);
-  }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
@@ -1152,12 +1131,6 @@
   }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
-  }
-  .px-12 {
-    padding-inline: calc(var(--spacing) * 12);
-  }
-  .px-14 {
-    padding-inline: calc(var(--spacing) * 14);
   }
   .px-48 {
     padding-inline: calc(var(--spacing) * 48);

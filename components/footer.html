@@ -1,0 +1,202 @@
+<footer
+    class="bg-[url(/src/images/footer-vector-9.svg)] bg-contain bg-no-repeat bg-left-center border-t-2 border-[#BAAE9F]">
+    <div class="container mx-auto px-4 py-8">
+        <div class="flex flex-row justify-between text-[#3C3A37] py-8">
+
+            <div class="w-1/3">
+                <img src="/src/images/logo-white.svg" alt="Logo" class="inline-block w-36 mb-4">
+            </div>
+            <div class="w-2/3">
+                <div class="flex flex-row justify-between items-start">
+                    <div class="w-1/3">
+                        <h4 class="uppercase text-base font-semibold mb-4">Terms</h4>
+                        <div class="text-sm flex flex-col gap-y-2">
+                            <a href="#" class="link-with-icon">Privacy Policy</a>
+                            <a href="#" class="link-with-icon">Shipping Policy</a>
+                            <a href="#" class="link-with-icon">Terms & Conditions</a>
+                        </div>
+                    </div>
+
+                    <div class="w-1/3">
+                        <h4 class="uppercase text-base font-semibold mb-2">Contact</h4>
+                        <div class="text-sm flex flex-col gap-y-2">
+                            <a href="#" class="link-with-icon">theattesacoffee@gmail.com</a>
+                            <a href="#" class="link-with-icon">+31 64 420 7299</a>
+                            <a href="#" class="link-with-icon inline-flex">Entrada 569,<br>
+                                1115 SE Duivendrecht,<br>
+                                The Netherlands</a>
+                        </div>
+                    </div>
+
+                    <div class="w-1/3">
+                        <div class="flex flex-col">
+                            <h4 class="uppercase text-base font-semibold mb-2 w-46">From lush estates to your coffee
+                                plates</h4>
+                            <p class="text-sm">Subscribe for deep dives on bean highs, pricing ties, and shipping-wise
+                                advisories!
+                            </p>
+                        </div>
+                        <div>
+                            <form class="flex flex-col gap-y-2 mt-4">
+                                <input type="text" placeholder="Name"
+                                    class="px-3 py-2 rounded-lg bg-[#F0EAE3] text-sm border border-[#3C3A37]">
+                                <div class="relative border border-[#3C3A37] rounded-lg">
+                                    <input type="email" placeholder="Email"
+                                        class="px-3 py-2 rounded-lg bg-[#F0EAE3] text-sm w-full">
+                                    <button type="submit"
+                                        class="absolute cursor-pointer right-2 top-1/2 transform -translate-y-1/2">
+                                        <svg height="8" width="8" viewBox="0 0 512 512"
+                                            xmlns="http://www.w3.org/2000/svg" fill="#3C3A37">
+                                            <path
+                                                d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="text-sm flex flex-row gap-x-2 py-6">
+                            <a href="#" class="">
+                                <div class="inline-flex justify-center items-center p-2 rounded-full bg-[#575450]">
+                                    <img src="/src/images/linkedin-icon.svg" alt="LinkedIn" class="inline-block w-4">
+                                </div>
+                            </a>
+                            <a href="#" class="">
+                                <div class="inline-flex justify-center items-center p-2 rounded-full bg-[#575450]">
+                                    <img src="/src/images/instagram-icon.svg" alt="Instagram" class="inline-block w-4">
+                                </div>
+                            </a>
+                            <a href="#" class="">
+                                <div class="inline-flex justify-center items-center p-2 rounded-full bg-[#575450]">
+                                    <img src="/src/images/facebook-icon.svg" alt="Facebook" class="inline-block w-4">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="flex flex-row justify-center items-center py-4">
+            <p class="text-sm">© Attesa B.V. 2025 . All rights reserved.</p>
+            <!-- <p class="text-sm">
+                Powered by:
+                <a href="https://teque7.com" target="_blank" rel="noopener noreferrer">
+                    <img src="/src/images/t7.png" alt="TEQUE7" class="inline-block w-16">
+                </a>
+            </p> -->
+        </div>
+    </div>
+</footer>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+            delay: 9000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+
+<!-- Custom Accordion Script -->
+<script>
+    function openAccordion(index) {
+        const total = 4;
+        for (let i = 0; i < total; i++) {
+            const content = document.getElementById(`accordion-content-${i}`);
+            const parent = content.parentElement;
+            if (i === index) {
+                content.classList.remove('opacity-0', 'pointer-events-none');
+                content.classList.add('opacity-100', 'pointer-events-auto');
+                parent.classList.add('border-brand-primary');
+                parent.classList.remove('border-transparent');
+                parent.classList.add('flex-[6]');
+                parent.classList.remove('flex-1');
+            } else {
+                content.classList.add('opacity-0', 'pointer-events-none');
+                content.classList.remove('opacity-100', 'pointer-events-auto');
+                parent.classList.remove('border-brand-primary');
+                parent.classList.add('border-transparent');
+                parent.classList.remove('flex-[6]');
+                parent.classList.add('flex-1');
+            }
+        }
+    }
+    // Open first by default
+    window.addEventListener('DOMContentLoaded', () => openAccordion(0));
+</script>
+
+
+<!-- Sticky Navigation Script -->
+<script>
+    const nav = document.getElementById('main-nav');
+    const signInBtn = document.getElementById('sign-in-btn');
+
+    // Only add hover class if signInBtn exists
+    if (signInBtn) {
+        signInBtn.classList.add('hover:text-[#EDE8E1]');
+    }
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) {
+            // Nav styles
+            nav.classList.add('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
+            nav.classList.remove('bg-black/50', 'text-[#EDE8E1]');
+
+            // Sign In button styles
+            if (signInBtn) {
+                signInBtn.classList.add('text-[#3B3D34]', 'border', 'border-[#D7D0C4]');
+                signInBtn.classList.remove('text-[#EDE8E1]');
+            }
+        } else {
+            // Nav styles revert
+            nav.classList.remove('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
+            nav.classList.add('bg-black/50', 'text-[#EDE8E1]');
+
+            // Sign In button revert
+            if (signInBtn) {
+                signInBtn.classList.remove('text-[#3B3D34]');
+                signInBtn.classList.add('text-[#EDE8E1]');
+            }
+        }
+    });
+</script>
+
+
+<!-- Icon Animation Script -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const iconHTML = `
+        <span class="absolute inset-0 transition-all duration-300 ease-in-out group-hover:-translate-y-2 group-hover:translate-x-2 group-hover:opacity-0 z-10">
+            <svg class="inline-block w-2 h-2" width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.47945 0.19454L2.48692 0.19454C2.38845 0.194539 2.29093 0.213935 2.19995 0.251621C2.10897 0.289306 2.02631 0.344542 1.95667 0.414176C1.88704 0.483809 1.8318 0.566476 1.79412 0.657456C1.75643 0.748437 1.73704 0.845949 1.73704 0.944426C1.73704 1.0429 1.75643 1.14042 1.79412 1.2314C1.8318 1.32238 1.88704 1.40504 1.95667 1.47468C2.02631 1.54431 2.10897 1.59955 2.19995 1.63723C2.29093 1.67492 2.38845 1.69431 2.48692 1.69431L4.91902 1.69431L0.895932 5.7174C0.75528 5.85805 0.676262 6.04882 0.676262 6.24773C0.676262 6.44664 0.75528 6.6374 0.895932 6.77806C1.03658 6.91871 1.22735 6.99773 1.42626 6.99773C1.62517 6.99773 1.81594 6.91871 1.95659 6.77806L5.97968 2.75497L5.97968 5.18707C5.97939 5.28562 5.9986 5.38326 6.03618 5.47437C6.07377 5.56548 6.12899 5.64826 6.19868 5.71795C6.26837 5.78764 6.35115 5.84286 6.44226 5.88045C6.53337 5.91803 6.63101 5.93724 6.72956 5.93695C6.92844 5.93692 7.11916 5.85791 7.25978 5.71728C7.4004 5.57666 7.47942 5.38594 7.47945 5.18707L7.47945 0.19454Z" fill="#F0EAE3"/>
+            </svg>
+        </span>
+        <span class="absolute inset-0 translate-y-2 -translate-x-2 opacity-0 transition-all duration-300 ease-in-out group-hover:translate-y-0 group-hover:translate-x-0 group-hover:opacity-100 z-20">
+            <svg class="inline-block w-2 h-2" width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.47945 0.19454L2.48692 0.19454C2.38845 0.194539 2.29093 0.213935 2.19995 0.251621C2.10897 0.289306 2.02631 0.344542 1.95667 0.414176C1.88704 0.483809 1.8318 0.566476 1.79412 0.657456C1.75643 0.748437 1.73704 0.845949 1.73704 0.944426C1.73704 1.0429 1.75643 1.14042 1.79412 1.2314C1.8318 1.32238 1.88704 1.40504 1.95667 1.47468C2.02631 1.54431 2.10897 1.59955 2.19995 1.63723C2.29093 1.67492 2.38845 1.69431 2.48692 1.69431L4.91902 1.69431L0.895932 5.7174C0.75528 5.85805 0.676262 6.04882 0.676262 6.24773C0.676262 6.44664 0.75528 6.6374 0.895932 6.77806C1.03658 6.91871 1.22735 6.99773 1.42626 6.99773C1.62517 6.99773 1.81594 6.91871 1.95659 6.77806L5.97968 2.75497L5.97968 5.18707C5.97939 5.28562 5.9986 5.38326 6.03618 5.47437C6.07377 5.56548 6.12899 5.64826 6.19868 5.71795C6.26837 5.78764 6.35115 5.84286 6.44226 5.88045C6.53337 5.91803 6.63101 5.93724 6.72956 5.93695C6.92844 5.93692 7.11916 5.85791 7.25978 5.71728C7.4004 5.57666 7.47942 5.38594 7.47945 5.18707L7.47945 0.19454Z" fill="#F0EAE3"/>
+            </svg>
+        </span>
+      `;
+
+        document.querySelectorAll(".arrow-animation").forEach(el => {
+            el.innerHTML = iconHTML;
+        });
+    });
+</script>
+
+
+</body>
+
+</html>
