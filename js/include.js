@@ -22,34 +22,34 @@ function includeHTML() {
 }
 
 // Sticky Navigation Script
-function initStickyHeader() {
-  const nav = document.getElementById('main-nav');
-  const signInBtn = document.getElementById('sign-in-btn');
+// function initStickyHeader() {
+//   const nav = document.getElementById('main-nav');
+//   const signInBtn = document.getElementById('sign-in-btn');
 
-  if (!nav) return;
+//   if (!nav) return;
 
-  if (signInBtn) {
-    signInBtn.classList.add('hover:text-[#EDE8E1]');
-  }
+//   if (signInBtn) {
+//     signInBtn.classList.add('hover:text-[#EDE8E1]');
+//   }
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 10) {
-      nav.classList.add('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
-      nav.classList.remove('bg-black/50', 'text-[#EDE8E1]');
-      if (signInBtn) {
-        signInBtn.classList.add('text-[#3B3D34]', 'border', 'border-[#D7D0C4]');
-        signInBtn.classList.remove('text-[#EDE8E1]');
-      }
-    } else {
-      nav.classList.remove('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
-      nav.classList.add('bg-black/50', 'text-[#EDE8E1]');
-      if (signInBtn) {
-        signInBtn.classList.remove('text-[#3B3D34]');
-        signInBtn.classList.add('text-[#EDE8E1]');
-      }
-    }
-  });
-}
+//   window.addEventListener('scroll', () => {
+//     if (window.scrollY > 10) {
+//       nav.classList.add('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
+//       nav.classList.remove('bg-black/50', 'text-[#EDE8E1]');
+//       if (signInBtn) {
+//         signInBtn.classList.add('text-[#3B3D34]', 'border', 'border-[#D7D0C4]');
+//         signInBtn.classList.remove('text-[#EDE8E1]');
+//       }
+//     } else {
+//       nav.classList.remove('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
+//       nav.classList.add('bg-black/50', 'text-[#EDE8E1]');
+//       if (signInBtn) {
+//         signInBtn.classList.remove('text-[#3B3D34]');
+//         signInBtn.classList.add('text-[#EDE8E1]');
+//       }
+//     }
+//   });
+// }
 
 // Icon Animation Script
 function injectArrowIcons() {

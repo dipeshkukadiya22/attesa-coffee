@@ -9,6 +9,8 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-green-700: oklch(52.7% 0.154 150.069);
+    --color-blue-600: oklch(54.6% 0.245 262.881);
+    --color-blue-800: oklch(42.4% 0.199 265.638);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-gray-700: oklch(37.3% 0.034 259.733);
@@ -1032,6 +1034,9 @@
   .bg-transparent {
     background-color: transparent;
   }
+  .bg-white {
+    background-color: var(--color-white);
+  }
   .bg-white\/20 {
     background-color: color-mix(in srgb, #fff 20%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1208,6 +1213,12 @@
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
   }
+  .py-30 {
+    padding-block: calc(var(--spacing) * 30);
+  }
+  .py-40 {
+    padding-block: calc(var(--spacing) * 40);
+  }
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
   }
@@ -1258,6 +1269,9 @@
   }
   .pl-12 {
     padding-left: calc(var(--spacing) * 12);
+  }
+  .pl-14 {
+    padding-left: calc(var(--spacing) * 14);
   }
   .text-center {
     text-align: center;
@@ -1394,6 +1408,12 @@
   }
   .text-\[\#F0EAE3\] {
     color: #F0EAE3;
+  }
+  .text-black {
+    color: var(--color-black);
+  }
+  .text-blue-600 {
+    color: var(--color-blue-600);
   }
   .text-gray-500 {
     color: var(--color-gray-500);
@@ -1578,6 +1598,13 @@
     &:hover {
       @media (hover: hover) {
         color: #EDE8E1;
+      }
+    }
+  }
+  .hover\:text-blue-800 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-blue-800);
       }
     }
   }

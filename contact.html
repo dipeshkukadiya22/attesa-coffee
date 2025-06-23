@@ -23,8 +23,70 @@
 
 <body class="bg-brand-primary">
 
-    <!-- Include Header -->
-    <div data-include="components/header.html"></div>
+    <nav id="main-nav" class="sticky top-0 py-4 text-[#EDE8E1] bg-black/50 backdrop-blur-lg z-50">
+    <div class="container mx-auto px-4 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="font-bold text-xl w-auto">
+        <a href="index.html">
+          <img src="/src/images/Attesa-svg-logo.svg" alt="Logo" class="inline-block w-30">
+        </a>
+      </div>
+
+      <!-- Hamburger & Close (Mobile Only) -->
+      <div class="lg:hidden">
+        <button id="menu-open" class="text-[#EDE8E1] w-8 h-8" aria-label="Open Menu">
+          <!-- Hamburger SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+        <button id="menu-close" class="text-[#EDE8E1] w-8 h-8 hidden" aria-label="Close Menu">
+          <!-- Close SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul id="menu"
+        class="hidden lg:flex flex-col lg:flex-row justify-center items-center space-y-4 lg:space-y-0 lg:space-x-6 absolute lg:static top-full left-0 w-full lg:w-auto bg-black/90 lg:bg-transparent px-6 lg:px-0 py-6 lg:py-0 z-40 lg:z-auto">
+        <li><a href="/about-us.html" class="p-2 block">About</a></li>
+        <li><a href="/origins.html" class="p-2 block">Origins</a></li>
+        <li><a href="/our-coffee.html" class="p-2 block">Our Coffee</a></li>
+        <li class="relative group">
+          <a href="#" class="p-2 block">Micro shop</a>
+          <!-- Tooltip -->
+          <div
+            class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-4 py-2 rounded-lg bg-[#f5eade] border border-[#BAAE9F] shadow-lg backdrop-blur-md text-sm text-[#3B3D34] opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50 whitespace-nowrap">
+            <div
+              class="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 rotate-45 bg-[#f5eade] border-t border-l border-[#BAAE9F]">
+            </div>
+            Smaller quantities of green coffee
+          </div>
+        </li>
+        <li><a href="/coming-soon.html" class="p-2 block">Insights</a></li>
+        <!-- <li><a href="#" class="p-2 block">Contact</a></li> -->
+        <!-- Contact CTA for mobile -->
+        <li class="lg:hidden">
+          <a href="contact.html"
+            class="inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg hover:bg-brand-primary transition-colors duration-200">
+            Contact
+          </a>
+        </li>
+      </ul>
+
+      <!-- Desktop CTA -->
+      <div class="hidden lg:flex justify-end items-center text-base w-auto">
+        <a href="contact.html"
+          class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+          Contact
+          <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
+        </a>
+      </div>
+    </div>
+  </nav>
+
 
     <!-- Your main content here -->
     <div class="mt-[-85px]">
@@ -46,7 +108,7 @@
                             <a href="#"
                                 class="relative inline-block text-sm bg-white/20 text-[#F0EAE3] border border-[#D7D0C4] px-4 py-1 pr-7 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md overflow-hidden">
                                 Subscribe
-                                <div class="arrow-animation absolute top-1 right-1 w-4 h-4"></div>
+                                <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
                             </a>
                         </div>
                     </div>
@@ -195,6 +257,62 @@
 
     <script src="js/include.js"></script>
 
+    <!-- Icon Animation Script -->
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const iconHTML = `
+          <span class="absolute inset-0 transition-all duration-300 ease-in-out group-hover:-translate-y-2 group-hover:translate-x-2 group-hover:opacity-0 z-10">
+              <svg class="inline-block w-2 h-2" width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.47945 0.19454L2.48692 0.19454C2.38845 0.194539 2.29093 0.213935 2.19995 0.251621C2.10897 0.289306 2.02631 0.344542 1.95667 0.414176C1.88704 0.483809 1.8318 0.566476 1.79412 0.657456C1.75643 0.748437 1.73704 0.845949 1.73704 0.944426C1.73704 1.0429 1.75643 1.14042 1.79412 1.2314C1.8318 1.32238 1.88704 1.40504 1.95667 1.47468C2.02631 1.54431 2.10897 1.59955 2.19995 1.63723C2.29093 1.67492 2.38845 1.69431 2.48692 1.69431L4.91902 1.69431L0.895932 5.7174C0.75528 5.85805 0.676262 6.04882 0.676262 6.24773C0.676262 6.44664 0.75528 6.6374 0.895932 6.77806C1.03658 6.91871 1.22735 6.99773 1.42626 6.99773C1.62517 6.99773 1.81594 6.91871 1.95659 6.77806L5.97968 2.75497L5.97968 5.18707C5.97939 5.28562 5.9986 5.38326 6.03618 5.47437C6.07377 5.56548 6.12899 5.64826 6.19868 5.71795C6.26837 5.78764 6.35115 5.84286 6.44226 5.88045C6.53337 5.91803 6.63101 5.93724 6.72956 5.93695C6.92844 5.93692 7.11916 5.85791 7.25978 5.71728C7.4004 5.57666 7.47942 5.38594 7.47945 5.18707L7.47945 0.19454Z" fill="#F0EAE3"/>
+              </svg>
+          </span>
+          <span class="absolute inset-0 translate-y-2 -translate-x-2 opacity-0 transition-all duration-300 ease-in-out group-hover:translate-y-0 group-hover:translate-x-0 group-hover:opacity-100 z-20">
+              <svg class="inline-block w-2 h-2" width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.47945 0.19454L2.48692 0.19454C2.38845 0.194539 2.29093 0.213935 2.19995 0.251621C2.10897 0.289306 2.02631 0.344542 1.95667 0.414176C1.88704 0.483809 1.8318 0.566476 1.79412 0.657456C1.75643 0.748437 1.73704 0.845949 1.73704 0.944426C1.73704 1.0429 1.75643 1.14042 1.79412 1.2314C1.8318 1.32238 1.88704 1.40504 1.95667 1.47468C2.02631 1.54431 2.10897 1.59955 2.19995 1.63723C2.29093 1.67492 2.38845 1.69431 2.48692 1.69431L4.91902 1.69431L0.895932 5.7174C0.75528 5.85805 0.676262 6.04882 0.676262 6.24773C0.676262 6.44664 0.75528 6.6374 0.895932 6.77806C1.03658 6.91871 1.22735 6.99773 1.42626 6.99773C1.62517 6.99773 1.81594 6.91871 1.95659 6.77806L5.97968 2.75497L5.97968 5.18707C5.97939 5.28562 5.9986 5.38326 6.03618 5.47437C6.07377 5.56548 6.12899 5.64826 6.19868 5.71795C6.26837 5.78764 6.35115 5.84286 6.44226 5.88045C6.53337 5.91803 6.63101 5.93724 6.72956 5.93695C6.92844 5.93692 7.11916 5.85791 7.25978 5.71728C7.4004 5.57666 7.47942 5.38594 7.47945 5.18707L7.47945 0.19454Z" fill="#F0EAE3"/>
+              </svg>
+          </span>
+        `;
+
+          document.querySelectorAll(".arrow-animation").forEach(el => {
+            el.innerHTML = iconHTML;
+          });
+        });
+      </script>
+
+    <!-- Sticky Navigation Script -->
+    <script>
+      const nav = document.getElementById('main-nav');
+      const signInBtn = document.getElementById('sign-in-btn');
+
+
+      if (signInBtn) {
+        signInBtn.classList.add('hover:text-[#EDE8E1]');
+      }
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) {
+
+          nav.classList.add('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
+          nav.classList.remove('bg-black/50', 'text-[#EDE8E1]');
+
+
+          if (signInBtn) {
+            signInBtn.classList.add('text-[#3B3D34]', 'border', 'border-[#D7D0C4]');
+            signInBtn.classList.remove('text-[#EDE8E1]');
+          }
+        } else {
+
+          nav.classList.remove('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
+          nav.classList.add('bg-black/50', 'text-[#EDE8E1]');
+
+
+          if (signInBtn) {
+            signInBtn.classList.remove('text-[#3B3D34]');
+            signInBtn.classList.add('text-[#EDE8E1]');
+          }
+        }
+      });
+    </script>
 
 
 </body>

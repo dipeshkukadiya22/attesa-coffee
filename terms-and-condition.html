@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" type="image/svg+xml" href="/src/images/favicon.png">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>Terms & Conditions - Attesa Coffee</title>
+    <link href="./src/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-brand-primary">
+    <nav id="main-nav" class="sticky top-0 py-4 bg-[#F0EAE3] border-b border-[#BAAE9F] backdrop-blur-lg z-50">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="font-bold text-xl w-auto">
+                <a href="index.html">
+                    <img src="/src/images/Attesa-svg-logo.svg" alt="Logo" class="inline-block w-30">
+                </a>
+            </div>
+
+            <!-- Hamburger & Close (Mobile Only) -->
+            <div class="lg:hidden">
+                <button id="menu-open" class="text-[#EDE8E1] w-8 h-8" aria-label="Open Menu">
+                    <!-- Hamburger SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <button id="menu-close" class="text-[#EDE8E1] w-8 h-8 hidden" aria-label="Close Menu">
+                    <!-- Close SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul id="menu"
+                class="hidden lg:flex flex-col lg:flex-row justify-center items-center space-y-4 lg:space-y-0 lg:space-x-6 absolute lg:static top-full left-0 w-full lg:w-auto bg-black/90 lg:bg-transparent px-6 lg:px-0 py-6 lg:py-0 z-40 lg:z-auto">
+                <li><a href="/about-us.html" class="p-2 block">About</a></li>
+                <li><a href="/origins.html" class="p-2 block">Origins</a></li>
+                <li><a href="/our-coffee.html" class="p-2 block">Our Coffee</a></li>
+                <li class="relative group">
+                    <a href="#" class="p-2 block">Micro shop</a>
+                    <!-- Tooltip -->
+                    <div
+                        class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-4 py-2 rounded-lg bg-[#f5eade] border border-[#BAAE9F] shadow-lg backdrop-blur-md text-sm text-[#3B3D34] opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50 whitespace-nowrap">
+                        <div
+                            class="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 rotate-45 bg-[#f5eade] border-t border-l border-[#BAAE9F]">
+                        </div>
+                        Smaller quantities of green coffee
+                    </div>
+                </li>
+                <li><a href="/coming-soon.html" class="p-2 block">Insights</a></li>
+                <!-- <li><a href="#" class="p-2 block">Contact</a></li> -->
+                <!-- Contact CTA for mobile -->
+                <li class="lg:hidden">
+                    <a href="contact.html"
+                        class="inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg hover:bg-brand-primary transition-colors duration-200">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Desktop CTA -->
+            <div class="hidden lg:flex justify-end items-center text-base w-auto">
+                <a href="contact.html"
+                    class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+                    Contact
+                    <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Your main content here -->
+    <div class="bg-[url(/src/images/contact-bg-min.png)] bg-cover bg-center bg-no-repeat">
+
+
+        <!-- Hero Banner  -->
+        <!-- <div class="w-full">
+            <div
+                class="flex items-end bg-[url(/src/images/our-coffee-frame-1618868879.jpg)] bg-cover bg-no-repeat bg-bottom justify-center text-[#F0EAE3] content-end h-[600px] ">
+                <div class="container mx-auto px-4 py-20">
+                    <div class="flex flex-col items-start justify-end space-y-2 w-sm">
+                        <div>
+                            <h1 class="text-5xl font-medium mb-2 leading-16">Find your next favourite coffee </h1>
+                            <p class="text-base mb-6 text-[#F0EAE3] font-light w-76">Explore our carefully selected range of green coffees — from standout microlots to trusted, high-quality blends. </p>
+                        </div>
+                        <div>
+                            <a href="#"
+                                class="relative inline-block text-sm bg-white/20 text-[#F0EAE3] border border-[#D7D0C4] px-4 py-1 pr-7 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md overflow-hidden">
+                                Sign In
+                                <div class="arrow-animation absolute top-1 right-1 w-4 h-4"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="container mx-auto px-4 py-8">
+            <div>
+                <h2 class="text-4xl font-bold text-brand-primary mb-4">General Terms and Conditions of Sale</h2>
+
+
+                <section>
+
+                  <ul class="list-disc pl-6 space-y-2">
+                    <li>These General Terms and Condition of Sale (hereinafter, "Terms and Conditions") govern all requests, applications, quotations and offers, orders and agreements with respect to the supply of coffee products (hereinafter, "Coffee") by Attesa B.V., ("Supplier") to any legal entity or person purchasing Coffee (hereinafter, "Buyer"). </li>
+                    <li>Supplier and Buyer are hereinafter jointly referred to as "Parties". </li>
+                    <li>By placing an order with Supplier, Buyer acknowledges to have read, understood, and agreed to be bound by these Terms and Conditions. </li>
+                    <li>These Terms and Conditions supersede any conflicting terms or conditions proposed by Buyer. </li>
+                    <li>No deviation from these Terms and Conditions shall be binding unless agreed upon in writing and signed by Supplier. </li>
+                    <li>In case Supplier and Buyer have entered into a separate framework agreement regarding the purchase of Coffee ("Sales Agreement"), the provisions of the Sales Agreement shall prevail. </li>
+                    <li>Supplier can amend these Terms and Conditions at any time. </li>
+                    <li>Supplier will provide Buyer with written notice of any amendments to the Terms and Conditions at least 30 days prior to the effective date. </li>
+                    <li>Any offer and purchase of Coffee after the effective date will be deemed acceptance of the amended terms. </li>
+                    <li>In the event of any provision of these Terms and Conditions, or any part thereof, being deemed void or unenforceable, the remaining provisions shall remain valid and enforceable to the fullest extent permitted by law. </li>
+                    <li>Buyer may not assign its rights or obligations hereunder without the prior written consent of Supplier. </li>
+                </ul>
+
+                <h2 class="text-xl font-bold mt-4 mb-2">Article 2 - Offer and Ordering Process</h2>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Supplier will provide a monthly offer list to Buyer, detailing available stock (hereinafter: "Offer List"). </li>
+                    <li>The descriptions, characteristics, or specifications, and any accompanying photographs, contained within Supplier's Offer List or marketing materials shall be construed solely for informational purposes. </li>
+                    <li>These materials do not constitute a warranty or guarantee of the Coffee's accuracy or current specifications. </li>
+                    <li>Supplier reserves the right to modify the Coffee offered, including their descriptions, characteristics, specifications, and photographs, at any time, even after receipt of a purchase request from Buyer. </li>
+                    <li>This Offer List is not a binding contract and does not guarantee product availability. </li>
+                    <li>A binding agreement for the purchase and sale of Coffee shall only be formed upon the issuance of a Sales Order by Supplier. </li>
+                    <li>The Sales Order shall constitute the sole and exclusive source of reliable information regarding the Coffee and their specifications. </li>
+                    <li>This Sales Order supersedes any prior or conflicting information provided by Supplier, including, but not limited to, offer lists and marketing materials. </li>
+                    <li>Supplier reserves the right to reject any purchase request by Buyer. </li>
+                    <li>To place an order, Buyer must contact Supplier to finalize quantities and price. </li>
+                    <li>Upon agreement on price and quantity, Supplier will generate a Sales Order. </li>
+                    <li>A Sales Order contains the conditions of sale, including but not limit to the type of coffee, quantities, unit price, delivery time frame, methods of payment, transport and insurance. </li>
+                    <li>The Coffee is reserved for a period of 30 days from the date of issuance of the Sales Order. </li>
+                    <li>Buyer is responsible for reviewing the sales order for accuracy and notifying Supplier of any discrepancies within 5 business days. </li>
+                </ul>
+
+                <h2 class="text-xl font-bold mt-4 mb-2">Article 3 - Pricing and payment</h2>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Pricing may be subject to change based on stock levels. </li>
+                    <li>The sale price is determined by the rates set out by Supplier on the date of the Sales Order. </li>
+                    <li>All prices are quoted in Euros and exclusive Value Added Tax (VAT) and other government levies. </li>
+                    <li>Pricing is based on Free Carrier (FCA) terms. </li>
+                    <li>Buyer is solely responsible for all costs associated with transporting the Coffee from one of the Supplier's warehouses, including any insurance policies and packaging. </li>
+                    <li>Payment for Coffee is due in full before shipment except if any specific payment terms or credit period is specified in the Sales Order or Invoice. </li>
+                    <li>In the event that Buyer fails to make full payment for the Sales Order within the thirty (30) day period during which the ordered coffee is reserved, Supplier reserves the right to, at its sole discretion, cancel the Sales Order and revoke the reservation of the coffee, without the need for any further notice or formality. </li>
+                    <li>Buyer acknowledges that such cancellation shall be without liability to Supplier. </li>
+                    <li>Buyer remains responsible for any applicable taxes and duties. </li>
+                    <li>Delivery times will vary depending on the destination and are provided for informational purposes only. </li>
+                    <li>They do not constitute a guaranteed timeframe, and any delays will not entitle Buyer to claim damages. </li>
+                </ul>
+
+                <h2 class="text-xl font-bold mt-4 mb-2">Article 4 - Delivery and transfer of risk</h2>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Delivery of the coffee is FCA (Incoterms 2020) - Free Carrier. </li>
+                    <li>The risk of loss or damage of the Coffee shall pass to Buyer upon delivery of the products to the designated carrier. </li>
+                    <li>This means that Buyer assumes all liability for any loss or damage to the Coffee occurring after this point. </li>
+                    <li>Supplier can, upon request by Buyer, facilitate the planning of transportation and insurance. </li>
+                    <li>However, the responsibility for the chosen transport and any related costs remains with Buyer. </li>
+                    <li>Buyer is responsible for inspecting the delivered Coffee upon receipt and providing carrier with all necessary reservations in writing. </li>
+                    <li>Any damages or loss must be documented in writing and submitted immediately to the carrier and to Supplier. </li>
+                    <li>Failure to notify Supplier within this time frame waives Buyer's right to claim compensation for such issues. </li>
+                </ul>
+
+                <h2 class="text-xl font-bold mt-4 mb-2">Article 5 - Ownership</h2>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Ownership of the Coffee shall remain with Supplier until Buyer has made full payment for the products and any outstanding invoices. </li>
+                    <li>Buyer is expressly prohibited from pledging the goods as security for a loan, selling them on credit, or using them as collateral for any other debt. </li>
+                </ul>
+
+                <h2 class="text-xl font-bold mt-4 mb-2">Article 6 - Product conformity</h2>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Coffee shall be deemed compliant if it meets the detailed specifications outlined in the Sales Order or Invoice. </li>
+                    <li>These specifications may include factors such as lot number, origin, bean size, and any other relevant characteristics. </li>
+                    <li>Buyer acknowledges that, due to its nature as a natural product, coffee may exhibit inherent variations within these specified. </li>
+                    <li>Coffee is deemed compliant in terms of quality if it generally matches the characteristics of the sample provided by Supplier. </li>
+                    <li>Buyer has seven (7) calendar day from the date of order receipt to inspect the coffee for conformity with the agreed-upon specifications and quality. </li>
+                    <li>Any discrepancies or non-conformities must be reported to Supplier within this timeframe. </li>
+                    <li>Failure to meet this timeframe will result in a waiver of any legal claim resulting from the non-conformity. </li>
+                    <li>Buyer must grant the Supplier a reasonable opportunity to investigate any claimed non-conformity or defect. </li>
+                    <li>Buyer shall refrain from taking any independent action or involving third parties for this purpose. </li>
+                    <li>Any return of Coffee requires a prior written agreement between Supplier and Buyer. </li>
+                    <li>Coffee returned without such authorization will be held for Buyer for five (5) calendar days following receipt, but no credit note will be issued. </li>
+                </ul>
+
+                <h2 class="text-xl font-bold mt-4 mb-2">Article 7 - Liability</h2>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Supplier's liability for any claim shall not exceed the purchase price of the Coffee. </li>
+                    <li>In no case shall the total liability of Supplier amount more than € 10.000 per event, or series of events due to the same cause. </li>
+                    <li>Liability is excluded for any damages that are covered by an insurance policy of Buyer. </li>
+                    <li>Supplier shall not be liable for any indirect, incidental, consequential, or special damages, including but not limited to loss of profit, loss of savings and damage due to business stagnation. </li>
+                </ul>
+
+                <h2 class="text-xl font-bold mt-4 mb-2">Article 8 - Force Majeure</h2>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>A "Force Majeure Event" shall be construed as any event or circumstance beyond the reasonable control of a party, which prevents or hinders that party from fulfilling its contractual obligations under these Terms and Conditions. </li>
+                    <li>Force Majeure Events may include, but are not limited to, total or partial strikes, fire, natural disasters, breakdown in Supplier's own supply network or information technology systems, war, lock-out, manufacturing defect, restriction or prohibition of import or export, or any new circumstance that demonstrably prevents the execution of the sale. </li>
+                    <li>In the event of a Force Majeure Event, Supplier shall be temporarily relieved of the obligation to make the Coffee available and may elect to postpone the execution of the Sales Order or delivery of the Coffee until the Force Majeure Event is resolved. </li>
+                    <li>In the event of a Force Majeure Event, Supplier may, at its sole discretion, propose an alternative fulfillment solution. </li>
+                    <li>This solution would involve delivering the Coffee on a month-to-month basis until the full order quantity is completed. </li>
+                    <li>If a force majeure situation continues for more than thirty (30) days, Supplier is entitled to rescind the Sales Order, in whole or in part, without judicial intervention, or to suspend the performance of any of its obligations under the Terms and Conditions and Sales Order, without being liable for any damages to Buyer. </li>
+                    <li>The party affected by a Force Majeure Event shall notify the other party in writing as soon as reasonably practicable, explaining the nature of the event and its anticipated impact on performance of its obligations under these Terms and Conditions and Sales Order. </li>
+                </ul>
+
+                <h2 class="text-xl font-bold mt-4 mb-2">Article 9 - Termination</h2>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Without prejudice to any right or remedy available under these Terms and Conditions or Dutch law, Supplier is entitled to immediately rescind, in whole or in part, the Sales Order with immediate effect and without judicial intervention, in the event that Buyer has filed for or has entered into bankruptcy, moratorium, private settlement with its debtors, liquidation of its company or ceased its business operations. </li>
+                </ul>
+
+                <h2 class="text-xl font-bold mt-4 mb-2">Article 10 - Applicable law and jurisdiction</h2>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>All disputes and claims that may arise in connection with these Terms and Conditions, a Sales Order or relationship between Parties shall be exclusively governed and construed in accordance with the laws of The Netherlands. </li>
+                    <li>The United Convention on Contracts for the International Sale of Goods (CISG) is explicitly excluded. </li>
+                    <li>Any dispute arising out of or in relation to these Terms and Conditions, a Sales Order or relationship between Parties shall be exclusively settled by the District Court of Noord-Holland, location Amsterdam, the Netherlands. </li>
+                </ul>
+
+                </section>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <!-- Footer -->
+    <div data-include="components/footer.html"></div>
+
+    <script src="js/include.js"></script>
+
+
+
+    <!-- Eye Icon -->
+    <script>
+        const passwordInput = document.getElementById("password");
+        const toggleButton = document.getElementById("togglePassword");
+        const eyeIcon = document.getElementById("eyeIcon");
+
+        toggleButton.addEventListener("click", () => {
+            const isPassword = passwordInput.type === "password";
+            passwordInput.type = isPassword ? "text" : "password";
+
+            // Toggle icon (swap between open and slashed eye)
+            eyeIcon.innerHTML = isPassword
+                ? `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.542-7a9.959 9.959 0 012.336-3.568M6.183 6.183A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.542 7a9.974 9.974 0 01-4.107 5.13M15 12a3 3 0 01-3 3m0-6a3 3 0 013 3m-3-3L3 3"/>`
+                : `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M2.458 12C3.732 7.943 7.522 5 12 5c4.478 0 8.268 2.943 9.542 7
+                    -1.274 4.057-5.064 7-9.542 7-4.478 0-8.268-2.943-9.542-7z"/>`;
+        });
+    </script>
+
+
+    <!-- Icon Animation Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const iconHTML = `
+        <span class="absolute inset-0 transition-all duration-300 ease-in-out group-hover:-translate-y-2 group-hover:translate-x-2 group-hover:opacity-0 z-10">
+            <svg class="inline-block w-2 h-2" width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.47945 0.19454L2.48692 0.19454C2.38845 0.194539 2.29093 0.213935 2.19995 0.251621C2.10897 0.289306 2.02631 0.344542 1.95667 0.414176C1.88704 0.483809 1.8318 0.566476 1.79412 0.657456C1.75643 0.748437 1.73704 0.845949 1.73704 0.944426C1.73704 1.0429 1.75643 1.14042 1.79412 1.2314C1.8318 1.32238 1.88704 1.40504 1.95667 1.47468C2.02631 1.54431 2.10897 1.59955 2.19995 1.63723C2.29093 1.67492 2.38845 1.69431 2.48692 1.69431L4.91902 1.69431L0.895932 5.7174C0.75528 5.85805 0.676262 6.04882 0.676262 6.24773C0.676262 6.44664 0.75528 6.6374 0.895932 6.77806C1.03658 6.91871 1.22735 6.99773 1.42626 6.99773C1.62517 6.99773 1.81594 6.91871 1.95659 6.77806L5.97968 2.75497L5.97968 5.18707C5.97939 5.28562 5.9986 5.38326 6.03618 5.47437C6.07377 5.56548 6.12899 5.64826 6.19868 5.71795C6.26837 5.78764 6.35115 5.84286 6.44226 5.88045C6.53337 5.91803 6.63101 5.93724 6.72956 5.93695C6.92844 5.93692 7.11916 5.85791 7.25978 5.71728C7.4004 5.57666 7.47942 5.38594 7.47945 5.18707L7.47945 0.19454Z" fill="#F0EAE3"/>
+            </svg>
+        </span>
+        <span class="absolute inset-0 translate-y-2 -translate-x-2 opacity-0 transition-all duration-300 ease-in-out group-hover:translate-y-0 group-hover:translate-x-0 group-hover:opacity-100 z-20">
+            <svg class="inline-block w-2 h-2" width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.47945 0.19454L2.48692 0.19454C2.38845 0.194539 2.29093 0.213935 2.19995 0.251621C2.10897 0.289306 2.02631 0.344542 1.95667 0.414176C1.88704 0.483809 1.8318 0.566476 1.79412 0.657456C1.75643 0.748437 1.73704 0.845949 1.73704 0.944426C1.73704 1.0429 1.75643 1.14042 1.79412 1.2314C1.8318 1.32238 1.88704 1.40504 1.95667 1.47468C2.02631 1.54431 2.10897 1.59955 2.19995 1.63723C2.29093 1.67492 2.38845 1.69431 2.48692 1.69431L4.91902 1.69431L0.895932 5.7174C0.75528 5.85805 0.676262 6.04882 0.676262 6.24773C0.676262 6.44664 0.75528 6.6374 0.895932 6.77806C1.03658 6.91871 1.22735 6.99773 1.42626 6.99773C1.62517 6.99773 1.81594 6.91871 1.95659 6.77806L5.97968 2.75497L5.97968 5.18707C5.97939 5.28562 5.9986 5.38326 6.03618 5.47437C6.07377 5.56548 6.12899 5.64826 6.19868 5.71795C6.26837 5.78764 6.35115 5.84286 6.44226 5.88045C6.53337 5.91803 6.63101 5.93724 6.72956 5.93695C6.92844 5.93692 7.11916 5.85791 7.25978 5.71728C7.4004 5.57666 7.47942 5.38594 7.47945 5.18707L7.47945 0.19454Z" fill="#F0EAE3"/>
+            </svg>
+        </span>
+      `;
+
+            document.querySelectorAll(".arrow-animation").forEach(el => {
+                el.innerHTML = iconHTML;
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
