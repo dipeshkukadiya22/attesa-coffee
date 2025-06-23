@@ -22,48 +22,68 @@
 </head>
 
 <body class="bg-brand-primary">
-    <nav id="main-nav"
-        class="sticky top-0 py-4 z-99 bg-[#F0EAE3] border-b border-[#BAAE9F]">
+    <nav id="main-nav" class="sticky top-0 py-4 bg-[#F0EAE3] border-b border-[#BAAE9F] backdrop-blur-lg z-50">
         <div class="container mx-auto px-4 flex items-center justify-between">
-            <div class="font-bold text-xl w-[20%]">
+            <!-- Logo -->
+            <div class="font-bold text-xl w-auto">
                 <a href="index.html">
                     <img src="/src/images/Attesa-svg-logo.svg" alt="Logo" class="inline-block w-30">
                 </a>
             </div>
-            <ul class="flex justify-center items-center space-x-6 w-[80%]">
-                <li><a href="#" class="p-2">About</a></li>
-                <li><a href="#" class="p-2">Origins</a></li>
-                <li><a href="#" class="p-2">Our Coffee</a></li>
-                <li class="relative group">
-                    <a href="#" class="p-2">Micro shop</a>
 
+            <!-- Hamburger & Close (Mobile Only) -->
+            <div class="lg:hidden">
+                <button id="menu-open" class="text-[#EDE8E1] w-8 h-8" aria-label="Open Menu">
+                    <!-- Hamburger SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <button id="menu-close" class="text-[#EDE8E1] w-8 h-8 hidden" aria-label="Close Menu">
+                    <!-- Close SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul id="menu"
+                class="hidden lg:flex flex-col lg:flex-row justify-center items-center space-y-4 lg:space-y-0 lg:space-x-6 absolute lg:static top-full left-0 w-full lg:w-auto bg-black/90 lg:bg-transparent px-6 lg:px-0 py-6 lg:py-0 z-40 lg:z-auto">
+                <li><a href="/about-us.html" class="p-2 block">About</a></li>
+                <li><a href="/origins.html" class="p-2 block">Origins</a></li>
+                <li><a href="/our-coffee.html" class="p-2 block">Our Coffee</a></li>
+                <li class="relative group">
+                    <a href="#" class="p-2 block">Micro shop</a>
                     <!-- Tooltip -->
                     <div
                         class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-4 py-2 rounded-lg bg-[#f5eade] border border-[#BAAE9F] shadow-lg backdrop-blur-md text-sm text-[#3B3D34] opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50 whitespace-nowrap">
-                        <!-- Arrow -->
                         <div
                             class="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 rotate-45 bg-[#f5eade] border-t border-l border-[#BAAE9F]">
                         </div>
-
                         Smaller quantities of green coffee
                     </div>
                 </li>
-                <li><a href="#" class="p-2">Insights</a></li>
-                <li><a href="#" class="p-2">Contact</a></li>
+                <li><a href="/coming-soon.html" class="p-2 block">Insights</a></li>
+                <!-- <li><a href="#" class="p-2 block">Contact</a></li> -->
+                <!-- Contact CTA for mobile -->
+                <li class="lg:hidden">
+                    <a href="contact.html"
+                        class="inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg hover:bg-brand-primary transition-colors duration-200">
+                        Contact
+                    </a>
+                </li>
             </ul>
-            <div class="flex justify-end items-center text-base w-[20%]">
-                <div class="flex items-center space-x-4">
-                    <a href="#" id="sign-in-btn"
-                        class="py-1 border border-[#D7D0C4] text-[#46433E] px-4 rounded-lg hover:bg-[#86A161] hover:border-[#648930]">
-                        Login
-                    </a>
 
-                    <a href="#"
-                        class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
-                        Sign Up
-                        <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
-                    </a>
-                </div>
+            <!-- Desktop CTA -->
+            <div class="hidden lg:flex justify-end items-center text-base w-auto">
+                <a href="contact.html"
+                    class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+                    Contact
+                    <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
+                </a>
             </div>
         </div>
     </nav>
@@ -90,9 +110,51 @@
                 <div>
 
                     <div class="grid grid-cols-6 gap-4">
-                        <!-- Flag and Country Name 1 -->
-                        <a href="#origin-india" 
-                        class="scroll-link flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-full rounded-sm border border-[#A38764]" data-target="origin-india">
+
+                        <!-- Colombia Flag -->
+                        <a href="#origin-colombia"
+                            class="scroll-link flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-full rounded-sm border border-[#A38764]"
+                            data-target="origin-colombia">
+                            <div class="flex items-center space-x-2 p-1">
+                                <img src="/src/images/flags/colombia.svg" alt="India" class="w-6 h-6">
+                                <span class="text-[#A38764]">Colombia</span>
+                            </div>
+                            <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
+                                <img src="/src/images/down-arrow.svg" alt="">
+                            </div>
+                        </a>
+
+                        <!-- Peru Flag -->
+                        <a href="#origin-peru"
+                            class="scroll-link flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-full rounded-sm border border-[#A38764]"
+                            data-target="origin-peru">
+                            <div class="flex items-center space-x-2 p-1">
+                                <img src="/src/images/flags/peru.svg" alt="Peru" class="w-6 h-6">
+                                <span class="text-[#A38764]">Peru</span>
+                            </div>
+                            <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
+                                <img src="/src/images/down-arrow.svg" alt="">
+                            </div>
+                        </a>
+
+                        <!-- Guatemala Flag -->
+                        <a href="#origin-guatemala"
+                            class="scroll-link flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-full rounded-sm border border-[#A38764]"
+                            data-target="origin-guatemala">
+                            <div class="flex items-center space-x-2 p-1">
+                                <img src="/src/images/flags/guatemala.svg" alt="India" class="w-6 h-6">
+                                <span class="text-[#A38764]">Guatemala</span>
+                            </div>
+                            <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
+                                <img src="/src/images/down-arrow.svg" alt="">
+                            </div>
+                        </a>
+
+
+                        <!-- India Flag -->
+                        <a href="#origin-india"
+                            class="scroll-link flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-full rounded-sm border border-[#A38764]"
+                            data-target="origin-india">
                             <div class="flex items-center space-x-2 p-1">
                                 <img src="/src/images/flags/india.svg" alt="India" class="w-6 h-6">
                                 <span class="text-[#A38764]">India</span>
@@ -102,9 +164,49 @@
                             </div>
                         </a>
 
-                        <!-- Flag and Country Name 2 -->
+                        <!-- Ethiopia Flag -->
+                        <a href="#origin-ehiopia"
+                            class="scroll-link flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-full rounded-sm border border-[#A38764]"
+                            data-target="origin-ehiopia">
+                            <div class="flex items-center space-x-2 p-1">
+                                <img src="/src/images/flags/Ethiopia.svg" alt="India" class="w-6 h-6">
+                                <span class="text-[#A38764]">Ethiopia</span>
+                            </div>
+                            <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
+                                <img src="/src/images/down-arrow.svg" alt="">
+                            </div>
+                        </a>
+
+                        <!-- Mexico Flag -->
+                        <a href="#origin-mexico"
+                            class="scroll-link flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-full rounded-sm border border-[#A38764]"
+                            data-target="origin-mexico">
+                            <div class="flex items-center space-x-2 p-1">
+                                <img src="/src/images/flags/mexico.svg" alt="India" class="w-6 h-6">
+                                <span class="text-[#A38764]">Mexico</span>
+                            </div>
+                            <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
+                                <img src="/src/images/down-arrow.svg" alt="">
+                            </div>
+                        </a>
+
+                        <!-- Rwanda Flag -->
+                        <a href="#origin-rwanda"
+                            class="scroll-link flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-full rounded-sm border border-[#A38764]"
+                            data-target="origin-rwanda">
+                            <div class="flex items-center space-x-2 p-1">
+                                <img src="/src/images/flags/rwanda.svg" alt="India" class="w-6 h-6">
+                                <span class="text-[#A38764]">Rwanda</span>
+                            </div>
+                            <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
+                                <img src="/src/images/down-arrow.svg" alt="">
+                            </div>
+                        </a>
+
+                        <!-- Kenya Flag -->
                         <a href="#origin-kenya"
-                            class="scroll-link flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-full rounded-sm border border-[#A38764]" data-target="origin-kenya">
+                            class="scroll-link flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-full rounded-sm border border-[#A38764]"
+                            data-target="origin-kenya">
                             <div class="flex items-center space-x-2 p-1">
                                 <img src="/src/images/flags/kenya.svg" alt="India" class="w-6 h-6">
                                 <span class="text-[#A38764]">Kenya</span>
@@ -114,53 +216,47 @@
                             </div>
                         </a>
 
-                        <!-- Flag and Country Name 3 -->
-                        <a href="#"
-                            class="scroll-link flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-full rounded-sm border border-[#A38764]" data-target="origin-rwanda">
+                        <!-- El salvador Flag -->
+                        <a href="#origin-el-salvador"
+                            class="scroll-link flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-full rounded-sm border border-[#A38764]"
+                            data-target="origin-el-salvador">
                             <div class="flex items-center space-x-2 p-1">
-                                <img src="/src/images/flags/rwanda.svg" alt="India" class="w-6 h-6">
-                                <span class="text-[#A38764]">Rwanda</span>
+                                <img src="/src/images/flags/el-salvador.svg" alt="India" class="w-6 h-6">
+                                <span class="text-[#A38764]">El Salvador</span>
                             </div>
                             <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                                 <img src="/src/images/down-arrow.svg" alt="">
                             </div>
                         </a>
 
-                        <!-- Flag and Country Name 1 -->
-                        <a href="#"
-                            class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-full rounded-sm border border-[#A38764]">
+                        <!-- Honduras Flag -->
+                        <a href="#origin-honduras"
+                            class="scroll-link flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-full rounded-sm border border-[#A38764]"
+                            data-target="origin-honduras">
                             <div class="flex items-center space-x-2 p-1">
-                                <img src="/src/images/flags/india.svg" alt="India" class="w-6 h-6">
-                                <span class="text-[#A38764]">India</span>
+                                <img src="/src/images/flags/honduras.svg" alt="India" class="w-6 h-6">
+                                <span class="text-[#A38764]">Honduras</span>
                             </div>
                             <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                                 <img src="/src/images/down-arrow.svg" alt="">
                             </div>
                         </a>
 
-                        <!-- Flag and Country Name 2 -->
-                        <a href="#"
-                            class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-full rounded-sm border border-[#A38764]">
+                        <!-- Brazil Flag -->
+                        <a href="#origin-brazil"
+                            class="scroll-link flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-full rounded-sm border border-[#A38764]"
+                            data-target="origin-brazil">
                             <div class="flex items-center space-x-2 p-1">
-                                <img src="/src/images/flags/kenya.svg" alt="India" class="w-6 h-6">
-                                <span class="text-[#A38764]">Kenya</span>
+                                <img src="/src/images/flags/brazil.svg" alt="Brazil" class="w-6 h-6">
+                                <span class="text-[#A38764]">Brazil</span>
                             </div>
                             <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                                 <img src="/src/images/down-arrow.svg" alt="">
                             </div>
                         </a>
 
-                        <!-- Flag and Country Name 3 -->
-                        <a href="#"
-                            class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-full rounded-sm border border-[#A38764]">
-                            <div class="flex items-center space-x-2 p-1">
-                                <img src="/src/images/flags/rwanda.svg" alt="India" class="w-6 h-6">
-                                <span class="text-[#A38764]">Rwanda</span>
-                            </div>
-                            <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
-                                <img src="/src/images/down-arrow.svg" alt="">
-                            </div>
-                        </a>
+
+
                     </div>
 
                 </div>
@@ -175,8 +271,9 @@
 
         <div class="container mx-auto px-4 border-y border-[#D7D0C4] mb-12">
 
-            <!-- Origin Details 1 -->
-            <div id="origin-india"  class="grid grid-cols-2 items-stretch border-b border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full">
+            <!-- Colombia Details -->
+            <div id="origin-colombia"
+                class="grid grid-cols-2 items-stretch border-b border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full">
                 <div class="pr-12 py-12 h-full">
                     <!-- Left content -->
                     <div class="flex flex-row justify-between items-start">
@@ -186,7 +283,7 @@
                             <p class="text-sm">Known for its vibrant acidity and floral notes.</p>
                         </div>
                         <div>
-                            <a href="#"
+                            <!-- <a href="#"
                                 class="inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary mt-8">
                                 Origin Details
                                 <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512"
@@ -196,7 +293,7 @@
                                         d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
                                     </path>
                                 </svg>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                     <table class="origin-tbl w-full mt-4">
@@ -220,30 +317,31 @@
                 </div>
                 <div class="pl-12 py-12 h-full">
                     <!-- Right content -->
-                    <img src="/src/images/New-IMG_20240222_150238_514.jpg" alt="Origins Image"
-                        class="w-full h-auto rounded-lg">
+                    <img src="/src/images/Colombia_result.jpg" alt="Origins Image"
+                        class="w-full h-96 object-cover rounded-lg">
                 </div>
             </div>
 
 
 
-            <!-- Origin Details 2 -->
-            <div id="origin-kenya" class="grid grid-cols-2 items-stretch border-b border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full">
+            <!-- peru Details  -->
+            <div id="origin-peru"
+                class="grid grid-cols-2 items-stretch border-b border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full">
                 <div class="pr-12 py-12 h-full">
                     <!-- Left content -->
-                    <img src="/src/images/New-IMG_20240222_150238_514.jpg" alt="Origins Image"
-                        class="w-full h-auto rounded-lg">
+                    <img src="/src/images/Peru_result.jpg" alt="Origins Image"
+                        class="w-full h-96 object-cover rounded-lg">
                 </div>
                 <div class="pl-12 py-12 h-full">
                     <!-- Right content -->
                     <div class="flex flex-row justify-between items-start">
                         <div>
                             <span class="text-sm uppercase">origin</span>
-                            <h2 class="text-2xl font-semibold uppercase mb-2">colombia</h2>
+                            <h2 class="text-2xl font-semibold uppercase mb-2">peru</h2>
                             <p class="text-sm">Known for its vibrant acidity and floral notes.</p>
                         </div>
                         <div>
-                            <a href="#"
+                            <!-- <a href="#"
                                 class="inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary mt-8">
                                 Origin Details
                                 <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512"
@@ -253,43 +351,44 @@
                                         d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
                                     </path>
                                 </svg>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                     <table class="origin-tbl w-full mt-4">
                         <tr>
                             <td>Harvest Period</td>
-                            <td>September - December</td>
+                            <td>March – September</td>
                         </tr>
                         <tr>
                             <td>Typical Arrival</td>
-                            <td>March – April</td>
+                            <td>December – January</td>
                         </tr>
                         <tr>
                             <td>Region Tags</td>
-                            <td>Huila, Tolima, Quindío, etc.</td>
+                            <td>Cajamarca, San Martin, Junin, Cusco, Amazonas</td>
                         </tr>
                         <tr>
                             <td>Producers</td>
-                            <td>Seventeen</td>
+                            <td>one</td>
                         </tr>
                     </table>
                 </div>
             </div>
 
 
-            <!-- Origin Details 3 -->
-            <div id="origin-rwanda" class="grid grid-cols-2 items-stretch divide-x divide-[#D7D0C4] h-full">
+            <!-- GUATEMALA Details -->
+            <div id="origin-guatemala"
+                class="grid grid-cols-2 items-stretch border-b border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full">
                 <div class="pr-12 py-12 h-full">
                     <!-- Left content -->
                     <div class="flex flex-row justify-between items-start">
                         <div>
                             <span class="text-sm uppercase">origin</span>
-                            <h2 class="text-2xl font-semibold uppercase mb-2">colombia</h2>
+                            <h2 class="text-2xl font-semibold uppercase mb-2">GUATEMALA</h2>
                             <p class="text-sm">Known for its vibrant acidity and floral notes.</p>
                         </div>
                         <div>
-                            <a href="#"
+                            <!-- <a href="#"
                                 class="inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary mt-8">
                                 Origin Details
                                 <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512"
@@ -299,13 +398,279 @@
                                         d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
                                     </path>
                                 </svg>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                     <table class="origin-tbl w-full mt-4">
                         <tr>
                             <td>Harvest Period</td>
-                            <td>September - December</td>
+                            <td>November – April</td>
+                        </tr>
+                        <tr>
+                            <td>Typical Arrival</td>
+                            <td>July – August</td>
+                        </tr>
+                        <tr>
+                            <td>Region Tags</td>
+                            <td class="w-96">Acatenango, Antigua, Atitlán, Cobán, Fraijanes, Huehuetenango, Nuevo
+                                Oriente, San Marcos</td>
+                        </tr>
+                        <tr>
+                            <td>Producers</td>
+                            <td>One</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pl-12 py-12 h-full">
+                    <!-- Right content -->
+                    <img src="/src/images/Guatemala_result.jpg" alt="Origins Image"
+                        class="w-full h-96 object-cover rounded-lg">
+                </div>
+            </div>
+
+
+            <!-- India Details  -->
+            <div id="origin-india"
+                class="grid grid-cols-2 items-stretch border-b border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full">
+                <div class="pr-12 py-12 h-full">
+                    <!-- Left content -->
+                    <img src="/src/images/India_result.jpg" alt="Origins Image"
+                        class="w-full h-96 object-cover rounded-lg">
+                </div>
+                <div class="pl-12 py-12 h-full">
+                    <!-- Right content -->
+                    <div class="flex flex-row justify-between items-start">
+                        <div>
+                            <span class="text-sm uppercase">origin</span>
+                            <h2 class="text-2xl font-semibold uppercase mb-2">India</h2>
+                            <p class="text-sm">Known for its vibrant acidity and floral notes.</p>
+                        </div>
+                        <div>
+                            <!-- <a href="#"
+                                class="inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary mt-8">
+                                Origin Details
+                                <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512"
+                                    xmlns="http://www.w3.org/2000/svg" class="inline-block ml-2 align-middle"
+                                    fill="white">
+                                    <path
+                                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                                    </path>
+                                </svg>
+                            </a> -->
+                        </div>
+                    </div>
+                    <table class="origin-tbl w-full mt-4">
+                        <tr>
+                            <td>Harvest Period</td>
+                            <td>November – January</td>
+                        </tr>
+                        <tr>
+                            <td>Typical Arrival</td>
+                            <td>April – May</td>
+                        </tr>
+                        <tr>
+                            <td>Region Tags</td>
+                            <td>Karnataka, Kerala and Tamil Nadu</td>
+                        </tr>
+                        <tr>
+                            <td>Producers</td>
+                            <td>Three</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- ethiopia Details -->
+            <div id="origin-ethiopia"
+                class="grid grid-cols-2 items-stretch border-b border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full">
+                <div class="pr-12 py-12 h-full">
+                    <!-- Left content -->
+                    <div class="flex flex-row justify-between items-start">
+                        <div>
+                            <span class="text-sm uppercase">origin</span>
+                            <h2 class="text-2xl font-semibold uppercase mb-2">ethiopia</h2>
+                            <p class="text-sm">Known for its vibrant acidity and floral notes.</p>
+                        </div>
+                        <div>
+                            <!-- <a href="#"
+                                class="inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary mt-8">
+                                Origin Details
+                                <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512"
+                                    xmlns="http://www.w3.org/2000/svg" class="inline-block ml-2 align-middle"
+                                    fill="white">
+                                    <path
+                                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                                    </path>
+                                </svg>
+                            </a> -->
+                        </div>
+                    </div>
+                    <table class="origin-tbl w-full mt-4">
+                        <tr>
+                            <td>Harvest Period</td>
+                            <td>October – January</td>
+                        </tr>
+                        <tr>
+                            <td>Typical Arrival</td>
+                            <td>April – June</td>
+                        </tr>
+                        <tr>
+                            <td>Region Tags</td>
+                            <td class="96">Djimma, Limu, Nekempt, Guji, Yirgacheffe, Gedeb, Sidamo, Kochere, Kaffa</td>
+                        </tr>
+                        <tr>
+                            <td>Producers</td>
+                            <td>One</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pl-12 py-12 h-full">
+                    <!-- Right content -->
+                    <img src="/src/images/Ethiopia_result.jpg" alt="Origins Image"
+                        class="w-full h-96 object-cover rounded-lg">
+                </div>
+            </div>
+
+
+            <!-- Mexico Details  -->
+            <div id="origin-mexico"
+                class="grid grid-cols-2 items-stretch border-b border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full">
+                <div class="pr-12 py-12 h-full">
+                    <!-- Left content -->
+                    <img src="/src/images/Mexico_result.jpg" alt="Origins Image"
+                        class="w-full h-96 object-cover rounded-lg">
+                </div>
+                <div class="pl-12 py-12 h-full">
+                    <!-- Right content -->
+                    <div class="flex flex-row justify-between items-start">
+                        <div>
+                            <span class="text-sm uppercase">origin</span>
+                            <h2 class="text-2xl font-semibold uppercase mb-2">Mexico</h2>
+                            <p class="text-sm">Mexican coffees are known for their balanced body and sweet, nutty
+                                flavors, often with a hint of chocolate.</p>
+                        </div>
+                        <div>
+                            <!-- <a href="#"
+                                class="inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary mt-8">
+                                Origin Details
+                                <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512"
+                                    xmlns="http://www.w3.org/2000/svg" class="inline-block ml-2 align-middle"
+                                    fill="white">
+                                    <path
+                                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                                    </path>
+                                </svg>
+                            </a> -->
+                        </div>
+                    </div>
+                    <table class="origin-tbl w-full mt-4">
+                        <tr>
+                            <td>Harvest Period</td>
+                            <td>November – March</td>
+                        </tr>
+                        <tr>
+                            <td>Typical Arrival</td>
+                            <td>June – July</td>
+                        </tr>
+                        <tr>
+                            <td>Region Tags</td>
+                            <td>Chiapas, Veracruz, Oaxaca, Puebla</td>
+                        </tr>
+                        <tr>
+                            <td>Producers</td>
+                            <td>One</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- RWANDA Details -->
+            <div id="origin-rwanda"
+                class="grid grid-cols-2 items-stretch border-b border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full">
+                <div class="pr-12 py-12 h-full">
+                    <!-- Left content -->
+                    <div class="flex flex-row justify-between items-start">
+                        <div>
+                            <span class="text-sm uppercase">origin</span>
+                            <h2 class="text-2xl font-semibold uppercase mb-2">RWANDA</h2>
+                            <p class="text-sm">Known for its vibrant acidity and floral notes.</p>
+                        </div>
+                        <div>
+                            <!-- <a href="#"
+                                class="inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary mt-8">
+                                Origin Details
+                                <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512"
+                                    xmlns="http://www.w3.org/2000/svg" class="inline-block ml-2 align-middle"
+                                    fill="white">
+                                    <path
+                                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                                    </path>
+                                </svg>
+                            </a> -->
+                        </div>
+                    </div>
+                    <table class="origin-tbl w-full mt-4">
+                        <tr>
+                            <td>Harvest Period</td>
+                            <td>March – June</td>
+                        </tr>
+                        <tr>
+                            <td>Typical Arrival</td>
+                            <td>September – October</td>
+                        </tr>
+                        <tr>
+                            <td>Region Tags</td>
+                            <td class="w-96">West Province along Lake Kivu ,South Province ,North Province ,East
+                                Province</td>
+                        </tr>
+                        <tr>
+                            <td>Producers</td>
+                            <td>One</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pl-12 py-12 h-full">
+                    <!-- Right content -->
+                    <img src="/src/images/Rwanda_result.jpg" alt="Origins Image"
+                        class="w-full h-96 object-cover rounded-lg">
+                </div>
+            </div>
+
+            <!-- KENYA Details  -->
+            <div id="origin-kenya"
+                class="grid grid-cols-2 items-stretch border-b border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full">
+                <div class="pr-12 py-12 h-full">
+                    <!-- Left content -->
+                    <img src="/src/images/Kenya_result.jpg" alt="Origins Image"
+                        class="w-full h-96 object-cover rounded-lg">
+                </div>
+                <div class="pl-12 py-12 h-full">
+                    <!-- Right content -->
+                    <div class="flex flex-row justify-between items-start">
+                        <div>
+                            <span class="text-sm uppercase">origin</span>
+                            <h2 class="text-2xl font-semibold uppercase mb-2">KENYA</h2>
+                            <p class="text-sm">Mexican coffees are known for their balanced body and sweet, nutty
+                                flavors, often with a hint of chocolate.</p>
+                        </div>
+                        <div>
+                            <!-- <a href="#"
+                                class="inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary mt-8">
+                                Origin Details
+                                <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512"
+                                    xmlns="http://www.w3.org/2000/svg" class="inline-block ml-2 align-middle"
+                                    fill="white">
+                                    <path
+                                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                                    </path>
+                                </svg>
+                            </a> -->
+                        </div>
+                    </div>
+                    <table class="origin-tbl w-full mt-4">
+                        <tr>
+                            <td>Harvest Period</td>
+                            <td>October – December</td>
                         </tr>
                         <tr>
                             <td>Typical Arrival</td>
@@ -313,18 +678,169 @@
                         </tr>
                         <tr>
                             <td>Region Tags</td>
-                            <td>Huila, Tolima, Quindío, etc.</td>
+                            <td>Kiambu, Nyeri, Kirinyaga and Muranga</td>
                         </tr>
                         <tr>
                             <td>Producers</td>
-                            <td>Seventeen</td>
+                            <td>Eight</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+            <!-- EL SALVADOR Details -->
+            <div id="origin-el-salvador"
+                class="grid grid-cols-2 items-stretch border-b border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full">
+                <div class="pr-12 py-12 h-full">
+                    <!-- Left content -->
+                    <div class="flex flex-row justify-between items-start">
+                        <div>
+                            <span class="text-sm uppercase">origin</span>
+                            <h2 class="text-2xl font-semibold uppercase mb-2">EL SALVADOR</h2>
+                            <p class="text-sm">Known for its vibrant acidity and floral notes.</p>
+                        </div>
+                        <div>
+                            <!-- <a href="#"
+                                class="inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary mt-8">
+                                Origin Details
+                                <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512"
+                                    xmlns="http://www.w3.org/2000/svg" class="inline-block ml-2 align-middle"
+                                    fill="white">
+                                    <path
+                                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                                    </path>
+                                </svg>
+                            </a> -->
+                        </div>
+                    </div>
+                    <table class="origin-tbl w-full mt-4">
+                        <tr>
+                            <td>Harvest Period</td>
+                            <td>–</td>
+                        </tr>
+                        <tr>
+                            <td>Typical Arrival</td>
+                            <td>June – July</td>
+                        </tr>
+                        <tr>
+                            <td>Region Tags</td>
+                            <td class="w-96">Apaneca-Ilamatepec Mountain Range, Central Belt, Chichontepec, Cacahuatique
+                                Mountain Range ,Tecapa-Chichontepec Mountain Range</td>
+                        </tr>
+                        <tr>
+                            <td>Producers</td>
+                            <td>Three</td>
                         </tr>
                     </table>
                 </div>
                 <div class="pl-12 py-12 h-full">
                     <!-- Right content -->
-                    <img src="/src/images/New-IMG_20240222_150238_514.jpg" alt="Origins Image"
-                        class="w-full h-auto rounded-lg">
+                    <img src="/src/images/Rwanda_result.jpg" alt="Origins Image"
+                        class="w-full h-96 object-cover rounded-lg">
+                </div>
+            </div>
+
+
+            <!-- HONDURAS Details  -->
+            <div id="origin-honduras"
+                class="grid grid-cols-2 items-stretch border-b border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full">
+                <div class="pr-12 py-12 h-full">
+                    <!-- Left content -->
+                    <img src="/src/images/Honduras_result.jpg" alt="Origins Image"
+                        class="w-full h-96 object-cover rounded-lg">
+                </div>
+                <div class="pl-12 py-12 h-full">
+                    <!-- Right content -->
+                    <div class="flex flex-row justify-between items-start">
+                        <div>
+                            <span class="text-sm uppercase">origin</span>
+                            <h2 class="text-2xl font-semibold uppercase mb-2">HONDURAS</h2>
+                            <p class="text-sm">Mexican coffees are known for their balanced body and sweet, nutty
+                                flavors, often with a hint of chocolate.</p>
+                        </div>
+                        <div>
+                            <!-- <a href="#"
+                                class="inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary mt-8">
+                                Origin Details
+                                <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512"
+                                    xmlns="http://www.w3.org/2000/svg" class="inline-block ml-2 align-middle"
+                                    fill="white">
+                                    <path
+                                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                                    </path>
+                                </svg>
+                            </a> -->
+                        </div>
+                    </div>
+                    <table class="origin-tbl w-full mt-4">
+                        <tr>
+                            <td>Harvest Period</td>
+                            <td>November – April</td>
+                        </tr>
+                        <tr>
+                            <td>Typical Arrival</td>
+                            <td>July – August</td>
+                        </tr>
+                        <tr>
+                            <td>Region Tags</td>
+                            <td>Marcala, Comayagua, Copán, Opalaca ,Montecillos, El Paraiso ,Agalta</td>
+                        </tr>
+                        <tr>
+                            <td>Producers</td>
+                            <td>Five</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- BRAZIL Details -->
+            <div id="origin-brazil" class="grid grid-cols-2 items-stretch divide-x divide-[#D7D0C4] h-full">
+                <div class="pr-12 py-12 h-full">
+                    <!-- Left content -->
+                    <div class="flex flex-row justify-between items-start">
+                        <div>
+                            <span class="text-sm uppercase">origin</span>
+                            <h2 class="text-2xl font-semibold uppercase mb-2">BRAZIL</h2>
+                            <p class="text-sm">Known for its vibrant acidity and floral notes.</p>
+                        </div>
+                        <div>
+                            <!-- <a href="#"
+                                class="inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary mt-8">
+                                Origin Details
+                                <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512"
+                                    xmlns="http://www.w3.org/2000/svg" class="inline-block ml-2 align-middle"
+                                    fill="white">
+                                    <path
+                                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                                    </path>
+                                </svg>
+                            </a> -->
+                        </div>
+                    </div>
+                    <table class="origin-tbl w-full mt-4">
+                        <tr>
+                            <td>Harvest Period</td>
+                            <td>April – September</td>
+                        </tr>
+                        <tr>
+                            <td>Typical Arrival</td>
+                            <td>December-January</td>
+                        </tr>
+                        <tr>
+                            <td>Region Tags</td>
+                            <td>Sul de Minas, Cerrado Mineiro, Mogiana, Matas de Minas</td>
+                        </tr>
+                        <tr>
+                            <td>Producers</td>
+                            <td>Two</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pl-12 py-12 h-full">
+                    <!-- Right content -->
+                    <img src="/src/images/Brazil_result.jpg" alt="Origins Image"
+                        class="w-full h-96 object-cover rounded-lg">
                 </div>
             </div>
 
@@ -432,57 +948,57 @@
 
     <!-- Sticky Navigation Script -->
     <script>
-      //const nav = document.getElementById('main-nav');
-      const signInBtn = document.getElementById('sign-in-btn');
+        //const nav = document.getElementById('main-nav');
+        const signInBtn = document.getElementById('sign-in-btn');
 
-      // Add hover effect on page load
-      signInBtn.classList.add('hover:text-[#EDE8E1]');
+        // Add hover effect on page load
+        signInBtn.classList.add('hover:text-[#EDE8E1]');
 
 
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 10) {
-          // Nav styles
-          nav.classList.add('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
-          nav.classList.remove('bg-[#F0EAE3]', 'text-[#46433E]');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                // Nav styles
+                nav.classList.add('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
+                nav.classList.remove('bg-[#F0EAE3]', 'text-[#46433E]');
 
-          // Sign In button styles
-          signInBtn.classList.add('text-[#3B3D34]', 'border', 'border-[#D7D0C4]');
-          signInBtn.classList.remove('text-[#EDE8E1]');
-        } else {
-          // Nav styles revert
-          nav.classList.remove('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
-          nav.classList.add('bg-[#F0EAE3]', 'text-[#46433E]' );
+                // Sign In button styles
+                signInBtn.classList.add('text-[#3B3D34]', 'border', 'border-[#D7D0C4]');
+                signInBtn.classList.remove('text-[#EDE8E1]');
+            } else {
+                // Nav styles revert
+                nav.classList.remove('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
+                nav.classList.add('bg-[#F0EAE3]', 'text-[#46433E]');
 
-          // Sign In button revert
-          signInBtn.classList.remove('text-[#3B3D34]');
-          signInBtn.classList.add('text-[#3B3D34]');
-        }
-      });
+                // Sign In button revert
+                signInBtn.classList.remove('text-[#3B3D34]');
+                signInBtn.classList.add('text-[#3B3D34]');
+            }
+        });
     </script>
 
 
 
     <!-- Icon Animation Script -->
-    <script>
+      <script>
         document.addEventListener("DOMContentLoaded", () => {
-            const iconHTML = `
-        <span class="absolute inset-0 transition-all duration-300 ease-in-out group-hover:-translate-y-2 group-hover:translate-x-2 group-hover:opacity-0 z-10">
-          <svg class="inline-block w-2 h-2" viewBox="0 0 512 512" fill="white" xmlns="http://www.w3.org/2000/svg">
-            <path d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z" />
-          </svg>
-        </span>
-        <span class="absolute inset-0 translate-y-2 -translate-x-2 opacity-0 transition-all duration-300 ease-in-out group-hover:translate-y-0 group-hover:translate-x-0 group-hover:opacity-100 z-20">
-          <svg class="inline-block w-2 h-2" viewBox="0 0 512 512" fill="white" xmlns="http://www.w3.org/2000/svg">
-            <path d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z" />
-          </svg>
-        </span>
-      `;
+          const iconHTML = `
+          <span class="absolute inset-0 transition-all duration-300 ease-in-out group-hover:-translate-y-2 group-hover:translate-x-2 group-hover:opacity-0 z-10">
+              <svg class="inline-block w-2 h-2" width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.47945 0.19454L2.48692 0.19454C2.38845 0.194539 2.29093 0.213935 2.19995 0.251621C2.10897 0.289306 2.02631 0.344542 1.95667 0.414176C1.88704 0.483809 1.8318 0.566476 1.79412 0.657456C1.75643 0.748437 1.73704 0.845949 1.73704 0.944426C1.73704 1.0429 1.75643 1.14042 1.79412 1.2314C1.8318 1.32238 1.88704 1.40504 1.95667 1.47468C2.02631 1.54431 2.10897 1.59955 2.19995 1.63723C2.29093 1.67492 2.38845 1.69431 2.48692 1.69431L4.91902 1.69431L0.895932 5.7174C0.75528 5.85805 0.676262 6.04882 0.676262 6.24773C0.676262 6.44664 0.75528 6.6374 0.895932 6.77806C1.03658 6.91871 1.22735 6.99773 1.42626 6.99773C1.62517 6.99773 1.81594 6.91871 1.95659 6.77806L5.97968 2.75497L5.97968 5.18707C5.97939 5.28562 5.9986 5.38326 6.03618 5.47437C6.07377 5.56548 6.12899 5.64826 6.19868 5.71795C6.26837 5.78764 6.35115 5.84286 6.44226 5.88045C6.53337 5.91803 6.63101 5.93724 6.72956 5.93695C6.92844 5.93692 7.11916 5.85791 7.25978 5.71728C7.4004 5.57666 7.47942 5.38594 7.47945 5.18707L7.47945 0.19454Z" fill="#F0EAE3"/>
+              </svg>
+          </span>
+          <span class="absolute inset-0 translate-y-2 -translate-x-2 opacity-0 transition-all duration-300 ease-in-out group-hover:translate-y-0 group-hover:translate-x-0 group-hover:opacity-100 z-20">
+              <svg class="inline-block w-2 h-2" width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.47945 0.19454L2.48692 0.19454C2.38845 0.194539 2.29093 0.213935 2.19995 0.251621C2.10897 0.289306 2.02631 0.344542 1.95667 0.414176C1.88704 0.483809 1.8318 0.566476 1.79412 0.657456C1.75643 0.748437 1.73704 0.845949 1.73704 0.944426C1.73704 1.0429 1.75643 1.14042 1.79412 1.2314C1.8318 1.32238 1.88704 1.40504 1.95667 1.47468C2.02631 1.54431 2.10897 1.59955 2.19995 1.63723C2.29093 1.67492 2.38845 1.69431 2.48692 1.69431L4.91902 1.69431L0.895932 5.7174C0.75528 5.85805 0.676262 6.04882 0.676262 6.24773C0.676262 6.44664 0.75528 6.6374 0.895932 6.77806C1.03658 6.91871 1.22735 6.99773 1.42626 6.99773C1.62517 6.99773 1.81594 6.91871 1.95659 6.77806L5.97968 2.75497L5.97968 5.18707C5.97939 5.28562 5.9986 5.38326 6.03618 5.47437C6.07377 5.56548 6.12899 5.64826 6.19868 5.71795C6.26837 5.78764 6.35115 5.84286 6.44226 5.88045C6.53337 5.91803 6.63101 5.93724 6.72956 5.93695C6.92844 5.93692 7.11916 5.85791 7.25978 5.71728C7.4004 5.57666 7.47942 5.38594 7.47945 5.18707L7.47945 0.19454Z" fill="#F0EAE3"/>
+              </svg>
+          </span>
+        `;
 
-            document.querySelectorAll(".arrow-animation").forEach(el => {
-                el.innerHTML = iconHTML;
-            });
+          document.querySelectorAll(".arrow-animation").forEach(el => {
+            el.innerHTML = iconHTML;
+          });
         });
-    </script>
+      </script>
 
     <!-- Cursor Overlay Script -->
     <script>

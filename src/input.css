@@ -62,8 +62,17 @@
         @apply text-[#5A730F];
     }
 
-    th, td {
+    /* th, td {
         @apply border border-[#BAAE9F] px-4 py-2;
+    } */
+    th, td {
+        @apply border-b border-[#BAAE9F] px-4 py-2;
+    }
+    .standard-tbl thead {
+        @apply bg-[#EBDCCB];
+    }
+    .standard-tbl thead th, td {
+        @apply py-4;
     }
     .link-with-icon::before {
         content: '';

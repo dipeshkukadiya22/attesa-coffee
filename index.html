@@ -22,72 +22,70 @@
 </head>
 
 <body class="bg-brand-primary">
-  
- <nav id="main-nav" class="sticky top-0 py-4 text-[#EDE8E1] bg-black/50 backdrop-blur-lg z-50">
-  <div class="container mx-auto px-4 flex items-center justify-between">
-    <!-- Logo -->
-    <div class="font-bold text-xl w-auto">
-      <a href="index.html">
-        <img src="/src/images/Attesa-svg-logo.svg" alt="Logo" class="inline-block w-30">
-      </a>
-    </div>
 
-    <!-- Hamburger & Close (Mobile Only) -->
-    <div class="lg:hidden">
-      <button id="menu-open" class="text-[#EDE8E1] w-8 h-8" aria-label="Open Menu">
-        <!-- Hamburger SVG -->
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-      <button id="menu-close" class="text-[#EDE8E1] w-8 h-8 hidden" aria-label="Close Menu">
-        <!-- Close SVG -->
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-    </div>
-
-    <!-- Navigation Links -->
-    <ul id="menu"
-      class="hidden lg:flex flex-col lg:flex-row justify-center items-center space-y-4 lg:space-y-0 lg:space-x-6 absolute lg:static top-full left-0 w-full lg:w-auto bg-black/90 lg:bg-transparent px-6 lg:px-0 py-6 lg:py-0 z-40 lg:z-auto">
-      <li><a href="/about-us.html" class="p-2 block">About</a></li>
-      <li><a href="#" class="p-2 block">Origins</a></li>
-      <li><a href="#" class="p-2 block">Our Coffee</a></li>
-      <li class="relative group">
-        <a href="#" class="p-2 block">Micro shop</a>
-        <!-- Tooltip -->
-        <div
-          class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-4 py-2 rounded-lg bg-[#f5eade] border border-[#BAAE9F] shadow-lg backdrop-blur-md text-sm text-[#3B3D34] opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50 whitespace-nowrap">
-          <div
-            class="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 rotate-45 bg-[#f5eade] border-t border-l border-[#BAAE9F]">
-          </div>
-          Smaller quantities of green coffee
-        </div>
-      </li>
-      <li><a href="#" class="p-2 block">Insights</a></li>
-      <li><a href="#" class="p-2 block">Contact</a></li>
-      <!-- Contact CTA for mobile -->
-      <li class="lg:hidden">
-        <a href="contact.html"
-          class="inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg hover:bg-brand-primary transition-colors duration-200">
-          Contact
+  <nav id="main-nav" class="sticky top-0 py-4 text-[#EDE8E1] bg-black/50 backdrop-blur-lg z-50">
+    <div class="container mx-auto px-4 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="font-bold text-xl w-auto">
+        <a href="index.html">
+          <img src="/src/images/Attesa-svg-logo.svg" alt="Logo" class="inline-block w-30">
         </a>
-      </li>
-    </ul>
+      </div>
 
-    <!-- Desktop CTA -->
-    <div class="hidden lg:flex justify-end items-center text-base w-auto">
-      <a href="contact.html"
-        class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
-        Contact
-        <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
-      </a>
+      <!-- Hamburger & Close (Mobile Only) -->
+      <div class="lg:hidden">
+        <button id="menu-open" class="text-[#EDE8E1] w-8 h-8" aria-label="Open Menu">
+          <!-- Hamburger SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+        <button id="menu-close" class="text-[#EDE8E1] w-8 h-8 hidden" aria-label="Close Menu">
+          <!-- Close SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul id="menu"
+        class="hidden lg:flex flex-col lg:flex-row justify-center items-center space-y-4 lg:space-y-0 lg:space-x-6 absolute lg:static top-full left-0 w-full lg:w-auto bg-black/90 lg:bg-transparent px-6 lg:px-0 py-6 lg:py-0 z-40 lg:z-auto">
+        <li><a href="/about-us.html" class="p-2 block">About</a></li>
+        <li><a href="/origins.html" class="p-2 block">Origins</a></li>
+        <li><a href="/our-coffee.html" class="p-2 block">Our Coffee</a></li>
+        <li class="relative group">
+          <a href="#" class="p-2 block">Micro shop</a>
+          <!-- Tooltip -->
+          <div
+            class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-4 py-2 rounded-lg bg-[#f5eade] border border-[#BAAE9F] shadow-lg backdrop-blur-md text-sm text-[#3B3D34] opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50 whitespace-nowrap">
+            <div
+              class="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 rotate-45 bg-[#f5eade] border-t border-l border-[#BAAE9F]">
+            </div>
+            Smaller quantities of green coffee
+          </div>
+        </li>
+        <li><a href="/coming-soon.html" class="p-2 block">Insights</a></li>
+        <!-- <li><a href="#" class="p-2 block">Contact</a></li> -->
+        <!-- Contact CTA for mobile -->
+        <li class="lg:hidden">
+          <a href="contact.html"
+            class="inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg hover:bg-brand-primary transition-colors duration-200">
+            Contact
+          </a>
+        </li>
+      </ul>
+
+      <!-- Desktop CTA -->
+      <div class="hidden lg:flex justify-end items-center text-base w-auto">
+        <a href="contact.html"
+          class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+          Contact
+          <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
+        </a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 
 
@@ -104,7 +102,7 @@
 
           <!-- Slide 1 -->
           <div
-            class="swiper-slide bg-[url(/src/images/slider-1.jpg)] bg-cover bg-no-repeat flex items-center justify-center text-[#EDE8E1] content-end">
+            class="swiper-slide bg-[url(/src/images/banner-1.jpg)] bg-cover bg-no-repeat flex items-center justify-center text-[#EDE8E1] content-end">
             <div class="container mx-auto px-4 py-20">
               <div class="flex flex-col items-start justify-end space-y-2 w-sm">
                 <div>
@@ -113,7 +111,7 @@
                     from origins across the globe.</p>
                 </div>
                 <div>
-                  <a href="#"
+                  <a href="/our-coffee.html"
                     class="relative inline-block text-sm bg-white/20 text-[#EDE8E1] border border-[#D7D0C4] px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md overflow-hidden">
                     Explore our coffees
                     <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
@@ -134,7 +132,7 @@
                     what makes each region unique.</p>
                 </div>
                 <div>
-                  <a href="#"
+                  <a href="/origins.html"
                     class="relative inline-block text-sm bg-white/20 text-[#EDE8E1] border border-[#D7D0C4] px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md overflow-hidden">
                     Origins
                     <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
@@ -156,7 +154,7 @@
                     roastery.</p>
                 </div>
                 <div>
-                  <a href="#"
+                  <a href="/contact.html"
                     class="relative inline-block text-sm bg-white/20 text-[#EDE8E1] border border-[#D7D0C4] px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md">
                     Order samples
                     <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
@@ -190,7 +188,7 @@
             high-quality green coffee. Discover how we source, who we work with, and why transparency drives everything
             we do.
           </p>
-          <a href="#"
+          <a href="/about-us.html"
             class="relative bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary flex items-center normal-case">
             About our approach
             <div class="arrow-animation absolute top-1 right-4 w-4 h-4 leading-[1.4]"></div>
@@ -229,7 +227,7 @@
           <p class="text-base mb-6 leading-7 w-sm text-[#EDE8E1]">
             Order green coffee by the kilo — perfect for home roasters and micro roasteries
           </p>
-          <a href="#"
+          <a href="/contact.html"
             class="relative inline-block text-sm bg-white/20 text-[#F0EAE3] border border-[#D7D0C4] px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md overflow-hidden">
             Shop by KG
             <div class="arrow-animation absolute top-1 right-3 w-4 h-4 leading-[1.2]"></div>
@@ -250,97 +248,167 @@
         <h3 class="text-5xl font-semibold text-brand-primary">Lineup for the Roast</h3>
         <p class="text-xl">From standout varietals to diverse cup profiles, each lot is sourced with precision.</p>
       </div>
-      <div class="overflow-x-auto bg-[#F5EADE] p-2 border border-[#DBC4A7] rounded-lg">
+      <div class="overflow-x-auto bg-[#F5EADE] border border-[#DBC4A7] rounded-lg">
+        <!-- <table
+                    class="standard-tbl table-auto min-w-full text-left border border-[#BAAE9F] border-collapse rounded-lg overflow-hidden relative"> -->
         <table
-          class="standard-tbl table-auto min-w-full text-left border border-[#8E8D8B] border-collapse rounded-lg overflow-hidden">
+          class="standard-tbl table-auto min-w-full text-left border border-[#BAAE9F] border-collapse rounded-lg overflow-hidden relative">
           <thead>
             <tr>
-              <th>Origin</th>
-              <th>Producer</th>
-              <th>Varietal</th>
-              <th>Profile</th>
-              <th>SCA Score</th>
+              <th>Product Name & Details</th>
+              <th>Score and Sensory profile</th>
+              <th>Status</th>
+              <th>Price(€/KG)</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="flag brazil-flag">Brazil</td>
-              <td>Fine Cup 14/16 Santos</td>
-              <td>Blend</td>
-              <td>chocolate, nutty</td>
-              <td>-</td>
+              <td>
+                <div class="flex flex-col items-start space-y-3">
+                  <div>
+                    <div class="flex items-center gap-x-2">Buenos Aires <span
+                        class="bg-[#586742] text-[#F0EAE3] rounded-full px-2 py-1 text-xs">2025</span></div>
+                  </div>
+                  <div class="inline-flex flex-col items-start">
+                    <div class="inline-flex space-x-2 text-sm border-b-2 border-[#BAAE9F] pb-1">
+                      <span>Colombia</span>
+                      <span class="border-x-2 border-[#BAAE9F] px-2">Arabica</span>
+                      <span>Caturra</span>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-sm">Washed</span>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="flex items-stretch gap-x-4">
+                  <div class="bg-[#E8D2BA] px-4 rounded-lg text-sm flex items-center">85.75</div>
+                  <div class="bg-[#E8D2BA] p-2 rounded-lg text-sm w-70 flex items-center dots">Vanilla, biscuit, creamy
+                    body, balanced aftertaste</div>
+                </div>
+              </td>
+              <td>3 Bags (70kg) June 10</td>
+              <td>
+                <a href="contact.html"
+                  class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+                  Contact
+                  <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
+                </a>
+              </td>
             </tr>
             <tr>
-              <td class="flag colombia-flag">Colombia</td>
-              <td>Fine Cup 14/16 Santos</td>
-              <td>Blend</td>
-              <td>chocolate, nutty</td>
-              <td>-</td>
+              <td>
+                <div class="flex flex-col items-start space-y-3">
+                  <div>
+                    <div class="flex items-center gap-x-2">Cundinamarca <span
+                        class="bg-[#586742] text-[#F0EAE3] rounded-full px-2 py-1 text-xs">2025</span></div>
+                  </div>
+                  <div class="inline-flex flex-col items-start">
+                    <div class="inline-flex space-x-2 text-sm border-b-2 border-[#BAAE9F] pb-1">
+                      <span>Colombia</span>
+                      <span class="border-x-2 border-[#BAAE9F] px-2">Arabica</span>
+                      <span>Caturra</span>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-sm">Washed</span>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="flex items-stretch gap-x-4">
+                  <div class="bg-[#E8D2BA] px-4 rounded-lg text-sm flex items-center">87.00</div>
+                  <div class="bg-[#E8D2BA] p-2 rounded-lg text-sm w-70 flex items-center dots">Fruity, tangerine, peach,
+                    berry, bright acidity, blackcurrant like aftertaste</div>
+                </div>
+              </td>
+              <td>1 Bags (70kg) June 10</td>
+              <td>
+                <a href="contact.html"
+                  class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+                  Contact
+                  <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
+                </a>
+              </td>
             </tr>
             <tr>
-              <td class="flag brazil-flag">Brazil</td>
-              <td>Fine Cup 14/16 Santos</td>
-              <td>Blend</td>
-              <td>chocolate, nutty</td>
-              <td>-</td>
+              <td>
+                <div class="flex flex-col items-start space-y-3">
+                  <div>
+                    <div class="flex items-center gap-x-2">San Gabriel <span
+                        class="bg-[#586742] text-[#F0EAE3] rounded-full px-2 py-1 text-xs">2025</span></div>
+                  </div>
+                  <div class="inline-flex flex-col items-start">
+                    <div class="inline-flex space-x-2 text-sm border-b-2 border-[#BAAE9F] pb-1">
+                      <span>Colombia</span>
+                      <span class="border-x-2 border-[#BAAE9F] px-2">Arabica</span>
+                      <span>Geisha</span>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-sm">Anaerobic Washed</span>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="flex items-stretch gap-x-4">
+                  <div class="bg-[#E8D2BA] px-4 rounded-lg text-sm flex items-center">87.00</div>
+                  <div class="bg-[#E8D2BA] p-2 rounded-lg text-sm w-70 flex items-center dots">Floral, honey,
+                    lemongrass, almond.</div>
+                </div>
+              </td>
+              <td>8 Bags (35kg) June 10</td>
+              <td>
+                <a href="contact.html"
+                  class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+                  Contact
+                  <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
+                </a>
+              </td>
             </tr>
             <tr>
-              <td class="flag colombia-flag">Colombia</td>
-              <td>Fine Cup 14/16 Santos</td>
-              <td>Blend</td>
-              <td>chocolate, nutty</td>
-              <td>-</td>
+              <td>
+                <div class="flex flex-col items-start space-y-3">
+                  <div>
+                    <div class="flex items-center gap-x-2">La Villa <span
+                        class="bg-[#586742] text-[#F0EAE3] rounded-full px-2 py-1 text-xs">2025</span></div>
+                  </div>
+                  <div class="inline-flex flex-col items-start">
+                    <div class="inline-flex space-x-2 text-sm border-b-2 border-[#BAAE9F] pb-1">
+                      <span>Colombia</span>
+                      <span class="border-x-2 border-[#BAAE9F] px-2">Arabica</span>
+                      <span>Geisha</span>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-sm">Anaerobic Washed</span>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="flex items-stretch gap-x-4">
+                  <div class="bg-[#E8D2BA] px-4 rounded-lg text-sm flex items-center">87.50</div>
+                  <div class="bg-[#E8D2BA] p-2 rounded-lg text-sm w-70 flex items-center dots">Floral, clove, ginger,
+                    green tea, lemongrass.</div>
+                </div>
+              </td>
+              <td>8 Bags (35kg) June 10</td>
+              <td>
+                <a href="contact.html"
+                  class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+                  Contact
+                  <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
+                </a>
+              </td>
             </tr>
-            <tr>
-              <td class="flag brazil-flag">Brazil</td>
-              <td>Fine Cup 14/16 Santos</td>
-              <td>Blend</td>
-              <td>chocolate, nutty</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td class="flag colombia-flag">Colombia</td>
-              <td>Fine Cup 14/16 Santos</td>
-              <td>Blend</td>
-              <td>chocolate, nutty</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td class="flag brazil-flag">Brazil</td>
-              <td>Fine Cup 14/16 Santos</td>
-              <td>Blend</td>
-              <td>chocolate, nutty</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td class="flag colombia-flag">Colombia</td>
-              <td>Fine Cup 14/16 Santos</td>
-              <td>Blend</td>
-              <td>chocolate, nutty</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td class="flag brazil-flag">Brazil</td>
-              <td>Fine Cup 14/16 Santos</td>
-              <td>Blend</td>
-              <td>chocolate, nutty</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td class="flag colombia-flag">Colombia</td>
-              <td>Fine Cup 14/16 Santos</td>
-              <td>Blend</td>
-              <td>chocolate, nutty</td>
-              <td>-</td>
-            </tr>
-
           </tbody>
         </table>
       </div>
 
       <div
-        class="relative flex justify-center items-center space-x-4 pt-[80px] mt-[-96px] bg-[linear-gradient(to_top,_#F0EAE3_30%,_#f0eae34d_100%)] backdrop-blur-[1.1px]">
-        <a href="#"
+        class="relative flex justify-center items-center space-x-4 pt-[80px] mt-[-140px] bg-[linear-gradient(to_top,_#F0EAE3_30%,_#f0eae34d_100%)] backdrop-blur-[1.9px]">
+        <a href="/our-coffee.html"
           class="inline-block bg-transparent text-[#86A161] border border-[#648930] px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
           View All
           <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
@@ -350,7 +418,7 @@
             </path>
           </svg>
         </a>
-        <a href="#"
+        <!-- <a href="#"
           class="inline-block bg-brand-secondary text-[#F0EAE3] border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
           Login for Pricing
           <svg id="fi_5343266" height="7" width="7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
@@ -359,13 +427,13 @@
               d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
             </path>
           </svg>
-        </a>
+        </a> -->
 
       </div>
     </div>
 
     <!-- Explore spces -->
-    <div class="w-full bg-[url(/src/images/Banner-Seasonality-Calendar.jpg)] bg-cover bg-no-repeat ">
+    <div class="w-full bg-[url(/src/images/slider-1.jpg)] bg-cover bg-no-repeat ">
       <div class="relative container mx-auto flex justify-center">
         <div class="absolute top-[-200px]">
           <img src="/src/images/Attesa-Coffee-Logo-06-1-Traced.svg" alt="Explore Specs"
@@ -382,7 +450,7 @@
             <p class="text-xl font-extralight text-[#EDE8E1]">
               Browse our full offer list — with sensory notes, harvest info, and real-time availability
             </p>
-            <a href="#"
+            <a href="/contact.html"
               class="relative inline-block text-sm bg-white/20 text-[#EDE8E1] border border-[#D7D0C4] px-4 py-1 pr-8 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md">
               Know More
               <div class="arrow-animation absolute top-1 right-4 w-4 h-4 leading-[1.2]"></div>
@@ -414,7 +482,8 @@
               <div class="flex flex-row justify-between items-center mb-4 space-x-4">
 
                 <!-- Flag and Country Name 1 -->
-                <a href="#" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
+                <a href="/origins.html#origin-india"
+                  class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
                   <div class="flex items-center space-x-2 p-1">
                     <img src="/src/images/flags/india.svg" alt="India" class="w-6 h-6">
                     <span class="text-[#A38764]">India</span>
@@ -432,8 +501,8 @@
                 <!-- Flag and Country Name 2 -->
                 <a href="#" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
                   <div class="flex items-center space-x-2 p-1">
-                    <img src="/src/images/flags/kenya.svg" alt="India" class="w-6 h-6">
-                    <span class="text-[#A38764]">Kenya</span>
+                    <img src="/src/images/flags/Indonesia.svg" alt="India" class="w-6 h-6">
+                    <span class="text-[#A38764]">Indonesia</span>
                   </div>
                   <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                     <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
@@ -448,8 +517,8 @@
                 <!-- Flag and Country Name 3 -->
                 <a href="#" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
                   <div class="flex items-center space-x-2 p-1">
-                    <img src="/src/images/flags/rwanda.svg" alt="India" class="w-6 h-6">
-                    <span class="text-[#A38764]">Rwanda</span>
+                    <img src="/src/images/flags/vietnam.svg" alt="India" class="w-6 h-6">
+                    <span class="text-[#A38764]">Vietnam</span>
                   </div>
                   <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                     <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
@@ -468,7 +537,7 @@
               <h3 class="text-3xl font-semibold leading-12 w-auto">Asia offers diverse coffee styles—from India’s
                 estate-grown arabica to Indonesia’s unique island varieties. Vietnam leads in robusta farming, while
                 other countries blend tradition and modern techniques in processing.</h3>
-              <a href="#"
+              <a href="/origins.html"
                 class="relative inline-block bg-brand-secondary text-[#F0EAE3] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
                 Explore all origins
                 <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.2]"></div>
@@ -494,10 +563,11 @@
               <div class="flex flex-row justify-between items-center mb-4 space-x-4">
 
                 <!-- Flag and Country Name 1 -->
-                <a href="#" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
+                <a href="/origins.html##origin-guatemala"
+                  class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-44 rounded-sm">
                   <div class="flex items-center space-x-2 p-1">
-                    <img src="/src/images/flags/india.svg" alt="India" class="w-6 h-6">
-                    <span class="text-[#A38764]">India</span>
+                    <img src="/src/images/flags/guatemala.svg" alt="India" class="w-6 h-6">
+                    <span class="text-[#A38764]">Guatemala</span>
                   </div>
                   <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                     <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
@@ -510,10 +580,11 @@
                 </a>
 
                 <!-- Flag and Country Name 2 -->
-                <a href="#" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
+                <a href="/origins.html#origin-honduras"
+                  class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-44 rounded-sm">
                   <div class="flex items-center space-x-2 p-1">
-                    <img src="/src/images/flags/kenya.svg" alt="India" class="w-6 h-6">
-                    <span class="text-[#A38764]">Kenya</span>
+                    <img src="/src/images/flags/honduras.svg" alt="India" class="w-6 h-6">
+                    <span class="text-[#A38764]">Honduras</span>
                   </div>
                   <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                     <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
@@ -526,10 +597,11 @@
                 </a>
 
                 <!-- Flag and Country Name 3 -->
-                <a href="#" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
+                <a href="/origins.html#origin-el-salvador"
+                  class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-44 rounded-sm">
                   <div class="flex items-center space-x-2 p-1">
-                    <img src="/src/images/flags/rwanda.svg" alt="India" class="w-6 h-6">
-                    <span class="text-[#A38764]">Rwanda</span>
+                    <img src="/src/images/flags/el-salvador.svg" alt="India" class="w-6 h-6">
+                    <span class="text-[#A38764]">El salvador</span>
                   </div>
                   <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                     <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
@@ -541,6 +613,7 @@
                   </div>
                 </a>
 
+
               </div>
             </div>
 
@@ -548,7 +621,7 @@
               <h3 class="text-4xl font-semibold leading-12 w-auto">Known for its coffee traditions and smallholder
                 farms, countries like Guatemala, Honduras, and Costa Rica have strong infrastructure and cooperative
                 models. High-elevation growing, traceability, and lot separation support diverse sourcing.</h3>
-              <a href="#"
+              <a href="/origins.html"
                 class="relative inline-block bg-brand-secondary text-[#F0EAE3] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
                 Explore all origins
                 <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.2]"></div>
@@ -574,10 +647,11 @@
               <div class="flex flex-row justify-between items-center mb-4 space-x-4">
 
                 <!-- Flag and Country Name 1 -->
-                <a href="#" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
+                <a href="/origins.html#origin-brazil"
+                  class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
                   <div class="flex items-center space-x-2 p-1">
-                    <img src="/src/images/flags/india.svg" alt="India" class="w-6 h-6">
-                    <span class="text-[#A38764]">India</span>
+                    <img src="/src/images/flags/brazil.svg" alt="India" class="w-6 h-6">
+                    <span class="text-[#A38764]">Brazil</span>
                   </div>
                   <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                     <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
@@ -590,10 +664,11 @@
                 </a>
 
                 <!-- Flag and Country Name 2 -->
-                <a href="#" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
+                <a href="/origins.html#origin-colombia"
+                  class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
                   <div class="flex items-center space-x-2 p-1">
                     <img src="/src/images/flags/kenya.svg" alt="India" class="w-6 h-6">
-                    <span class="text-[#A38764]">Kenya</span>
+                    <span class="text-[#A38764]">Colombia</span>
                   </div>
                   <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                     <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
@@ -606,10 +681,11 @@
                 </a>
 
                 <!-- Flag and Country Name 3 -->
-                <a href="#" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
+                <a href="/origins.html#origin-peru"
+                  class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
                   <div class="flex items-center space-x-2 p-1">
-                    <img src="/src/images/flags/rwanda.svg" alt="India" class="w-6 h-6">
-                    <span class="text-[#A38764]">Rwanda</span>
+                    <img src="/src/images/flags/peru.svg" alt="India" class="w-6 h-6">
+                    <span class="text-[#A38764]">Peru</span>
                   </div>
                   <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                     <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
@@ -628,7 +704,7 @@
               <h3 class="text-4xl font-semibold leading-12 w-auto">A key coffee growing region led by Brazil’s
                 large-scale farms and Colombia’s quality focus. Mix of family plots and commercial estates, with solid
                 export systems offering volume, consistency, and reliable logistics.</h3>
-              <a href="#"
+              <a href="/origins.html"
                 class="relative inline-block bg-brand-secondary text-[#F0EAE3] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
                 Explore all origins
                 <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.2]"></div>
@@ -654,10 +730,11 @@
               <div class="flex flex-row justify-between items-center mb-4 space-x-4">
 
                 <!-- Flag and Country Name 1 -->
-                <a href="#" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
+                <a href="/origins.html#origin-ehiopia"
+                  class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
                   <div class="flex items-center space-x-2 p-1">
-                    <img src="/src/images/flags/india.svg" alt="India" class="w-6 h-6">
-                    <span class="text-[#A38764]">India</span>
+                    <img src="/src/images/flags/Ethiopia.svg" alt="India" class="w-6 h-6">
+                    <span class="text-[#A38764]">Ethiopia</span>
                   </div>
                   <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                     <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
@@ -670,7 +747,8 @@
                 </a>
 
                 <!-- Flag and Country Name 2 -->
-                <a href="#" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
+                <a href="/origins.html#origin-kenya"
+                  class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
                   <div class="flex items-center space-x-2 p-1">
                     <img src="/src/images/flags/kenya.svg" alt="India" class="w-6 h-6">
                     <span class="text-[#A38764]">Kenya</span>
@@ -686,7 +764,8 @@
                 </a>
 
                 <!-- Flag and Country Name 3 -->
-                <a href="#" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
+                <a href="/origins.html#origin-rawanda"
+                  class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
                   <div class="flex items-center space-x-2 p-1">
                     <img src="/src/images/flags/rwanda.svg" alt="India" class="w-6 h-6">
                     <span class="text-[#A38764]">Rwanda</span>
@@ -708,7 +787,7 @@
               <h3 class="text-4xl font-semibold leading-12 w-auto">The birthplace of coffee, with Ethiopia and Kenya as
                 highlights. Mostly small farms processed in washing stations or cooperatives. Traditional cultivation
                 and processing methods remain central, supported by local knowledge.</h3>
-              <a href="#"
+              <a href="/origins.html"
                 class="relative inline-block bg-brand-secondary text-[#F0EAE3] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
                 Explore all origins
                 <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.2]"></div>
@@ -727,7 +806,7 @@
       <div class="container mx-auto px-4 py-20 space-y-4">
         <h3 class="text-5xl font-semibold text-[#46433E]">When Seasons Turn, Beans Return.</h3>
         <p class="tracking-wide font-medium">Never miss a harvest window — plan your roasts with precision.</p>
-        <a href="#"
+        <a href="/contact.html"
           class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary mt-8">
           Join the List
           <div class="arrow-animation absolute top-1 right-3 w-4 h-4 leading-[1.2]"></div>
@@ -759,7 +838,7 @@
 
 
     <!-- Blogs -->
-    <div class="container mx-auto px-4 py-20 space-y-8">
+    <!-- <div class="container mx-auto px-4 py-20 space-y-8">
       <div class="flex flex-col items-center text-center space-y-4">
         <h3 class="text-5xl font-semibold text-brand-primary">Insights</h3>
         <p class="text-xl">Your source for in-depth coffee analysis & origin reports</p>
@@ -769,7 +848,7 @@
       <div>
         <div class="grid grid-cols-3 divide-x divide-[#8E8D8B] border-y border-[#8E8D8B]">
 
-          <!-- Blog 1 -->
+
           <div class="p-6 space-y-6">
             <div>
               <p class="flex items-center gap-2 mb-2">
@@ -789,7 +868,7 @@
             </div>
           </div>
 
-          <!-- Blog 2 -->
+
           <div class="p-6 space-y-6">
             <div>
               <p class="flex items-center gap-2 mb-2">
@@ -809,7 +888,7 @@
             </div>
           </div>
 
-          <!-- Blog 3 -->
+
           <div class="p-6 space-y-6">
             <div>
               <p class="flex items-center gap-2 mb-2">
@@ -842,10 +921,10 @@
       </div>
 
 
-    </div>
+    </div> -->
 
     <!-- Instagram -->
-    <div class="container mx-auto px-4 py-8">
+    <div class="container mx-auto px-4 py-20">
       <div class="flex flex-col items-center text-center space-y-2 mb-8">
         <h3 class="text-4xl font-semibold text-brand-primary mb-4">Always fresh updates — follow us on Instagram</h3>
         <p class="w-4xl text-xl">Stay in the know with real-time news on new arrivals, sustainability efforts, and
@@ -858,8 +937,9 @@
         <img src="/src/images/insta-img-2.jpg" alt="Instagram 4" class="w-full h-64 object-cover rounded-lg">
       </div>
       <div class="flex flex-col items-center text-center py-8">
-        <a href="#"
-          class="inline-block bg-brand-secondary text-[#F0EAE3] border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+        <a href="https://www.instagram.com/attesa.coffee/"
+          class="inline-block bg-brand-secondary text-[#F0EAE3] border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary"
+          target="_blank">
           Explore on instagram
           <img src="/src/images/instagram-icon.svg" alt="Instagram" class="inline-block ml-2 align-middle w-4 h-4">
         </a>
@@ -904,95 +984,95 @@
     <script src="js/include.js"></script>
 
 
-      <!-- Swiper JS -->
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <script>
-        const swiper = new Swiper(".mySwiper", {
-          loop: true,
-          autoplay: {
-            delay: 9000,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-      </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+          delay: 9000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 
-      <!-- Custom Accordion Script -->
-      <script>
-        function openAccordion(index) {
-          const total = 4;
-          for (let i = 0; i < total; i++) {
-            const content = document.getElementById(`accordion-content-${i}`);
-            const parent = content.parentElement;
-            if (i === index) {
-              content.classList.remove('opacity-0', 'pointer-events-none');
-              content.classList.add('opacity-100', 'pointer-events-auto');
-              parent.classList.add('border-brand-primary');
-              parent.classList.remove('border-transparent');
-              parent.classList.add('flex-[6]');
-              parent.classList.remove('flex-1');
-            } else {
-              content.classList.add('opacity-0', 'pointer-events-none');
-              content.classList.remove('opacity-100', 'pointer-events-auto');
-              parent.classList.remove('border-brand-primary');
-              parent.classList.add('border-transparent');
-              parent.classList.remove('flex-[6]');
-              parent.classList.add('flex-1');
-            }
-          }
-        }
-        // Open first by default
-        window.addEventListener('DOMContentLoaded', () => openAccordion(0));
-      </script>
-
-
-      <!-- Sticky Navigation Script -->
-      <script>
-        const nav = document.getElementById('main-nav');
-        const signInBtn = document.getElementById('sign-in-btn');
-
-
-        if (signInBtn) {
-          signInBtn.classList.add('hover:text-[#EDE8E1]');
-        }
-
-        window.addEventListener('scroll', () => {
-          if (window.scrollY > 10) {
-
-            nav.classList.add('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
-            nav.classList.remove('bg-black/50', 'text-[#EDE8E1]');
-
-
-            if (signInBtn) {
-              signInBtn.classList.add('text-[#3B3D34]', 'border', 'border-[#D7D0C4]');
-              signInBtn.classList.remove('text-[#EDE8E1]');
-            }
+    <!-- Custom Accordion Script -->
+    <script>
+      function openAccordion(index) {
+        const total = 4;
+        for (let i = 0; i < total; i++) {
+          const content = document.getElementById(`accordion-content-${i}`);
+          const parent = content.parentElement;
+          if (i === index) {
+            content.classList.remove('opacity-0', 'pointer-events-none');
+            content.classList.add('opacity-100', 'pointer-events-auto');
+            parent.classList.add('border-brand-primary');
+            parent.classList.remove('border-transparent');
+            parent.classList.add('flex-[6]');
+            parent.classList.remove('flex-1');
           } else {
-
-            nav.classList.remove('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
-            nav.classList.add('bg-black/50', 'text-[#EDE8E1]');
-
-
-            if (signInBtn) {
-              signInBtn.classList.remove('text-[#3B3D34]');
-              signInBtn.classList.add('text-[#EDE8E1]');
-            }
+            content.classList.add('opacity-0', 'pointer-events-none');
+            content.classList.remove('opacity-100', 'pointer-events-auto');
+            parent.classList.remove('border-brand-primary');
+            parent.classList.add('border-transparent');
+            parent.classList.remove('flex-[6]');
+            parent.classList.add('flex-1');
           }
-        });
-      </script>
+        }
+      }
+      // Open first by default
+      window.addEventListener('DOMContentLoaded', () => openAccordion(0));
+    </script>
 
 
-      <!-- Icon Animation Script -->
-      <script>
-        document.addEventListener("DOMContentLoaded", () => {
-          const iconHTML = `
+    <!-- Sticky Navigation Script -->
+    <script>
+      const nav = document.getElementById('main-nav');
+      const signInBtn = document.getElementById('sign-in-btn');
+
+
+      if (signInBtn) {
+        signInBtn.classList.add('hover:text-[#EDE8E1]');
+      }
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) {
+
+          nav.classList.add('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
+          nav.classList.remove('bg-black/50', 'text-[#EDE8E1]');
+
+
+          if (signInBtn) {
+            signInBtn.classList.add('text-[#3B3D34]', 'border', 'border-[#D7D0C4]');
+            signInBtn.classList.remove('text-[#EDE8E1]');
+          }
+        } else {
+
+          nav.classList.remove('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
+          nav.classList.add('bg-black/50', 'text-[#EDE8E1]');
+
+
+          if (signInBtn) {
+            signInBtn.classList.remove('text-[#3B3D34]');
+            signInBtn.classList.add('text-[#EDE8E1]');
+          }
+        }
+      });
+    </script>
+
+
+    <!-- Icon Animation Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const iconHTML = `
           <span class="absolute inset-0 transition-all duration-300 ease-in-out group-hover:-translate-y-2 group-hover:translate-x-2 group-hover:opacity-0 z-10">
               <svg class="inline-block w-2 h-2" width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M7.47945 0.19454L2.48692 0.19454C2.38845 0.194539 2.29093 0.213935 2.19995 0.251621C2.10897 0.289306 2.02631 0.344542 1.95667 0.414176C1.88704 0.483809 1.8318 0.566476 1.79412 0.657456C1.75643 0.748437 1.73704 0.845949 1.73704 0.944426C1.73704 1.0429 1.75643 1.14042 1.79412 1.2314C1.8318 1.32238 1.88704 1.40504 1.95667 1.47468C2.02631 1.54431 2.10897 1.59955 2.19995 1.63723C2.29093 1.67492 2.38845 1.69431 2.48692 1.69431L4.91902 1.69431L0.895932 5.7174C0.75528 5.85805 0.676262 6.04882 0.676262 6.24773C0.676262 6.44664 0.75528 6.6374 0.895932 6.77806C1.03658 6.91871 1.22735 6.99773 1.42626 6.99773C1.62517 6.99773 1.81594 6.91871 1.95659 6.77806L5.97968 2.75497L5.97968 5.18707C5.97939 5.28562 5.9986 5.38326 6.03618 5.47437C6.07377 5.56548 6.12899 5.64826 6.19868 5.71795C6.26837 5.78764 6.35115 5.84286 6.44226 5.88045C6.53337 5.91803 6.63101 5.93724 6.72956 5.93695C6.92844 5.93692 7.11916 5.85791 7.25978 5.71728C7.4004 5.57666 7.47942 5.38594 7.47945 5.18707L7.47945 0.19454Z" fill="#F0EAE3"/>
@@ -1005,32 +1085,32 @@
           </span>
         `;
 
-          document.querySelectorAll(".arrow-animation").forEach(el => {
-            el.innerHTML = iconHTML;
-          });
+        document.querySelectorAll(".arrow-animation").forEach(el => {
+          el.innerHTML = iconHTML;
         });
-      </script>
+      });
+    </script>
 
-      <!-- JS Toggle -->
-      <script>
-        const menu = document.getElementById('menu');
-        const openBtn = document.getElementById('menu-open');
-        const closeBtn = document.getElementById('menu-close');
+    <!-- JS Toggle -->
+    <script>
+      const menu = document.getElementById('menu');
+      const openBtn = document.getElementById('menu-open');
+      const closeBtn = document.getElementById('menu-close');
 
-        openBtn.addEventListener('click', () => {
-          menu.classList.remove('hidden');
-          openBtn.classList.add('hidden');
-          closeBtn.classList.remove('hidden');
-        });
+      openBtn.addEventListener('click', () => {
+        menu.classList.remove('hidden');
+        openBtn.classList.add('hidden');
+        closeBtn.classList.remove('hidden');
+      });
 
-        closeBtn.addEventListener('click', () => {
-          menu.classList.add('hidden');
-          openBtn.classList.remove('hidden');
-          closeBtn.classList.add('hidden');
-        });
-      </script>
-    
+      closeBtn.addEventListener('click', () => {
+        menu.classList.add('hidden');
+        openBtn.classList.remove('hidden');
+        closeBtn.classList.add('hidden');
+      });
+    </script>
 
-  </body>
 
-  </html>
+</body>
+
+</html>

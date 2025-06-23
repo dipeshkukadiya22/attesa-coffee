@@ -22,48 +22,68 @@
 </head>
 
 <body class="bg-brand-primary">
-    <nav id="main-nav"
-        class="sticky top-0 py-4 z-99 bg-[#F0EAE3] border-b border-[#BAAE9F]">
+    <nav id="main-nav" class="sticky top-0 py-4 bg-[#F0EAE3] border-b border-[#BAAE9F] backdrop-blur-lg z-50">
         <div class="container mx-auto px-4 flex items-center justify-between">
-            <div class="font-bold text-xl w-[20%]">
+            <!-- Logo -->
+            <div class="font-bold text-xl w-auto">
                 <a href="index.html">
                     <img src="/src/images/Attesa-svg-logo.svg" alt="Logo" class="inline-block w-30">
                 </a>
             </div>
-            <ul class="flex justify-center items-center space-x-6 w-[80%]">
-                <li><a href="#" class="p-2">About</a></li>
-                <li><a href="#" class="p-2">Origins</a></li>
-                <li><a href="#" class="p-2">Our Coffee</a></li>
-                <li class="relative group">
-                    <a href="#" class="p-2">Micro shop</a>
 
+            <!-- Hamburger & Close (Mobile Only) -->
+            <div class="lg:hidden">
+                <button id="menu-open" class="text-[#EDE8E1] w-8 h-8" aria-label="Open Menu">
+                    <!-- Hamburger SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <button id="menu-close" class="text-[#EDE8E1] w-8 h-8 hidden" aria-label="Close Menu">
+                    <!-- Close SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul id="menu"
+                class="hidden lg:flex flex-col lg:flex-row justify-center items-center space-y-4 lg:space-y-0 lg:space-x-6 absolute lg:static top-full left-0 w-full lg:w-auto bg-black/90 lg:bg-transparent px-6 lg:px-0 py-6 lg:py-0 z-40 lg:z-auto">
+                <li><a href="/about-us.html" class="p-2 block">About</a></li>
+                <li><a href="/origins.html" class="p-2 block">Origins</a></li>
+                <li><a href="/our-coffee.html" class="p-2 block">Our Coffee</a></li>
+                <li class="relative group">
+                    <a href="#" class="p-2 block">Micro shop</a>
                     <!-- Tooltip -->
                     <div
                         class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-4 py-2 rounded-lg bg-[#f5eade] border border-[#BAAE9F] shadow-lg backdrop-blur-md text-sm text-[#3B3D34] opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50 whitespace-nowrap">
-                        <!-- Arrow -->
                         <div
                             class="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 rotate-45 bg-[#f5eade] border-t border-l border-[#BAAE9F]">
                         </div>
-
                         Smaller quantities of green coffee
                     </div>
                 </li>
-                <li><a href="#" class="p-2">Insights</a></li>
-                <li><a href="#" class="p-2">Contact</a></li>
+                <li><a href="/coming-soon.html" class="p-2 block">Insights</a></li>
+                <!-- <li><a href="#" class="p-2 block">Contact</a></li> -->
+                <!-- Contact CTA for mobile -->
+                <li class="lg:hidden">
+                    <a href="contact.html"
+                        class="inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg hover:bg-brand-primary transition-colors duration-200">
+                        Contact
+                    </a>
+                </li>
             </ul>
-            <div class="flex justify-end items-center text-base w-[20%]">
-                <div class="flex items-center space-x-4">
-                    <a href="#" id="sign-in-btn"
-                        class="py-1 border border-[#D7D0C4] text-[#46433E] px-4 rounded-lg hover:bg-[#86A161] hover:border-[#648930]">
-                        Login
-                    </a>
 
-                    <a href="#"
-                        class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
-                        Sign Up
-                        <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
-                    </a>
-                </div>
+            <!-- Desktop CTA -->
+            <div class="hidden lg:flex justify-end items-center text-base w-auto">
+                <a href="contact.html"
+                    class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+                    Contact
+                    <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
+                </a>
             </div>
         </div>
     </nav>
@@ -101,7 +121,7 @@
                 <p class="text-xl w-2xl">We offer a diverse range of green coffees — from traceable microlots and
                     specialty selections to consistent, high-quality blends.
                 </p>
-                <a href="#"
+                <!-- <a href="#"
                     class="relative bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg group transition-colors duration-200 hover:bg-brand-primary flex items-center">
                     Download Offerlist
                     <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -110,16 +130,16 @@
                             d="M4.18761 9.81055L7.71786 6.2803C7.7875 6.21066 7.84273 6.128 7.88042 6.03702C7.9181 5.94604 7.9375 5.84852 7.9375 5.75005C7.9375 5.65157 7.9181 5.55406 7.88042 5.46308C7.84273 5.3721 7.7875 5.28943 7.71786 5.2198C7.64823 5.15016 7.56556 5.09493 7.47458 5.05724C7.3836 5.01956 7.28609 5.00016 7.18761 5.00016C7.08914 5.00016 6.99162 5.01956 6.90064 5.05724C6.80966 5.09493 6.727 5.15016 6.65736 5.2198L4.93761 6.93955L4.93761 1.25005C4.93761 1.05113 4.8586 0.860368 4.71794 0.719716C4.57729 0.579063 4.38653 0.500046 4.18761 0.500046C3.9887 0.500046 3.79794 0.579063 3.65728 0.719716C3.51663 0.860367 3.43761 1.05113 3.43761 1.25005L3.43761 6.93955L1.71786 5.2198C1.64837 5.14991 1.56575 5.09445 1.47475 5.0566C1.38375 5.01875 1.28617 4.99927 1.18761 4.99927C1.08906 4.99927 0.991474 5.01875 0.900474 5.0566C0.809474 5.09445 0.726853 5.14991 0.657363 5.2198C0.51676 5.36044 0.437774 5.55117 0.437774 5.75005C0.437774 5.94892 0.51676 6.13965 0.657363 6.2803L4.18761 9.81055Z"
                             fill="#EDE8E1" />
                     </svg>
-                </a>
+                </a> -->
             </div>
 
             <!-- Filter and Search Bar -->
-            <div class="flex justify-between items-center mb-4">
+            <!-- <div class="flex justify-between items-center mb-4">
                 <div class="flex space-x-2 items-center">
                     <div class="font-semibold text-base text-[#3B3D34]">
                         Sort by:
                     </div>
-                    <!-- Origin Dropdown -->
+                    
                     <div class="relative">
                         <select
                             class="appearance-none px-3 py-2 pr-8 border border-[#E6D0B6] rounded-lg bg-[#F6F1EB] font-semibold text-sm">
@@ -141,7 +161,7 @@
                     <div class="font-semibold text-base text-[#3B3D34] pl-10">
                         Filters:
                     </div>
-                    <!-- Process Dropdown -->
+                    
                     <div class="relative">
                         <select
                             class="appearance-none px-3 py-2 pr-8 border border-[#E6D0B6] rounded-lg bg-[#F6F1EB] font-semibold text-sm">
@@ -160,7 +180,7 @@
                         </div>
                     </div>
 
-                    <!-- SCA Dropdown -->
+                    
                     <div class="relative">
                         <select
                             class="appearance-none px-3 py-2 pr-8 border border-[#E6D0B6] rounded-lg bg-[#F6F1EB] font-semibold text-sm">
@@ -180,7 +200,7 @@
                     </div>
                 </div>
 
-                <!-- Search Bar -->
+                
                 <div class="relative">
                     <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
                         <svg class="h-5 w-5 text-[#3B3D34]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -191,49 +211,153 @@
                     <input type="text" placeholder="Search"
                         class="pl-10 pr-4 py-2 border border-[#D9C8B4] rounded-lg bg-[#F6F1EB] placeholder:[#9E9485] placeholder:font-semibold text-sm w-72">
                 </div>
-            </div>
+            </div> -->
 
-            <div class="overflow-x-auto bg-[#F5EADE] p-2 border border-[#DBC4A7] rounded-lg">
+            <div class="overflow-x-auto bg-[#F5EADE] border border-[#DBC4A7] rounded-lg">
+                <!-- <table
+                    class="standard-tbl table-auto min-w-full text-left border border-[#BAAE9F] border-collapse rounded-lg overflow-hidden relative"> -->
                 <table
                     class="standard-tbl table-auto min-w-full text-left border border-[#BAAE9F] border-collapse rounded-lg overflow-hidden relative">
                     <thead>
                         <tr>
-                            <th>Origin</th>
-                            <th>Producer</th>
-                            <th>Type</th>
-                            <th>Process</th>
-                            <th>Varietal</th>
-                            <th>Year</th>
-                            <th>Bags</th>
+                            <th>Product Name & Details</th>
+                            <th>Score and Sensory profile</th>
                             <th>Status</th>
-                            <th>SCA</th>
-                            <th>Sensory profile</th>
+                            <th>Price(€/KG)</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="flag brazil-flag">Brazil</td>
-                            <td>Casa Blend</td>
-                            <td>Arabica</td>
-                            <td>Natural</td>
-                            <td>Blend</td>
-                            <td>2024</td>
-                            <td>126 Bags (59 Kg)</td>
-                            <td>Spot</td>
-                            <td>91</td>
-                            <td>Caramel, Chocolate, Sweet Balanced</td>
+                            <td>
+                                <div class="flex flex-col items-start space-y-3">
+                                    <div>
+                                        <div class="flex items-center gap-x-2">Buenos Aires <span class="bg-[#586742] text-[#F0EAE3] rounded-full px-2 py-1 text-xs">2025</span></div>
+                                    </div>
+                                    <div class="inline-flex flex-col items-start">
+                                        <div class="inline-flex space-x-2 text-sm border-b-2 border-[#BAAE9F] pb-1">
+                                            <span>Colombia</span>
+                                            <span class="border-x-2 border-[#BAAE9F] px-2">Arabica</span>
+                                            <span>Caturra</span>
+                                        </div>
+                                        <div>
+                                            <span class="font-semibold text-sm">Washed</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="flex items-stretch gap-x-4">
+                                    <div class="bg-[#E8D2BA] px-4 rounded-lg text-sm flex items-center">85.75</div>
+                                    <div class="bg-[#E8D2BA] p-2 rounded-lg text-sm w-70 flex items-center dots">Vanilla, biscuit, creamy body, balanced aftertaste</div>
+                                </div>
+                            </td>
+                            <td>3 Bags (70kg) June 10</td>
+                            <td>
+                                 <a href="contact.html"
+                                    class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+                                    Contact
+                                    <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
+                                </a>
+                            </td>
                         </tr>
                         <tr>
-                            <td class="flag brazil-flag">Brazil</td>
-                            <td>Casa Blend</td>
-                            <td>Arabica</td>
-                            <td>Natural</td>
-                            <td>Blend</td>
-                            <td>2024</td>
-                            <td>126 Bags (59 Kg)</td>
-                            <td>Spot</td>
-                            <td>91</td>
-                            <td>Caramel, Chocolate, Sweet Balanced</td>
+                            <td>
+                                <div class="flex flex-col items-start space-y-3">
+                                    <div>
+                                        <div class="flex items-center gap-x-2">Cundinamarca <span class="bg-[#586742] text-[#F0EAE3] rounded-full px-2 py-1 text-xs">2025</span></div>
+                                    </div>
+                                    <div class="inline-flex flex-col items-start">
+                                        <div class="inline-flex space-x-2 text-sm border-b-2 border-[#BAAE9F] pb-1">
+                                            <span>Colombia</span>
+                                            <span class="border-x-2 border-[#BAAE9F] px-2">Arabica</span>
+                                            <span>Caturra</span>
+                                        </div>
+                                        <div>
+                                            <span class="font-semibold text-sm">Washed</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="flex items-stretch gap-x-4">
+                                    <div class="bg-[#E8D2BA] px-4 rounded-lg text-sm flex items-center">87.00</div>
+                                    <div class="bg-[#E8D2BA] p-2 rounded-lg text-sm w-70 flex items-center dots">Fruity, tangerine, peach, berry, bright acidity, blackcurrant like aftertaste</div>
+                                </div>
+                            </td>
+                            <td>1 Bags (70kg) June 10</td>
+                            <td>
+                                 <a href="contact.html"
+                                    class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+                                    Contact
+                                    <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="flex flex-col items-start space-y-3">
+                                    <div>
+                                        <div class="flex items-center gap-x-2">San Gabriel <span class="bg-[#586742] text-[#F0EAE3] rounded-full px-2 py-1 text-xs">2025</span></div>
+                                    </div>
+                                    <div class="inline-flex flex-col items-start">
+                                        <div class="inline-flex space-x-2 text-sm border-b-2 border-[#BAAE9F] pb-1">
+                                            <span>Colombia</span>
+                                            <span class="border-x-2 border-[#BAAE9F] px-2">Arabica</span>
+                                            <span>Geisha</span>
+                                        </div>
+                                        <div>
+                                            <span class="font-semibold text-sm">Anaerobic Washed</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="flex items-stretch gap-x-4">
+                                    <div class="bg-[#E8D2BA] px-4 rounded-lg text-sm flex items-center">87.00</div>
+                                    <div class="bg-[#E8D2BA] p-2 rounded-lg text-sm w-70 flex items-center dots">Floral, honey, lemongrass, almond.</div>
+                                </div>
+                            </td>
+                            <td>8 Bags (35kg) June 10</td>
+                            <td>
+                                 <a href="contact.html"
+                                    class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+                                    Contact
+                                    <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="flex flex-col items-start space-y-3">
+                                    <div>
+                                        <div class="flex items-center gap-x-2">La Villa <span class="bg-[#586742] text-[#F0EAE3] rounded-full px-2 py-1 text-xs">2025</span></div>
+                                    </div>
+                                    <div class="inline-flex flex-col items-start">
+                                        <div class="inline-flex space-x-2 text-sm border-b-2 border-[#BAAE9F] pb-1">
+                                            <span>Colombia</span>
+                                            <span class="border-x-2 border-[#BAAE9F] px-2">Arabica</span>
+                                            <span>Geisha</span>
+                                        </div>
+                                        <div>
+                                            <span class="font-semibold text-sm">Anaerobic Washed</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="flex items-stretch gap-x-4">
+                                    <div class="bg-[#E8D2BA] px-4 rounded-lg text-sm flex items-center">87.50</div>
+                                    <div class="bg-[#E8D2BA] p-2 rounded-lg text-sm w-70 flex items-center dots">Floral, clove, ginger, green tea, lemongrass.</div>
+                                </div>
+                            </td>
+                            <td>8 Bags (35kg) June 10</td>
+                            <td>
+                                 <a href="contact.html"
+                                    class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+                                    Contact
+                                    <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
+                                </a>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
