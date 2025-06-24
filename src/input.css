@@ -150,4 +150,9 @@
             max-width: 82rem !important;
         }
     }
+    @media (max-width: 767px) {
+        .mobile\:text-beige {
+        color: #3B3D34;
+        }
+    }
 }
