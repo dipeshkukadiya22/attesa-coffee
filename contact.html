@@ -71,7 +71,7 @@
         <li class="lg:hidden">
           <a href="contact.html"
             class="inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg hover:bg-brand-primary transition-colors duration-200">
-            Contact
+            Get a quote
           </a>
         </li>
       </ul>
@@ -80,7 +80,7 @@
       <div class="hidden lg:flex justify-end items-center text-base w-auto">
         <a href="contact.html"
           class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
-          Contact
+          Get a quote
           <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
         </a>
       </div>
@@ -118,9 +118,10 @@
 
         <!-- Contact Form -->
         <div class="container mx-auto px-4 py-18">
-            <div class="grid grid-cols-2 align-middle items-center gap-10">
-                <div>
-                    <div>
+            <div class="grid grid-cols-2 align-middle items-stretch gap-10">
+                <div class="inline-flex flex-col h-full">
+                    <img src="/src/images/home-about-subtract.png" alt="Vision" class="w-full h-full object-cover rounded-lg">
+                    <!-- <div>
                         <p class="flex items-center gap-2 mb-3">
                             <span class=""><img src="/src/images/right-arrow-icon.svg" class="w-3"></span>
                             <span class="text-xs font-medium">Let’s connect</span>
@@ -147,9 +148,10 @@
                             <h3 class="font-medium mt-6">One step closer to great coffee  </h3>
                             <p class="text-sm">Getting started is easy. Share a few details about your business, and we’ll take care of the rest — including sending a sample your way.</p>
                         </div>
-                    </div>
+                        
+                    </div> -->
                 </div>
-                <div class="inline-flex flex-col justify-center bg-[#F9EDE0] border-2 border-[#DBC4A7] py-8 px-10 rounded-2xl">
+                <div class="inline-flex flex-col justify-center bg-[#F9EDE0] border-2 border-[#DBC4A7] py-8 px-10 rounded-2xl h-full">
 
                     <h2 class="text-3xl font-semibold text-brand-primary mb-4 w-md leading-12">Fill the form</h2>
 
@@ -171,17 +173,17 @@
                         </div>
                         <div class="flex flex-col gap-y-2 md:col-span-2">
                             <label for="phoneNumber" class="text-sm text-[#3C3A37]">Phone Number</label>
-                            <input type="tel" name="phone" placeholder="Phone"
+                            <input type="tel" name="phone" placeholder="Phone Number" required
                                 class="px-3 py-2 rounded-sm text-sm border border-[#BAAE9F] w-full">
                         </div>
                         <div class="flex flex-col gap-y-2 md:col-span-2">
-                            <label for="comapnytName" class="text-sm text-[#3C3A37]">Company Name</label>
-                            <input type="text" name="company" placeholder="Company Name"
+                            <label for="productName" class="text-sm text-[#3C3A37]">Product Name</label>
+                            <input type="text" name="pname" placeholder="Buenos Aires" required
                                 class="px-3 py-2 rounded-sm text-sm border border-[#BAAE9F] w-full">
                         </div>
                         <div class="flex flex-col gap-y-2 md:col-span-2">
-                            <label for="VATnumber" class="text-sm text-[#3C3A37]">Company Name</label>
-                            <input type="text" name="vat" placeholder="VAT Number"
+                            <label for="WeightNumber" class="text-sm text-[#3C3A37]">Required Weight in KG</label>
+                            <input type="text" name="weight" placeholder="5kg" required
                                 class="px-3 py-2 rounded-sm text-sm border border-[#BAAE9F] w-full">
                         </div>
                         <div class="flex flex-col gap-y-2 md:col-span-2">
@@ -192,7 +194,7 @@
                         <div class="md:col-span-2 flex justify-end">
                             <button type="submit"
                                 class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary cursor-pointer">
-                                Get in Touch
+                                Get a quote
                                 <div class="arrow-animation absolute top-1 right-4 w-4 h-4 leading-[1.4]"></div>
                             </button>
                         </div>

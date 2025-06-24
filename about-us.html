@@ -67,7 +67,7 @@
                 <li class="lg:hidden">
                     <a href="contact.html"
                         class="inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 rounded-lg hover:bg-brand-primary transition-colors duration-200">
-                        Contact
+                        Get a quote
                     </a>
                 </li>
             </ul>
@@ -76,7 +76,7 @@
             <div class="hidden lg:flex justify-end items-center text-base w-auto">
                 <a href="contact.html"
                     class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
-                    Contact
+                    Get a quote
                     <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
                 </a>
             </div>
@@ -484,6 +484,41 @@
         document.querySelectorAll(".arrow-animation").forEach(el => {
           el.innerHTML = iconHTML;
         });
+      });
+    </script>
+
+    <!-- Sticky Navigation Script -->
+    <script>
+      const nav = document.getElementById('main-nav');
+      const signInBtn = document.getElementById('sign-in-btn');
+
+
+      if (signInBtn) {
+        signInBtn.classList.add('hover:text-[#EDE8E1]');
+      }
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) {
+
+          nav.classList.add('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
+          nav.classList.remove('bg-black/50', 'text-[#EDE8E1]');
+
+
+          if (signInBtn) {
+            signInBtn.classList.add('text-[#3B3D34]', 'border', 'border-[#D7D0C4]');
+            signInBtn.classList.remove('text-[#EDE8E1]');
+          }
+        } else {
+
+          nav.classList.remove('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
+          nav.classList.add('bg-black/50', 'text-[#EDE8E1]');
+
+
+          if (signInBtn) {
+            signInBtn.classList.remove('text-[#3B3D34]');
+            signInBtn.classList.add('text-[#EDE8E1]');
+          }
+        }
       });
     </script>
 

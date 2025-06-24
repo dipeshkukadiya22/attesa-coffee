@@ -22,8 +22,8 @@ try {
     $lastName  = htmlspecialchars($_POST['lastname']);
     $email     = htmlspecialchars($_POST['email']);
     $phone     = htmlspecialchars($_POST['phone']);
-    $company   = htmlspecialchars($_POST['company']);
-    $vat       = htmlspecialchars($_POST['vat']);
+    $pname   = htmlspecialchars($_POST['pname']);
+    $weight       = htmlspecialchars($_POST['weight']);
     $message   = htmlspecialchars($_POST['message']);
 
     // ========================
@@ -37,8 +37,8 @@ try {
         <strong>Name:</strong> $firstName $lastName<br>
         <strong>Email:</strong> $email<br>
         <strong>Phone:</strong> $phone<br>
-        <strong>Company:</strong> $company<br>
-        <strong>VAT:</strong> $vat<br>
+        <strong>Product Name:</strong> $pname<br>
+        <strong>Weight in KG:</strong> $weight<br>
         <strong>Message:</strong><br>$message
     ";
     $mail->send();
