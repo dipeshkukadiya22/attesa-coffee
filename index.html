@@ -34,13 +34,13 @@
 
       <!-- Hamburger & Close (Mobile Only) -->
       <div class="lg:hidden">
-        <button id="menu-open" class="text-[#EDE8E1] w-8 h-8" aria-label="Open Menu">
+        <button id="menu-open" class="text-[#86A161] w-8 h-8" aria-label="Open Menu">
           <!-- Hamburger SVG -->
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
-        <button id="menu-close" class="text-[#EDE8E1] w-8 h-8 hidden" aria-label="Close Menu">
+        <button id="menu-close" class="text-brand-primary w-8 h-8 hidden" aria-label="Close Menu">
           <!-- Close SVG -->
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -103,11 +103,11 @@
           <!-- Slide 1 -->
           <div
             class="swiper-slide bg-[url(/src/images/banner-1.jpg)] bg-cover bg-no-repeat flex items-center justify-center text-[#EDE8E1] content-end">
-            <div class="container mx-auto px-6 py-20">
-              <div class="flex flex-col items-start justify-end space-y-2 w-full lg:w-sm">
-                <div>
-                  <h1 class="text-2xl lg:text-6xl font-semibold mb-4 leading-14 lg:leading-16 text-[#EDE8E1]">Looking for green coffee?</h1>
-                  <p class="text-base mb-6 text-[#EDE8E1] font-light w-full lg:w-76">Discover traceable, freshly harvested coffees from origins across the globe.</p>
+            <div class="container mx-auto px-6 py-6 lg:py-20">
+              <div class="flex flex-col items-start justify-end space-y-2 w-full lg:w-sm gap-y-4">
+                <div class="flex flex-col gap-y-4">
+                  <h1 class="text-4xl lg:text-6xl font-semibold lg:leading-16 text-[#EDE8E1] w-70">Looking for green coffee?</h1>
+                  <p class="text-base text-[#EDE8E1] font-light w-86 lg:w-76">Discover traceable, freshly harvested coffees from origins across the globe.</p>
                 </div>
                 <div>
                   <a href="/our-coffee.html"
@@ -123,11 +123,11 @@
           <!-- Slide 2 -->
           <div
             class="swiper-slide bg-[url(/src/images/slider-2.jpg)] bg-cover bg-no-repeat flex items-center justify-center text-[#EDE8E1] content-end">
-            <div class="container mx-auto px-4 py-20">
-              <div class="flex flex-col items-start justify-end space-y-2 w-sm">
-                <div>
-                  <h1 class="text-6xl font-semibold mb-4 leading-16 text-[#EDE8E1]">Every coffee has a story</h1>
-                  <p class="text-base mb-6 text-[#EDE8E1] w-74">See where our coffees grow, when they’re harvested, and
+            <div class="container mx-auto px-6 py-6 lg:py-20">
+              <div class="flex flex-col items-start justify-end space-y-2 w-full lg:w-sm gap-y-4">
+                <div class="flex flex-col gap-y-4">
+                  <h1 class="text-4xl lg:text-6xl font-semibold lg:leading-16 text-[#EDE8E1] w-60 lg:w-70">Every coffee has a story</h1>
+                  <p class="text-base text-[#EDE8E1] font-light w-86 lg:w-76">See where our coffees grow, when they’re harvested, and
                     what makes each region unique.</p>
                 </div>
                 <div>
@@ -144,17 +144,16 @@
           <!-- Slide 3 -->
           <div
             class="swiper-slide bg-[url(/src/images/slider-3.jpg)] bg-cover bg-no-repeat flex items-center justify-center text-[#F0EAE3] content-end">
-            <div class="container mx-auto px-4 py-20">
-              <div class="flex flex-col items-start justify-end space-y-2 w-lg">
-                <div>
-                  <h1 class="text-6xl font-semibold mb-4 leading-16 text-[#EDE8E1]">Looking for the right green coffee?
-                  </h1>
-                  <p class="text-base mb-6 text-[#EDE8E1] w-76">Order free samples and find the perfect match for your
+            <div class="container mx-auto px-6 py-6 lg:py-20">
+              <div class="flex flex-col items-start justify-end space-y-2 w-full lg:w-sm gap-y-4">
+                <div class="flex flex-col gap-y-4">
+                  <h1 class="text-4xl lg:text-6xl font-semibold lg:leading-16 text-[#EDE8E1] w-80 lg:w-70">Looking for the right green coffee?</h1>
+                  <p class="text-base text-[#EDE8E1] font-light w-86 lg:w-76">Order free samples and find the perfect match for your
                     roastery.</p>
                 </div>
                 <div>
                   <a href="/contact.html"
-                    class="relative inline-block text-sm bg-white/20 text-[#EDE8E1] border border-[#D7D0C4] px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md">
+                    class="relative inline-block text-sm bg-white/20 text-[#EDE8E1] border border-[#D7D0C4] px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md overflow-hidden">
                     Order samples
                     <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
                   </a>
@@ -174,12 +173,12 @@
 
     <!-- Join Vision -->
     <div class="container mx-auto px-4 py-12">
-      <div class="grid lg:grid-cols-2 align-middle items-center">
+      <div class="grid lg:grid-cols-2 align-middle items-center space-y-4">
         <div>
           <img src="/src/images/home-about-subtract.png" alt="Vision" class="w-full h-auto rounded-lg">
         </div>
         <div class="inline-flex flex-col justify-center items-center text-center">
-          <h2 class="text-5xl font-semibold text-brand-primary mb-4 w-full lg:w-lg leading-14">Who we are – and why it matters
+          <h2 class="text-4xl lg:text-5xl font-semibold text-brand-primary lg:mb-4 w-full lg:w-lg lg:leading-14">Who we are – and why it matters
           </h2>
           <p class="text-base mb-6 leading-7 w-full lg:w-lg">We’re more than just importers. We work hand in hand with various
             farms across
@@ -245,7 +244,7 @@
     <div class="relative container mx-auto px-4 py-14 space-y-8 z-[10] bg-[#F0EAE3]">
       <div class="flex flex-col items-center text-center space-y-4">
         <h3 class="text-5xl font-semibold text-brand-primary">Lineup for the Roast</h3>
-        <p class="text-xl w-2xl">From standout micro lots to regional blends — every lot in our offer list is carefully selected for quality, character, and consistency. </p>
+        <p class="text-xl w-full lg:w-2xl">From standout micro lots to regional blends — every lot in our offer list is carefully selected for quality, character, and consistency. </p>
       </div>
       <div class="overflow-x-auto bg-[#F5EADE] border border-[#DBC4A7] rounded-lg">
         <!-- <table
@@ -576,7 +575,7 @@
                 </a>
 
                 <!-- Flag and Country Name 2 -->
-                <a href="#" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
+                <a href="/origins.html#origin-indonesia" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
                   <div class="flex items-center space-x-2 p-1">
                     <img src="/src/images/flags/Indonesia.svg" alt="India" class="w-6 h-6">
                     <span class="text-[#A38764]">Indonesia</span>
@@ -592,7 +591,7 @@
                 </a>
 
                 <!-- Flag and Country Name 3 -->
-                <a href="#" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
+                <a href="/origins.html#origin-vietnam" class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
                   <div class="flex items-center space-x-2 p-1">
                     <img src="/src/images/flags/vietnam.svg" alt="India" class="w-6 h-6">
                     <span class="text-[#A38764]">Vietnam</span>
@@ -637,7 +636,7 @@
             class="absolute inset-0 flex flex-col justify-between items-start text-[#F0EAE3] opacity-100 pointer-events-auto transition-opacity duration-500 px-48 py-6 space-y-6 z-10">
 
             <div>
-              <div class="flex flex-row justify-between items-center mb-4 space-x-4">
+              <div class="grid grid-cols-3 mb-4 space-x-4 space-y-4">
 
                 <!-- Flag and Country Name 1 -->
                 <a href="/origins.html##origin-guatemala"
@@ -674,11 +673,45 @@
                 </a>
 
                 <!-- Flag and Country Name 3 -->
+                <a href="/origins.html#origin-costa-rica"
+                  class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-44 rounded-sm">
+                  <div class="flex items-center space-x-2 p-1">
+                    <img src="/src/images/flags/Costa-rica.svg" alt="India" class="w-6 h-6">
+                    <span class="text-[#A38764]">Costa Rica</span>
+                  </div>
+                  <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
+                    <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                      class="inline-block align-middle" fill="white">
+                      <path
+                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                      </path>
+                    </svg>
+                  </div>
+                </a>
+
+                <!-- Flag and Country Name 4 -->
                 <a href="/origins.html#origin-el-salvador"
                   class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-44 rounded-sm">
                   <div class="flex items-center space-x-2 p-1">
                     <img src="/src/images/flags/el-salvador.svg" alt="India" class="w-6 h-6">
                     <span class="text-[#A38764]">El salvador</span>
+                  </div>
+                  <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
+                    <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                      class="inline-block align-middle" fill="white">
+                      <path
+                        d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                      </path>
+                    </svg>
+                  </div>
+                </a>
+
+                <!-- Flag and Country Name 5 -->
+                <a href="/origins.html#origin-mexico"
+                  class="flex flex-row justify-between items-center bg-[#FBE8D0] mb-4 px-2 py-1 w-44 rounded-sm">
+                  <div class="flex items-center space-x-2 p-1">
+                    <img src="/src/images/flags/mexico.svg" alt="India" class="w-6 h-6">
+                    <span class="text-[#A38764]">Mexico</span>
                   </div>
                   <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                     <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
@@ -744,7 +777,7 @@
                 <a href="/origins.html#origin-colombia"
                   class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-38 rounded-sm">
                   <div class="flex items-center space-x-2 p-1">
-                    <img src="/src/images/flags/kenya.svg" alt="India" class="w-6 h-6">
+                    <img src="/src/images/flags/colombia.svg" alt="India" class="w-6 h-6">
                     <span class="text-[#A38764]">Colombia</span>
                   </div>
                   <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
