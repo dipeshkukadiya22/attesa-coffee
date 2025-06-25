@@ -540,7 +540,7 @@
 
     <!-- Image Accordion Section -->
     <div class="px-4 py-16">
-      <div id="image-accordion" class="flex flex-col lg:flex-row gap-2 h-[680px]">
+      <div id="image-accordion" class="flex flex-col lg:flex-row gap-2 h-[740px] lg:h-[680px]">
         <!-- Accordion Item 1 (Open by default) -->
         <div
           class="group relative flex-1 transition-[flex] duration-500 overflow-hidden rounded-lg bg-cover bg-center bg-[url('/src/images/aco-img-1.jpg')] items-start"
@@ -548,14 +548,14 @@
           <!-- Black overlay -->
           <div class="absolute inset-0 bg-[#000]/50 z-0"></div>
           <div class="absolute left-14 2xl:left-24 bottom-0 h-full flex items-end z-10">
-            <h2 class="text-5xl font-bold text-[#F0EAE3] rotate-[-90deg] origin-left whitespace-nowrap uppercase">
+            <h2 class="hidden lg:block text-5xl font-bold text-[#F0EAE3] rotate-[-90deg] origin-left whitespace-nowrap uppercase">
               asia</h2>
           </div>
           <div id="accordion-content-0"
-            class="absolute inset-0 flex flex-col  justify-between items-start text-[#F0EAE3] opacity-100 pointer-events-auto transition-opacity duration-500 px-48 py-6 space-y-6 z-10">
+            class="absolute inset-0 flex flex-col  justify-between items-start text-[#F0EAE3] opacity-100 pointer-events-auto transition-opacity duration-500 px-4 lg:px-48 py-6 space-y-6 z-10">
 
             <div>
-              <div class="flex flex-row justify-between items-center mb-4 space-x-4">
+              <div class="flex flex-col lg:flex-row justify-between item-start lg:items-center mb-4 space-y-4 space-x-4">
 
                 <!-- Flag and Country Name 1 -->
                 <a href="/origins.html#origin-india"
@@ -609,8 +609,9 @@
               </div>
             </div>
 
-            <div class="space-y-6">
-              <h3 class="text-3xl font-semibold leading-12 w-auto">Asia offers diverse coffee styles—from India’s
+            <div class="space-y-3 lg:space-y-6">
+              <h2 class="lg:hidden text-lg font-bold text-[#F0EAE3] uppercase">asia</h2>
+              <h3 class="text-base lg:text-3xl font-medium lg:font-semibold lg:leading-12 w-auto">Asia offers diverse coffee styles—from India’s
                 estate-grown arabica to Indonesia’s unique island varieties. Vietnam leads in robusta farming, while
                 other countries blend tradition and modern techniques in processing.</h3>
               <a href="/origins.html"

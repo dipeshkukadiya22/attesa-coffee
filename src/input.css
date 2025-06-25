@@ -155,4 +155,9 @@
         color: #3B3D34;
         }
     }
+    @media (max-width: 767px) {
+        .standard-tbl tr td:nth-last-child(-n+2) {
+            @apply min-w-44;
+        }
+    }
 }
