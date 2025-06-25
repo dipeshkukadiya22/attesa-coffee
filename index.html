@@ -1076,17 +1076,17 @@
                         <li>Stories and sourcing updates </li>
                         <li>Latest spot availability, pricing trends, and exclusive offers</li>
                     </ul>
-          <form class="space-y-3 max-w-md">
+          <form action="newsletter.php" method="POST" class="space-y-3 max-w-md">
             <input type="text" name="name" placeholder="Name (optional)"
-              class="px-3 py-2 rounded-lg text-sm border border-[#898277] w-full">
+              class="px-3 py-2 rounded-lg text-sm border border-[#898277] w-full" required>
             <div class="relative border border-[#898277] rounded-lg">
-              <input type="email" name="email" placeholder="Email" required class="px-3 py-2 rounded-lg text-sm w-full">
+              <input type="email" name="email" placeholder="Email" required class="px-3 py-2 rounded-lg text-sm w-full" required>
             </div>
-            <a href="#"
-              class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+            <button type="submit" href="#"
+              class="relative cursor-pointer inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
               Join the Newsletter
               <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
-            </a>
+            </button>
           </form>
         </div>
       </div>
