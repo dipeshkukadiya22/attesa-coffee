@@ -1,33 +1,57 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $name  = htmlspecialchars(trim($_POST["name"]));
-    $email = htmlspecialchars(trim($_POST["email"]));
 
-    // Basic validation
-    if (!empty($name) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-        // === Admin Email (G Suite) ===
-        $adminEmail = "dipesh@teque7.com"; // Replace with your actual G Suite email
+require 'vendor/autoload.php'; // Ensure PHPMailer is installed via Composer
 
-        // === Email Subject & Message ===
-        $subject = "New Newsletter Subscription";
-        $message = "You have a new subscriber:\n\nName: $name\nEmail: $email";
+$mail = new PHPMailer(true);
 
-        // === Email Headers ===
-        $headers = "From: dipesh@teque7.com\r\n"; // Replace with your domain email (must exist!)
-        $headers .= "Reply-To: $email\r\n";
-        $headers .= "X-Mailer: PHP/" . phpversion();
+try {
+    // === SMTP SETTINGS ===
+    $mail->isSMTP();
+    $mail->Host       = 'smtp.gmail.com';
+    $mail->SMTPAuth   = true;
+    $mail->Username   = 'dipesh.teque7@gmail.com';  // Your Gmail address
+    $mail->Password   = 'mkgoobiheyeaqwra';         // Gmail App Password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port       = 587;
 
-        // === Send the Email ===
-        if (mail($adminEmail, $subject, $message, $headers)) {
-            echo "Thank you for subscribing!";
-        } else {
-            echo "Error sending email. Please try again.";
-        }
+    // === FORM INPUT ===
+    $name  = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
 
-    } else {
-        echo "Invalid input. Please enter a valid name and email.";
+    if (empty($name) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        throw new Exception("Invalid input.");
     }
-} else {
-    echo "Invalid request.";
+
+    // === SEND TO ADMIN ===
+    $mail->setFrom('dipesh.teque7@gmail.com', 'Newsletter Signup');
+    $mail->addAddress('dipesh@teque7.com'); // Admin/G Suite Email
+    $mail->isHTML(true);
+    $mail->Subject = "New Newsletter Signup from $name";
+    $mail->Body    = "
+        <strong>New subscriber details:</strong><br><br>
+        <strong>Name:</strong> $name<br>
+        <strong>Email:</strong> $email<br>
+    ";
+    $mail->send();
+
+    // === SEND CONFIRMATION TO SUBSCRIBER ===
+    $mail->clearAddresses(); // Clear previous recipient
+    $mail->addAddress($email); // Send to subscriber
+    $mail->Subject = "Thank you for subscribing to Attesa Coffee!";
+    $mail->Body    = "
+        Dear $name,<br><br>
+        Thank you for subscribing to Attesa Coffee!<br>
+        You'll now receive updates, offers, and more straight to your inbox.<br><br>
+        Cheers,<br>
+        <strong>Attesa Coffee Team</strong>
+    ";
+    $mail->send();
+
+    echo "<script>alert('Subscription successful.'); window.location.href = 'index.html';</script>";
+
+} catch (Exception $e) {
+    echo "<script>alert('Error: {$mail->ErrorInfo}'); history.back();</script>";
 }
