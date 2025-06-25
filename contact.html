@@ -105,8 +105,8 @@
                                 your inbox. </p>
                         </div>
                         <div>
-                            <a href="#"
-                                class="relative inline-block text-sm bg-white/20 text-[#F0EAE3] border border-[#D7D0C4] px-4 py-1 pr-7 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md overflow-hidden">
+                            <a href="#footer"
+                                class="scroll-link not-[]:relative inline-block text-sm bg-white/20 text-[#F0EAE3] border border-[#D7D0C4] px-4 py-1 pr-7 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md overflow-hidden" data-target="footer">
                                 Subscribe
                                 <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
                             </a>
@@ -225,15 +225,17 @@
                         </tr>
                         <tr>
                             <td class="text-brand-primary font-semibold w-1/3">Address</td>
-                            <td>Entrada 569,<br> 1115 SE Duivendrecht,<br> The Netherlands</td>
+                            <td>Entrada 500,<br>
+                                114 AA Duivendrecht,<br>
+                                Netherlands</td>
                         </tr>
                         <tr>
                             <td class="text-brand-primary font-semibold">Email</td>
-                            <td>theattesacoffee@gmail.com</td>
+                            <td><a href="mailto:hello@attesa.co">hello@attesa.co</a></td>
                         </tr>
                         <tr>
                             <td class="text-brand-primary font-semibold">Phone</td>
-                            <td>+31 64 420 7299</td>
+                            <td><a href="tel:31644207299">+31 644207299</a></td>
                         </tr>
                         <tr>
                             <td class="text-brand-primary font-semibold">Hours</td>
@@ -314,6 +316,26 @@
           }
         }
       });
+    </script>
+
+
+    <!-- Cursor Overlay Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll('.scroll-link').forEach(link => {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute('data-target');
+                    const el = document.getElementById(targetId);
+                    if (el) {
+                        window.scrollTo({
+                            top: el.getBoundingClientRect().top + window.pageYOffset - 10,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
     </script>
 
 

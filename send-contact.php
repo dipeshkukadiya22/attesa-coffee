@@ -58,7 +58,7 @@ try {
     ";
     $mail->send();
 
-    echo "<script>alert('Message sent successfully.'); window.location.href = 'index.html';</script>";
+    echo "<script>alert('Message sent successfully.'); window.location.href = 'our-coffee.html';</script>";
 } catch (Exception $e) {
     echo "<script>alert('Mailer Error: {$mail->ErrorInfo}'); history.back();</script>";
 }
