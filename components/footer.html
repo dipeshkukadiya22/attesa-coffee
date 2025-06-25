@@ -38,19 +38,21 @@
                         </div>
                         <div>
                             <form action="newsletter.php" method="POST" class="flex flex-col gap-y-2 mt-4">
-                                <input type="text" name="email" placeholder="Name"
-                                    class="px-3 py-2 rounded-lg bg-[#F0EAE3] text-sm border border-[#3C3A37]">
+                                <input type="text" name="name" placeholder="Name"
+                                    class="px-3 py-2 rounded-lg bg-[#F0EAE3] text-sm border border-[#3C3A37]" required>
+
                                 <div class="relative border border-[#3C3A37] rounded-lg">
-                                    <input type="email" placeholder="Email"
-                                        class="px-3 py-2 rounded-lg bg-[#F0EAE3] text-sm w-full">
+                                    <input type="email" name="email" placeholder="Email"
+                                    class="px-3 py-2 rounded-lg bg-[#F0EAE3] text-sm w-full pr-10" required>
+
                                     <button type="submit"
-                                        class="absolute cursor-pointer right-2 top-1/2 transform -translate-y-1/2">
-                                        <svg height="8" width="8" viewBox="0 0 512 512"
-                                            xmlns="http://www.w3.org/2000/svg" fill="#3C3A37">
-                                            <path
-                                                d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
-                                            </path>
-                                        </svg>
+                                    class="absolute cursor-pointer right-2 top-1/2 transform -translate-y-1/2">
+                                    <svg height="8" width="8" viewBox="0 0 512 512"
+                                        xmlns="http://www.w3.org/2000/svg" fill="#3C3A37">
+                                        <path
+                                            d="m512 32v359.2a32 32 0 0 1 -64 0v-281.945l-393.372 393.372a32 32 0 0 1 -45.256-45.254l393.373-393.373h-281.945a32 32 0 0 1 0-64h359.2a32 32 0 0 1 32 32z">
+                                        </path>
+                                    </svg>
                                     </button>
                                 </div>
                             </form>
