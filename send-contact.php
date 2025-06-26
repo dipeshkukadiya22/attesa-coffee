@@ -12,8 +12,8 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'dipesh.teque7@gmail.com'; // Your Gmail address
-    $mail->Password   = 'mkgoobiheyeaqwra';        // App password from Gmail
+    $mail->Username   = 'hello@attesa.co'; // Your Gmail address
+    $mail->Password   = 'apklnxuppvqdjwgy';        // App password from Gmail
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 
@@ -29,8 +29,8 @@ try {
     // ========================
     // 1. Send email to Admin
     // ========================
-    $mail->setFrom('dipesh.teque7@gmail.com', 'Attesa Coffee Contact');
-    $mail->addAddress('dipesh@teque7.com'); // Admin email
+    $mail->setFrom('hello@attesa.co', 'Attesa Coffee Contact');
+    $mail->addAddress('hello@attesa.co'); // Admin email
     $mail->isHTML(true);
     $mail->Subject = "New Contact Form Submission from $firstName $lastName";
     $mail->Body    = "

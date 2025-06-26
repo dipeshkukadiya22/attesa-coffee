@@ -12,8 +12,8 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'dipesh.teque7@gmail.com';  // Your Gmail address
-    $mail->Password   = 'mkgoobiheyeaqwra';         // Gmail App Password
+    $mail->Username   = 'hello@attesa.co';  // Your Gmail address
+    $mail->Password   = 'apklnxuppvqdjwgy';         // Gmail App Password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 
@@ -26,8 +26,8 @@ try {
     }
 
     // === SEND TO ADMIN ===
-    $mail->setFrom('dipesh.teque7@gmail.com', 'Newsletter Signup');
-    $mail->addAddress('dipesh@teque7.com'); // Admin/G Suite Email
+    $mail->setFrom('hello@attesa.co', 'Newsletter Signup');
+    $mail->addAddress('hello@attesa.co'); // Admin/G Suite Email
     $mail->isHTML(true);
     $mail->Subject = "New Newsletter Signup from $name";
     $mail->Body    = "
