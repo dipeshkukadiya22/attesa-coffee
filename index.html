@@ -538,7 +538,7 @@
         </div>
       </div>
 
-      <div class="relative container mx-auto h-[600px] content-end px-4 py-20">
+      <div class="relative container mx-auto h-[600px] content-end px-4 py-8 lg:py-20">
         <div class="flex flex-col lg:flex-row lg:justify-between text-[#F0EAE3] items-end space-y-4">
           <div class="lg:text-left w-full lg:w-80">
             <h3 class="text-4xl lg:text-5xl font-semibold lg:leading-15 text-[#EDE8E1]">The right lot for your roast
@@ -562,7 +562,7 @@
 
     <!-- Image Accordion Section -->
     <div class="px-4 py-16">
-      <div id="image-accordion" class="flex flex-col lg:flex-row gap-2 h-[740px] lg:h-[680px]">
+      <div id="image-accordion" class="flex flex-col lg:flex-row gap-2 h-[800px] lg:h-[680px]">
         <!-- Accordion Item 1 (Open by default) -->
         <div
           class="group relative flex-1 transition-[flex] duration-500 overflow-hidden rounded-lg bg-cover bg-center bg-[url('/src/images/aco-img-1.jpg')] items-start"
@@ -570,7 +570,7 @@
           <!-- Black overlay -->
           <div class="absolute inset-0 bg-[#000]/50 z-0"></div>
           <div
-            class="absolute top-[-45%] left-4 lg:top-auto lg:left-14 2xl:left-24 bottom-0 h-full flex items-end z-10">
+            class="absolute top-[-14%] left-4 lg:top-auto lg:left-14 2xl:left-24 bottom-0 h-full flex items-end z-10">
             <h2
               class="lg:block text-4xl lg:text-5xl font-bold text-[#F0EAE3] lg:rotate-[-90deg] origin-left whitespace-nowrap uppercase">
               asia</h2>
@@ -638,7 +638,7 @@
 
             <div class="space-y-3 lg:space-y-6">
               <!-- <h2 class="lg:hidden text-lg font-bold text-[#F0EAE3] uppercase">asia</h2> -->
-              <h3 class="text-base lg:text-3xl font-medium lg:font-semibold lg:leading-12 w-auto">Asia offers diverse
+              <h3 class="text-base mb-16 lg:mb-1 lg:text-3xl font-medium lg:font-semibold lg:leading-12 w-auto">Asia offers diverse
                 coffee styles—from India’s
                 estate-grown arabica to Indonesia’s unique island varieties. Vietnam leads in robusta farming, while
                 other countries blend tradition and modern techniques in processing.</h3>
@@ -657,22 +657,22 @@
           onclick="openAccordion(1)">
           <!-- Black overlay -->
           <div class="absolute inset-0 bg-[#000]/50 z-0"></div>
-          <div class="absolute left-14 2xl:left-24 bottom-0 h-full flex items-end z-10">
-            <h2 class="text-5xl font-bold text-[#F0EAE3] rotate-[-90deg] origin-left whitespace-nowrap uppercase">
+          <div class="absolute top-[-14%] left-4 lg:top-auto lg:left-14 2xl:left-24 bottom-0 h-full flex items-end z-10">
+            <h2 class="lg:block text-4xl lg:text-5xl font-bold text-[#F0EAE3] lg:rotate-[-90deg] origin-left whitespace-nowrap uppercase">
               central america</h2>
           </div>
           <div id="accordion-content-1"
-            class="absolute inset-0 flex flex-col justify-between items-start text-[#F0EAE3] opacity-100 pointer-events-auto transition-opacity duration-500 px-48 py-6 space-y-6 z-10">
+            class="absolute inset-0 flex flex-col justify-between items-start text-[#F0EAE3] opacity-100 pointer-events-auto transition-opacity duration-500 px-4 lg:px-48 py-6 space-y-6 z-10">
 
             <div>
-              <div class="grid grid-cols-3 mb-4 space-x-4 space-y-4">
+              <div class="grid grid-cols-2 lg:grid-cols-3 mb-4 space-x-4 gap-x-4 space-y-4">
 
                 <!-- Flag and Country Name 1 -->
                 <a href="/origins.html##origin-guatemala"
-                  class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-44 rounded-sm">
+                  class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-full lg:w-44 rounded-sm">
                   <div class="flex items-center space-x-2 p-1">
                     <img src="/src/images/flags/guatemala.svg" alt="India" class="w-6 h-6">
-                    <span class="text-[#A38764]">Guatemala</span>
+                    <span class="text-xs lg:text-base text-[#A38764]">Guatemala</span>
                   </div>
                   <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                     <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
@@ -686,10 +686,10 @@
 
                 <!-- Flag and Country Name 2 -->
                 <a href="/origins.html#origin-honduras"
-                  class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-44 rounded-sm">
+                  class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-full lg:w-44 rounded-sm">
                   <div class="flex items-center space-x-2 p-1">
                     <img src="/src/images/flags/honduras.svg" alt="India" class="w-6 h-6">
-                    <span class="text-[#A38764]">Honduras</span>
+                    <span class="text-[#A38764] text-xs lg:text-base">Honduras</span>
                   </div>
                   <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                     <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
@@ -703,10 +703,10 @@
 
                 <!-- Flag and Country Name 3 -->
                 <a href="/origins.html#origin-costa-rica"
-                  class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-44 rounded-sm">
+                  class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-full lg:w-44 rounded-sm">
                   <div class="flex items-center space-x-2 p-1">
                     <img src="/src/images/flags/Costa-rica.svg" alt="India" class="w-6 h-6">
-                    <span class="text-[#A38764]">Costa Rica</span>
+                    <span class="text-[#A38764] text-xs lg:text-base">Costa Rica</span>
                   </div>
                   <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                     <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
@@ -720,10 +720,10 @@
 
                 <!-- Flag and Country Name 4 -->
                 <a href="/origins.html#origin-el-salvador"
-                  class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-44 rounded-sm">
+                  class="flex flex-row justify-between items-center bg-[#FBE8D0] px-2 py-1 w-full lg:w-44 rounded-sm">
                   <div class="flex items-center space-x-2 p-1">
                     <img src="/src/images/flags/el-salvador.svg" alt="India" class="w-6 h-6">
-                    <span class="text-[#A38764]">El salvador</span>
+                    <span class="text-[#A38764] text-xs lg:text-base">El salvador</span>
                   </div>
                   <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                     <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
@@ -737,10 +737,10 @@
 
                 <!-- Flag and Country Name 5 -->
                 <a href="/origins.html#origin-mexico"
-                  class="flex flex-row justify-between items-center bg-[#FBE8D0] mb-4 px-2 py-1 w-44 rounded-sm">
+                  class="flex flex-row justify-between items-center bg-[#FBE8D0] mb-4 px-2 py-1 w-full lg:w-44 rounded-sm">
                   <div class="flex items-center space-x-2 p-1">
                     <img src="/src/images/flags/mexico.svg" alt="India" class="w-6 h-6">
-                    <span class="text-[#A38764]">Mexico</span>
+                    <span class="text-[#A38764] text-xs lg:text-base">Mexico</span>
                   </div>
                   <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                     <svg id="fi_5343266" height="9" width="9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
@@ -757,7 +757,7 @@
             </div>
 
             <div class="space-y-6">
-              <h3 class="text-4xl font-semibold leading-12 w-auto">Known for its coffee traditions and smallholder
+              <h3 class="text-base mb-16 lg:mb-1 lg:text-3xl font-medium lg:font-semibold lg:leading-12 w-auto">Known for its coffee traditions and smallholder
                 farms, countries like Guatemala, Honduras, and Costa Rica have strong infrastructure and cooperative
                 models. High-elevation growing, traceability, and lot separation support diverse sourcing.</h3>
               <a href="/origins.html"
@@ -775,15 +775,15 @@
           onclick="openAccordion(2)">
           <!-- Black overlay -->
           <div class="absolute inset-0 bg-[#000]/50 z-0"></div>
-          <div class="absolute left-14 2xl:left-24 bottom-0 h-full flex items-end z-10">
-            <h2 class="text-5xl font-bold text-[#F0EAE3] rotate-[-90deg] origin-left whitespace-nowrap uppercase">
+          <div class="absolute top-[-14%] left-4 lg:top-auto lg:left-14 2xl:left-24 bottom-0 h-full flex items-end z-10">
+            <h2 class="lg:block text-4xl lg:text-5xl font-bold text-[#F0EAE3] lg:rotate-[-90deg] origin-left whitespace-nowrap uppercase">
               south america</h2>
           </div>
           <div id="accordion-content-2"
-            class="absolute inset-0 flex flex-col justify-between items-start text-[#F0EAE3] opacity-100 pointer-events-auto transition-opacity duration-500 px-48 py-6 space-y-6 z-10">
+            class="absolute inset-0 flex flex-col justify-between items-start text-[#F0EAE3] opacity-100 pointer-events-auto transition-opacity duration-500 px-4 lg:px-48 py-6 space-y-6 z-10">
 
             <div>
-              <div class="flex flex-row justify-between items-center mb-4 space-x-4">
+              <div class="flex flex-col lg:flex-row justify-between item-left lg:items-start mb-4 space-x-4 space-y-4">
 
                 <!-- Flag and Country Name 1 -->
                 <a href="/origins.html#origin-brazil"
@@ -840,7 +840,7 @@
             </div>
 
             <div class="space-y-6">
-              <h3 class="text-4xl font-semibold leading-12 w-auto">A key coffee growing region led by Brazil’s
+              <h3 class="text-base mb-16 lg:mb-1 lg:text-3xl font-medium lg:font-semibold lg:leading-12 w-auto">A key coffee growing region led by Brazil’s
                 large-scale farms and Colombia’s quality focus. Mix of family plots and commercial estates, with solid
                 export systems offering volume, consistency, and reliable logistics.</h3>
               <a href="/origins.html"
@@ -858,15 +858,15 @@
           onclick="openAccordion(3)">
           <!-- Black overlay -->
           <div class="absolute inset-0 bg-[#000]/50 z-0"></div>
-          <div class="absolute left-14 2xl:left-24 bottom-0 h-full flex items-end z-10">
-            <h2 class="text-5xl font-bold text-[#F0EAE3] rotate-[-90deg] origin-left whitespace-nowrap uppercase">
+          <div class="absolute top-[-14%] left-4 lg:top-auto lg:left-14 2xl:left-24 bottom-0 h-full flex items-end z-10">
+            <h2 class="lg:block text-4xl lg:text-5xl font-bold text-[#F0EAE3] lg:rotate-[-90deg] origin-left whitespace-nowrap uppercase">
               africa</h2>
           </div>
           <div id="accordion-content-3"
-            class="absolute inset-0 flex flex-col justify-between items-start text-[#F0EAE3] opacity-100 pointer-events-auto transition-opacity duration-500 px-48 py-6 space-y-6 z-10">
+            class="absolute inset-0 flex flex-col justify-between items-start text-[#F0EAE3] opacity-100 pointer-events-auto transition-opacity duration-500 px-4 lg:px-48 py-6 space-y-6 z-10">
 
             <div>
-              <div class="flex flex-row justify-between items-center mb-4 space-x-4">
+              <div class="flex flex-col lg:flex-row justify-between item-start lg:items-start mb-4 space-y-4 space-x-4">
 
                 <!-- Flag and Country Name 1 -->
                 <a href="/origins.html#origin-ehiopia"
@@ -923,7 +923,7 @@
             </div>
 
             <div class="space-y-6">
-              <h3 class="text-4xl font-semibold leading-12 w-auto">The birthplace of coffee, with Ethiopia and Kenya as
+              <h3 class="text-base mb-16 lg:mb-1 lg:text-3xl font-medium lg:font-semibold lg:leading-12 w-auto">The birthplace of coffee, with Ethiopia and Kenya as
                 highlights. Mostly small farms processed in washing stations or cooperatives. Traditional cultivation
                 and processing methods remain central, supported by local knowledge.</h3>
               <a href="/origins.html"
@@ -941,14 +941,14 @@
 
     <!--Season Section-->
     <div
-      class="skyanimation w-full h-[540px] bg-[url(/src/images/SUL-DE-MINAS-4_land-1-min.png)] bg-cover bg-no-repeat bg-position-[0_20%] flex justify-center items-center text-center">
+      class="skyanimation w-full h-[540px] bg-[url(/src/images/SUL-DE-MINAS-4_land-1-min.png)] lg:bg-cover bg-no-repeat bg-position-[0_30%] lg:bg-position-[0_20%] flex justify-center lg:items-center text-center">
       <div class="container mx-auto px-4 py-20 space-y-4">
-        <h3 class="text-4xl font-semibold text-[#46433E]">Be first to know about new coffees – preorders & spot offers
+        <h3 class="text-xl lg:text-4xl font-semibold text-[#46433E]">Be first to know about new coffees – preorders & spot offers
         </h3>
-        <p class="tracking-wide font-medium">Stay ahead of the harvest. Get updates on fresh arrivals, exclusive spot
+        <p class="tracking-wide font-medium text-sm lg:text-base">Stay ahead of the harvest. Get updates on fresh arrivals, exclusive spot
           deals, and upcoming preorders – delivered straight to your inbox. </p>
         <a href="#join-newsletter"
-          class="scroll-link relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary mt-8"
+          class="scroll-link relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary lg:mt-8"
           data-target="join-newsletter">
           Join the Newsletter
           <div class="arrow-animation absolute top-1 right-3 w-4 h-4 leading-[1.2]"></div>
@@ -1066,14 +1066,14 @@
     </div> -->
 
     <!-- Instagram -->
-    <div class="container mx-auto px-4 py-20">
+    <div class="container mx-auto px-4 py-10 lg:py-20">
       <div class="flex flex-col items-center text-center space-y-2 mb-8">
-        <h3 class="text-4xl font-semibold text-brand-primary mb-4">Always fresh updates — follow us on Instagram</h3>
-        <p class="w-full lg:w-4xl text-xl">Stay in the know with real-time news on new arrivals, sustainability efforts,
+        <h3 class="text-2xl lg:text-4xl font-semibold text-brand-primary mb-4">Always fresh updates — follow us on Instagram</h3>
+        <p class="w-full lg:w-4xl text-base lg:text-xl">Stay in the know with real-time news on new arrivals, sustainability efforts,
           and
           coffee community highlights — straight from the source.</p>
       </div>
-      <div class="grid grid-cols-4 gap-4">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
         <img src="/src/images/insta-1.jpg" alt="Instagram 1" class="w-full h-full object-cover rounded-lg">
         <img src="/src/images/insta-2.jpg" alt="Instagram 2" class="w-full h-full object-cover rounded-lg">
         <img src="/src/images/insta-3.jpg" alt="Instagram 3" class="w-full h-full object-cover rounded-lg">
@@ -1094,7 +1094,7 @@
     <div id="join-newsletter" class="container mx-auto px-6 pb-20">
       <div class="grid lg:grid-cols-2 align-middle items-center bg-[#FFF1E2] rounded-lg">
         <div>
-          <img src="/src/images/keep-in-touch-img.png" alt="Vision" class="w-full rounded-tl-lg rounded-bl-lg h-auto">
+          <img src="/src/images/keep-in-touch-img.png" alt="Vision" class="w-full rounded-tl-lg rounded-tr-lg lg:rounded-bl-lg h-auto">
         </div>
         <div class="text-left mx-auto p-12 space-y-4">
           <p class="flex items-center gap-2 mb-4 text[#46433E]">

@@ -33,25 +33,23 @@
 
             <!-- Hamburger & Close (Mobile Only) -->
             <div class="lg:hidden">
-                <button id="menu-open" class="text-[#EDE8E1] w-8 h-8" aria-label="Open Menu">
-                    <!-- Hamburger SVG -->
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
+                <button id="menu-open" class="text-[#86A161] w-8 h-8" aria-label="Open Menu">
+                <!-- Hamburger SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
                 </button>
-                <button id="menu-close" class="text-[#EDE8E1] w-8 h-8 hidden" aria-label="Close Menu">
-                    <!-- Close SVG -->
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M6 18L18 6M6 6l12 12" />
-                    </svg>
+                <button id="menu-close" class="text-brand-primary w-8 h-8 hidden" aria-label="Close Menu">
+                <!-- Close SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
                 </button>
             </div>
 
             <!-- Navigation Links -->
             <ul id="menu"
-                class="hidden lg:flex flex-col lg:flex-row justify-center items-center space-y-4 lg:space-y-0 lg:space-x-6 absolute lg:static top-full left-0 w-full lg:w-auto bg-black/90 lg:bg-transparent px-6 lg:px-0 py-6 lg:py-0 z-40 lg:z-auto">
+                class="hidden lg:flex flex-col lg:flex-row justify-center items-center space-y-4 lg:space-y-0 lg:space-x-6 absolute lg:static top-full left-0 w-full bg-[#F0EAE3] lg:w-auto mobile:text-beige lg:bg-transparent px-6 lg:px-0 py-6 lg:py-0 z-40 lg:z-auto">
                 <li><a href="/about-us.html" class="p-2 block">About</a></li>
                 <li><a href="/origins.html" class="p-2 block">Origins</a></li>
                 <li><a href="/our-coffee.html" class="p-2 block">Our Coffee</a></li>
@@ -117,8 +115,8 @@
         <!-- Table Section -->
         <div class="relative container mx-auto px-4 py-14 space-y-8 z-[10] bg-[#F0EAE3]">
             <div class="flex flex-col items-center text-center space-y-4">
-                <h3 class="text-4xl font-semibold text-brand-primary">Explore our curated coffee offerings</h3>
-                <p class="text-xl w-2xl">We offer a diverse range of green coffees — from traceable microlots and
+                <h3 class="text-3xl lg:text-4xl font-semibold text-brand-primary">Explore our curated coffee offerings</h3>
+                <p class="text-base lg:text-xl w-full lg:w-2xl">We offer a diverse range of green coffees — from traceable microlots and
                     specialty selections to consistent, high-quality blends.
                 </p>
                 <!-- <a href="#"
@@ -2092,64 +2090,65 @@
         </div>
 
         <!-- Loose Beans  -->
-        <div class="container mx-auto px-4 py-12">
-            <div class="grid grid-cols-2 align-middle items-stretch space-x-4">
+        <div class="container mx-auto px-4 py-6 lg:py-12">
+            <div class="grid lg:grid-cols-2 align-middle items-stretch space-x-4 gap-2">
                 <div
-                    class="inline-flex flex-col justify-center items-center text-center bg-[#6F894D] rounded-lg h-full">
-                    <h2
-                        class="text-5xl font-bold italic capitalize text-brand-primary mb-4 w-md leading-14 text-[#EDE8E1] ">
-                        Need less than a full bag? </h2>
-                    <p class="text-base mb-6 leading-7 w-sm text-[#EDE8E1]">
-                        Order green coffee by the kilo — perfect for home roasters and micro roasteries.
-                    </p>
-                    <a href="#"
-                        class="relative inline-block text-sm bg-white/20 text-[#F0EAE3] border border-[#D7D0C4] px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md overflow-hidden">
-                        Shop by KG
-                        <div class="arrow-animation absolute top-1 right-4 w-4 h-4 leading-[1.2]"></div>
-                    </a>
+                class="inline-flex flex-col justify-center items-center text-center bg-[#6F894D] rounded-lg p-4 py-10 lg:p-0 w-full h-full">
+                <h2
+                    class="text-4xl lg:text-5xl font-bold italic capitalize text-brand-primary mb-4 w-full lg:w-md lg:leading-14 text-[#EDE8E1] ">
+                    Need
+                    less than a full bag? </h2>
+                <p class="text-base mb-6 leading-7 w-full lg:w-sm text-[#EDE8E1]">
+                    Order green coffee by the kilo — perfect for home roasters and micro roasteries
+                </p>
+                <a href="/contact.html"
+                    class="relative inline-block text-sm bg-white/20 text-[#F0EAE3] border border-[#D7D0C4] px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary backdrop-blur-md overflow-hidden">
+                    Shop by KG
+                    <div class="arrow-animation absolute top-1 right-3 w-4 h-4 leading-[1.2]"></div>
+                </a>
                 </div>
                 <div class="h-full relative">
-                    <img src="/src/images/New-Banner-Seasonality-Calendar.jpg" alt="Vision" class="w-full rounded-lg">
-                    <div class="absolute top-14 left-[-44px] right-0">
-                        <img src="/src/images/Frame-1618869036.png" alt="Vision" class="w-28">
-                    </div>
+                <img src="/src/images/New-Banner-Seasonality-Calendar.jpg" alt="Vision" class="w-full rounded-lg">
+                <div class="absolute top-[-24px] lg:top-14  lg:left-[-44px] right-4 lg:right-0">
+                    <img src="/src/images/Frame-1618869036.png" alt="Vision" class="w-14 lg:w-28">
+                </div>
                 </div>
             </div>
         </div>
 
 
         <!-- Keep in Touch -->
-        <div class="container mx-auto px-4 py-12">
-            <div class="grid grid-cols-2 align-middle items-center bg-[#FFF1E2] rounded-lg">
+        <div id="join-newsletter" class="container mx-auto px-4 pt-10 lg:pt-0 pb-20">
+            <div class="grid lg:grid-cols-2 align-middle items-center bg-[#FFF1E2] rounded-lg">
                 <div>
-                    <img src="/src/images/home-vision.png" alt="Vision" class="w-full h-auto">
+                <img src="/src/images/home-vision.png" alt="Vision" class="w-full rounded-tl-lg rounded-tr-lg lg:rounded-bl-lg h-auto">
                 </div>
                 <div class="text-left mx-auto p-12 space-y-4">
-                    <p class="flex items-center gap-2 mb-4 text[#46433E]">
-                        <span class=""><img src="/src/images/right-arrow-icon.svg" class="w-3"></span>
-                        <span class="text-xs">Subscribe to the Newsletter</span>
-                    </p>
-                    <h2 class="text-4xl font-semibold text-brand-primary  mb-4">Let’s keep in touch. </h2>
+                <p class="flex items-center gap-2 mb-4 text[#46433E]">
+                    <span class=""><img src="/src/images/right-arrow-icon.svg" class="w-3"></span>
+                    <span class="text-xs">Subscribe to the Newsletter</span>
+                </p>
+                <h2 class="text-4xl font-semibold text-brand-primary  mb-4">Let’s keep in touch </h2>
 
-                    <p>Join our coffee list </p>
-                    <ul class="list-disc space-y-2 pl-6">
-                        <li>Early preorder access,</li>
-                        <li>Stories and sourcing updates </li>
-                        <li>Latest spot availability, pricing trends, and exclusive offers</li>
-                    </ul>
-                    <form action="newsletter.php" method="POST" class="inline flex-col space-y-3 gap-y-4">
-                        <input type="text" name="name" placeholder="Name (optional)"
-                            class="px-3 py-2 rounded-lg text-sm border border-[#898277] w-full" required>
-                        <div class="relative border border-[#898277] rounded-lg">
-                            <input type="email" name="email" placeholder="Email" required
-                                class="px-3 py-2 rounded-lg text-sm w-full">
-                        </div>
-                        <button type="submit"
-                            class="relative inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
-                            Join the List
-                            <div class="arrow-animation absolute top-1 right-3 w-4 h-4 leading-[1.2]"></div>
-                        </button>
-                    </form>
+                <p>Join our coffee list </p>
+                <ul class="list-disc space-y-2 pl-6">
+                    <li>Early preorder access,</li>
+                    <li>Stories and sourcing updates </li>
+                    <li>Latest spot availability, pricing trends, and exclusive offers</li>
+                </ul>
+                <form action="newsletter.php" method="POST" class="space-y-3 max-w-md">
+                    <input type="text" name="name" placeholder="Name (optional)"
+                    class="px-3 py-2 rounded-lg text-sm border border-[#898277] w-full" required>
+                    <div class="relative border border-[#898277] rounded-lg">
+                    <input type="email" name="email" placeholder="Email" required class="px-3 py-2 rounded-lg text-sm w-full"
+                        required>
+                    </div>
+                    <button type="submit"
+                    class="relative cursor-pointer inline-block bg-brand-secondary text-[#EDE8E1] border brand-border px-4 py-1 pr-9 rounded-lg group transition-colors duration-200 hover:bg-brand-primary">
+                    Join the Newsletter
+                    <div class="arrow-animation absolute top-1 right-2 w-4 h-4 leading-[1.4]"></div>
+                    </button>
+                </form>
                 </div>
             </div>
         </div>
@@ -2165,6 +2164,24 @@
     <script src="js/include.js"></script>
 
 
+    <!-- JS Toggle -->
+    <script>
+      const menu = document.getElementById('menu');
+      const openBtn = document.getElementById('menu-open');
+      const closeBtn = document.getElementById('menu-close');
+
+      openBtn.addEventListener('click', () => {
+        menu.classList.remove('hidden');
+        openBtn.classList.add('hidden');
+        closeBtn.classList.remove('hidden');
+      });
+
+      closeBtn.addEventListener('click', () => {
+        menu.classList.add('hidden');
+        openBtn.classList.remove('hidden');
+        closeBtn.classList.add('hidden');
+      });
+    </script>
 
     <!-- Sticky Navigation Script -->
     <script>
