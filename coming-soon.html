@@ -32,25 +32,23 @@
 
             <!-- Hamburger & Close (Mobile Only) -->
             <div class="lg:hidden">
-                <button id="menu-open" class="text-[#EDE8E1] w-8 h-8" aria-label="Open Menu">
-                    <!-- Hamburger SVG -->
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
+                <button id="menu-open" class="text-[#86A161] w-8 h-8" aria-label="Open Menu">
+                <!-- Hamburger SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
                 </button>
-                <button id="menu-close" class="text-[#EDE8E1] w-8 h-8 hidden" aria-label="Close Menu">
-                    <!-- Close SVG -->
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M6 18L18 6M6 6l12 12" />
-                    </svg>
+                <button id="menu-close" class="text-brand-primary w-8 h-8 hidden" aria-label="Close Menu">
+                <!-- Close SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
                 </button>
             </div>
 
             <!-- Navigation Links -->
             <ul id="menu"
-                class="hidden lg:flex flex-col lg:flex-row justify-center items-center space-y-4 lg:space-y-0 lg:space-x-6 absolute lg:static top-full left-0 w-full lg:w-auto bg-black/90 lg:bg-transparent px-6 lg:px-0 py-6 lg:py-0 z-40 lg:z-auto">
+                class="hidden lg:flex flex-col lg:flex-row justify-center items-center space-y-4 lg:space-y-0 lg:space-x-6 absolute lg:static top-full left-0 w-full bg-[#F0EAE3] lg:w-auto mobile:text-beige lg:bg-transparent px-6 lg:px-0 py-6 lg:py-0 z-40 lg:z-auto">
                 <li><a href="/about-us.html" class="p-2 block">About</a></li>
                 <li><a href="/origins.html" class="p-2 block">Origins</a></li>
                 <li><a href="/our-coffee.html" class="p-2 block">Our Coffee</a></li>
@@ -132,7 +130,54 @@
 
     <script src="js/include.js"></script>
 
+    <!-- Sticky Navigation Script -->
+    <script>
+        //const nav = document.getElementById('main-nav');
+        const signInBtn = document.getElementById('sign-in-btn');
 
+        // Add hover effect on page load
+        signInBtn.classList.add('hover:text-[#EDE8E1]');
+
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                // Nav styles
+                nav.classList.add('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
+                nav.classList.remove('bg-[#F0EAE3]', 'text-[#46433E]');
+
+                // Sign In button styles
+                signInBtn.classList.add('text-[#3B3D34]', 'border', 'border-[#D7D0C4]');
+                signInBtn.classList.remove('text-[#EDE8E1]');
+            } else {
+                // Nav styles revert
+                nav.classList.remove('bg-[#F0EAE3]', 'text-[#3B3D34]', 'border-b', 'border-[#BAAE9F]');
+                nav.classList.add('bg-[#F0EAE3]', 'text-[#46433E]');
+
+                // Sign In button revert
+                signInBtn.classList.remove('text-[#3B3D34]');
+                signInBtn.classList.add('text-[#3B3D34]');
+            }
+        });
+    </script>
+
+    <!-- JS Toggle -->
+    <script>
+      const menu = document.getElementById('menu');
+      const openBtn = document.getElementById('menu-open');
+      const closeBtn = document.getElementById('menu-close');
+
+      openBtn.addEventListener('click', () => {
+        menu.classList.remove('hidden');
+        openBtn.classList.add('hidden');
+        closeBtn.classList.remove('hidden');
+      });
+
+      closeBtn.addEventListener('click', () => {
+        menu.classList.add('hidden');
+        openBtn.classList.remove('hidden');
+        closeBtn.classList.add('hidden');
+      });
+    </script>
 
     <!-- Eye Icon -->
     <script>

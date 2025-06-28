@@ -33,25 +33,23 @@
 
             <!-- Hamburger & Close (Mobile Only) -->
             <div class="lg:hidden">
-                <button id="menu-open" class="text-[#EDE8E1] w-8 h-8" aria-label="Open Menu">
-                    <!-- Hamburger SVG -->
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
+                <button id="menu-open" class="text-[#86A161] w-8 h-8" aria-label="Open Menu">
+                <!-- Hamburger SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
                 </button>
-                <button id="menu-close" class="text-[#EDE8E1] w-8 h-8 hidden" aria-label="Close Menu">
-                    <!-- Close SVG -->
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M6 18L18 6M6 6l12 12" />
-                    </svg>
+                <button id="menu-close" class="text-brand-primary w-8 h-8 hidden" aria-label="Close Menu">
+                <!-- Close SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
                 </button>
             </div>
 
             <!-- Navigation Links -->
             <ul id="menu"
-                class="hidden lg:flex flex-col lg:flex-row justify-center items-center space-y-4 lg:space-y-0 lg:space-x-6 absolute lg:static top-full left-0 w-full lg:w-auto bg-black/90 lg:bg-transparent px-6 lg:px-0 py-6 lg:py-0 z-40 lg:z-auto">
+                class="hidden lg:flex flex-col lg:flex-row justify-center items-center space-y-4 lg:space-y-0 lg:space-x-6 absolute lg:static top-full left-0 w-full bg-[#F0EAE3] lg:w-auto mobile:text-beige lg:bg-transparent px-6 lg:px-0 py-6 lg:py-0 z-40 lg:z-auto">
                 <li><a href="/about-us.html" class="p-2 block">About</a></li>
                 <li><a href="/origins.html" class="p-2 block">Origins</a></li>
                 <li><a href="/our-coffee.html" class="p-2 block">Our Coffee</a></li>
@@ -94,22 +92,22 @@
 
 
         <!-- Table Section -->
-        <div class="relative container mx-auto px-4 py-14 space-y-8 z-[10] bg-[#F0EAE3]">
+        <div class="relative container mx-auto px-4 py-6 lg:py-14 space-y-8 z-[10] bg-[#F0EAE3]">
             <div class="flex flex-col items-center text-center space-y-4">
                 <h3 class="text-4xl font-semibold text-brand-primary">Our Origins</h3>
-                <p class="text-xl w-2xl">Attesa Coffee is a specialty coffee importer, focusing on the high quality,
+                <p class="text-base lg:text-xl w-full lg:w-2xl">Attesa Coffee is a specialty coffee importer, focusing on the high quality,
                     transparency, and responsible sourcing of green coffee beans.
                 </p>
             </div>
 
             <div
-                class="flex flex-col bg-gradient-to-t from-[#FFF3E5] via-[#FFF4E5] to-[#FFF3E5] p-10 rounded-xl gap-10">
+                class="flex flex-col bg-gradient-to-t from-[#FFF3E5] via-[#FFF4E5] to-[#FFF3E5] p-4 lg:p-10 rounded-xl gap-10">
                 <div class="">
                     <img src="/src/images/Map-Component-20.png" alt="Origins Map" class="w-full h-auto">
                 </div>
                 <div>
 
-                    <div class="grid grid-cols-6 gap-4">
+                    <div class="grid grid-cols-2 lg:grid-cols-6 gap-4">
 
                         <!-- Colombia Flag -->
                         <a href="#origin-colombia"
@@ -117,7 +115,7 @@
                             data-target="origin-colombia">
                             <div class="flex items-center space-x-2 p-1">
                                 <img src="/src/images/flags/colombia.svg" alt="India" class="w-6 h-6">
-                                <span class="text-[#A38764]">Colombia</span>
+                                <span class="text-sm lg:text-base text-[#A38764]">Colombia</span>
                             </div>
                             <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                                 <img src="/src/images/down-arrow.svg" alt="">
@@ -130,7 +128,7 @@
                             data-target="origin-peru">
                             <div class="flex items-center space-x-2 p-1">
                                 <img src="/src/images/flags/peru.svg" alt="Peru" class="w-6 h-6">
-                                <span class="text-[#A38764]">Peru</span>
+                                <span class="text-sm lg:text-base text-[#A38764]">Peru</span>
                             </div>
                             <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                                 <img src="/src/images/down-arrow.svg" alt="">
@@ -143,7 +141,7 @@
                             data-target="origin-guatemala">
                             <div class="flex items-center space-x-2 p-1">
                                 <img src="/src/images/flags/guatemala.svg" alt="India" class="w-6 h-6">
-                                <span class="text-[#A38764]">Guatemala</span>
+                                <span class="text-sm lg:text-base text-[#A38764]">Guatemala</span>
                             </div>
                             <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                                 <img src="/src/images/down-arrow.svg" alt="">
@@ -157,7 +155,7 @@
                             data-target="origin-india">
                             <div class="flex items-center space-x-2 p-1">
                                 <img src="/src/images/flags/india.svg" alt="India" class="w-6 h-6">
-                                <span class="text-[#A38764]">India</span>
+                                <span class="text-sm lg:text-base text-[#A38764]">India</span>
                             </div>
                             <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                                 <img src="/src/images/down-arrow.svg" alt="">
@@ -170,7 +168,7 @@
                             data-target="origin-ehiopia">
                             <div class="flex items-center space-x-2 p-1">
                                 <img src="/src/images/flags/Ethiopia.svg" alt="India" class="w-6 h-6">
-                                <span class="text-[#A38764]">Ethiopia</span>
+                                <span class="text-sm lg:text-base text-[#A38764]">Ethiopia</span>
                             </div>
                             <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                                 <img src="/src/images/down-arrow.svg" alt="">
@@ -183,7 +181,7 @@
                             data-target="origin-mexico">
                             <div class="flex items-center space-x-2 p-1">
                                 <img src="/src/images/flags/mexico.svg" alt="India" class="w-6 h-6">
-                                <span class="text-[#A38764]">Mexico</span>
+                                <span class="text-sm lg:text-base text-[#A38764]">Mexico</span>
                             </div>
                             <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                                 <img src="/src/images/down-arrow.svg" alt="">
@@ -196,7 +194,7 @@
                             data-target="origin-rwanda">
                             <div class="flex items-center space-x-2 p-1">
                                 <img src="/src/images/flags/rwanda.svg" alt="India" class="w-6 h-6">
-                                <span class="text-[#A38764]">Rwanda</span>
+                                <span class="text-sm lg:text-base text-[#A38764]">Rwanda</span>
                             </div>
                             <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                                 <img src="/src/images/down-arrow.svg" alt="">
@@ -209,7 +207,7 @@
                             data-target="origin-kenya">
                             <div class="flex items-center space-x-2 p-1">
                                 <img src="/src/images/flags/kenya.svg" alt="India" class="w-6 h-6">
-                                <span class="text-[#A38764]">Kenya</span>
+                                <span class="text-sm lg:text-base text-[#A38764]">Kenya</span>
                             </div>
                             <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                                 <img src="/src/images/down-arrow.svg" alt="">
@@ -222,7 +220,7 @@
                             data-target="origin-el-salvador">
                             <div class="flex items-center space-x-2 p-1">
                                 <img src="/src/images/flags/el-salvador.svg" alt="India" class="w-6 h-6">
-                                <span class="text-[#A38764]">El Salvador</span>
+                                <span class="text-sm lg:text-base text-[#A38764]">El Salvador</span>
                             </div>
                             <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                                 <img src="/src/images/down-arrow.svg" alt="">
@@ -235,7 +233,7 @@
                             data-target="origin-honduras">
                             <div class="flex items-center space-x-2 p-1">
                                 <img src="/src/images/flags/honduras.svg" alt="India" class="w-6 h-6">
-                                <span class="text-[#A38764]">Honduras</span>
+                                <span class="text-sm lg:text-base text-[#A38764]">Honduras</span>
                             </div>
                             <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                                 <img src="/src/images/down-arrow.svg" alt="">
@@ -248,7 +246,7 @@
                             data-target="origin-brazil">
                             <div class="flex items-center space-x-2 p-1">
                                 <img src="/src/images/flags/brazil.svg" alt="Brazil" class="w-6 h-6">
-                                <span class="text-[#A38764]">Brazil</span>
+                                <span class="text-sm lg:text-base text-[#A38764]">Brazil</span>
                             </div>
                             <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                                 <img src="/src/images/down-arrow.svg" alt="">
@@ -261,7 +259,7 @@
                             data-target="origin-indonesia">
                             <div class="flex items-center space-x-2 p-1">
                                 <img src="/src/images/flags/Indonesia.svg" alt="Indonesia" class="w-6 h-6">
-                                <span class="text-[#A38764]">Indonesia</span>
+                                <span class="text-sm lg:text-base text-[#A38764]">Indonesia</span>
                             </div>
                             <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                                 <img src="/src/images/down-arrow.svg" alt="">
@@ -274,7 +272,7 @@
                             data-target="origin-vietnam">
                             <div class="flex items-center space-x-2 p-1">
                                 <img src="/src/images/flags/vietnam.svg" alt="Vietnam" class="w-6 h-6">
-                                <span class="text-[#A38764]">Vietnam</span>
+                                <span class="text-sm lg:text-base text-[#A38764]">Vietnam</span>
                             </div>
                             <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                                 <img src="/src/images/down-arrow.svg" alt="">
@@ -287,7 +285,7 @@
                             data-target="origin-costa-rica">
                             <div class="flex items-center space-x-2 p-1">
                                 <img src="/src/images/flags/Costa-rica.svg" alt="Vietnam" class="w-6 h-6">
-                                <span class="text-[#A38764]">Costa Rica</span>
+                                <span class="text-sm lg:text-base text-[#A38764]">Costa Rica</span>
                             </div>
                             <div class="bg-brand-secondary flex justify-center items-center rounded-xs p-2">
                                 <img src="/src/images/down-arrow.svg" alt="">
@@ -308,12 +306,12 @@
 
 
 
-        <div class="container mx-auto px-4 border-y border-[#D7D0C4] mb-12">
+        <div class="container mx-auto px-4 lg:border-y border-[#D7D0C4] mb-12">
 
             <!-- Colombia Details -->
             <div id="origin-colombia"
-                class="grid grid-cols-2 items-stretch border-b border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full place-content-center">
-                <div class="pr-12 py-12 h-full">
+                class="grid grid-cols-1 lg:grid-cols-2 items-stretch lg:border-b border-[#D7D0C4] lg:divide-x divide-[#D7D0C4] h-full place-content-center py-6 lg:py-0 ">
+                <div class="lg:pr-12 lg:py-12 h-full py-4">
                     <!-- Left content -->
                     <div class="flex flex-row justify-between items-start">
                         <div>
@@ -350,10 +348,10 @@
                         </tr>
                     </table>
                 </div>
-                <div class="pl-12 py-12 h-full">
+                <div class="lg:pl-12 lg:py-12 h-full order-first lg:order-last">
                     <!-- Right content -->
                     <img src="/src/images/Colombia_result.jpg" alt="Origins Image"
-                        class="w-full h-96 object-cover rounded-lg">
+                        class="w-full lg:h-96 object-cover rounded-lg">
                 </div>
             </div>
 
@@ -361,13 +359,13 @@
 
             <!-- peru Details  -->
             <div id="origin-peru"
-                class="grid grid-cols-2 items-stretch border-b border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full">
-                <div class="pr-12 py-12 h-full">
+                class="grid grid-cols-1 lg:grid-cols-2 items-stretch lg:border-b border-[#D7D0C4] lg:divide-x divide-[#D7D0C4] h-full py-6 lg:py-0">
+                <div class="lg:pr-12 lg:py-12 h-full py-4">
                     <!-- Left content -->
                     <img src="/src/images/Peru_result.jpg" alt="Origins Image"
-                        class="w-full h-96 object-cover rounded-lg">
+                        class="w-full lg:h-96 object-cover rounded-lg">
                 </div>
-                <div class="pl-12 py-12 h-full">
+                <div class="lg:pl-12 lg:py-12 h-full">
                     <!-- Right content -->
                     <div class="flex flex-row justify-between items-start">
                         <div>
@@ -410,8 +408,8 @@
 
             <!-- GUATEMALA Details -->
             <div id="origin-guatemala"
-                class="grid grid-cols-2 items-stretch border-b border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full">
-                <div class="pr-12 py-12 h-full">
+                class="grid grid-cols-1 lg:grid-cols-2 items-stretch lg:border-b border-[#D7D0C4] lg:divide-x divide-[#D7D0C4] h-full py-6 lg:py-0">
+                <div class="lg:pr-12 lg:py-12 h-full">
                     <!-- Left content -->
                     <div class="flex flex-row justify-between items-start">
                         <div>
@@ -449,23 +447,23 @@
 
                     </table>
                 </div>
-                <div class="pl-12 py-12 h-full">
+                <div class="lg:pl-12 lg:py-12 h-full py-4 order-first lg:order-last">
                     <!-- Right content -->
                     <img src="/src/images/Guatemala_result.jpg" alt="Origins Image"
-                        class="w-full h-96 object-cover rounded-lg">
+                        class="w-full lg:h-96 object-cover rounded-lg">
                 </div>
             </div>
 
 
             <!-- India Details  -->
             <div id="origin-india"
-                class="grid grid-cols-2 items-stretch border-b border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full">
-                <div class="pr-12 py-12 h-full">
+                class="grid grid-cols-1 lg:grid-cols-2 items-stretch lg:border-b border-[#D7D0C4] lg:divide-x divide-[#D7D0C4] h-full py-6 lg:py-0">
+                <div class="lg:pr-12 lg:py-12 h-full py-4">
                     <!-- Left content -->
                     <img src="/src/images/India_result.jpg" alt="Origins Image"
-                        class="w-full h-96 object-cover rounded-lg">
+                        class="w-full lg:h-96 object-cover rounded-lg">
                 </div>
-                <div class="pl-12 py-12 h-full">
+                <div class="lg:pl-12 lg:py-12 h-full">
                     <!-- Right content -->
                     <div class="flex flex-row justify-between items-start">
                         <div>
@@ -500,18 +498,14 @@
                             <td>Arrival</td>
                             <td>Mar – Jun</td>
                         </tr>
-                        <tr>
-                            <td>Producers</td>
-                            <td>Three</td>
-                        </tr>
                     </table>
                 </div>
             </div>
 
             <!-- ethiopia Details -->
             <div id="origin-ethiopia"
-                class="grid grid-cols-2 items-stretch border-b border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full">
-                <div class="pr-12 py-12 h-full">
+                class="grid grid-cols-1 lg:grid-cols-2 items-stretch lg:border-b border-[#D7D0C4] lg:divide-x divide-[#D7D0C4] h-full py-6 lg:py-0">
+                <div class="lg:pr-12 lg:py-12 h-full">
                     <!-- Left content -->
                     <div class="flex flex-row justify-between items-start">
                         <div>
@@ -548,23 +542,23 @@
                         </tr>
                     </table>
                 </div>
-                <div class="pl-12 py-12 h-full">
+                <div class="lg:pl-12 lg:py-12 h-full py-4 order-first lg:order-last">
                     <!-- Right content -->
                     <img src="/src/images/Ethiopia_result.jpg" alt="Origins Image"
-                        class="w-full h-96 object-cover rounded-lg">
+                        class="w-full lg:h-96 object-cover rounded-lg">
                 </div>
             </div>
 
 
             <!-- Mexico Details  -->
             <div id="origin-mexico"
-                class="grid grid-cols-2 items-stretch border-b border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full">
-                <div class="pr-12 py-12 h-full">
+                class="grid grid-cols-1 lg:grid-cols-2 items-stretch lg:border-b border-[#D7D0C4] lg:divide-x divide-[#D7D0C4] h-full py-6 lg:py-0">
+                <div class="lg:pr-12 lg:py-12 h-full py-4">
                     <!-- Left content -->
                     <img src="/src/images/Mexico_result.jpg" alt="Origins Image"
-                        class="w-full h-96 object-cover rounded-lg">
+                        class="w-full lg:h-96 object-cover rounded-lg">
                 </div>
-                <div class="pl-12 py-12 h-full">
+                <div class="lg:pl-12 lg:py-12 h-full">
                     <!-- Right content -->
                     <div class="flex flex-row justify-between items-start">
                         <div>
@@ -606,8 +600,8 @@
 
             <!-- RWANDA Details -->
             <div id="origin-rwanda"
-                class="grid grid-cols-2 items-stretch border-b border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full">
-                <div class="pr-12 py-12 h-full">
+                class="grid grid-cols-1 lg:grid-cols-2 items-stretch lg:border-b border-[#D7D0C4] lg:divide-x divide-[#D7D0C4] h-full">
+                <div class="lg:pr-12 lg:py-12 h-full py-4">
                     <!-- Left content -->
                     <div class="flex flex-row justify-between items-start">
                         <div>
@@ -644,22 +638,22 @@
                         </tr>
                     </table>
                 </div>
-                <div class="pl-12 py-12 h-full">
+                <div class="lg:pl-12 lg:py-12 h-full py-4 order-first lg:order-last">
                     <!-- Right content -->
                     <img src="/src/images/Rwanda_result.jpg" alt="Origins Image"
-                        class="w-full h-96 object-cover rounded-lg">
+                        class="w-full lg:h-96 object-cover rounded-lg">
                 </div>
             </div>
 
             <!-- KENYA Details  -->
             <div id="origin-kenya"
-                class="grid grid-cols-2 items-stretch border-b border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full">
-                <div class="pr-12 py-12 h-full">
+                class="grid grid-cols-1 lg:grid-cols-2 items-stretch lg:border-b border-[#D7D0C4] lg:divide-x divide-[#D7D0C4] h-full">
+                <div class="lg:pr-12 lg:py-12 h-full py-4">
                     <!-- Left content -->
                     <img src="/src/images/Kenya_result.jpg" alt="Origins Image"
-                        class="w-full h-96 object-cover rounded-lg">
+                        class="w-full lg:h-96 object-cover rounded-lg">
                 </div>
-                <div class="pl-12 py-12 h-full">
+                <div class="lg:pl-12 lg:py-12 h-full">
                     <!-- Right content -->
                     <div class="flex flex-row justify-between items-start">
                         <div>
@@ -702,8 +696,8 @@
 
             <!-- EL SALVADOR Details -->
             <div id="origin-el-salvador"
-                class="grid grid-cols-2 items-stretch border-b border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full">
-                <div class="pr-12 py-12 h-full">
+                class="grid grid-cols-1 lg:grid-cols-2 items-stretch lg:border-b border-[#D7D0C4] lg:divide-x divide-[#D7D0C4] h-full py-6 lg:py-0">
+                <div class="lg:pr-12 lg:py-12 h-full">
                     <!-- Left content -->
                     <div class="flex flex-row justify-between items-start">
                         <div>
@@ -740,23 +734,23 @@
                         </tr>
                     </table>
                 </div>
-                <div class="pl-12 py-12 h-full">
+                <div class="lg:pl-12 lg:py-12 h-full py-4 order-first lg:order-last">
                     <!-- Right content -->
                     <img src="/src/images/Rwanda_result.jpg" alt="Origins Image"
-                        class="w-full h-96 object-cover rounded-lg">
+                        class="w-full lg:h-96 object-cover rounded-lg">
                 </div>
             </div>
 
 
             <!-- HONDURAS Details  -->
             <div id="origin-honduras"
-                class="grid grid-cols-2 items-stretch border-b border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full">
-                <div class="pr-12 py-12 h-full">
+                class="grid grid-cols-1 lg:grid-cols-2 items-stretch lg:border-b border-[#D7D0C4] lg:divide-x divide-[#D7D0C4] h-full py-6 lg:py-0">
+                <div class="lg:pr-12 lg:py-12 h-full py-4">
                     <!-- Left content -->
                     <img src="/src/images/Honduras_result.jpg" alt="Origins Image"
-                        class="w-full h-96 object-cover rounded-lg">
+                        class="w-full lg:h-96 object-cover rounded-lg">
                 </div>
-                <div class="pl-12 py-12 h-full">
+                <div class="lg:pl-12 lg:py-12 h-full">
                     <!-- Right content -->
                     <div class="flex flex-row justify-between items-start">
                         <div>
@@ -797,8 +791,8 @@
             </div>
 
             <!-- BRAZIL Details -->
-            <div id="origin-brazil" class="grid grid-cols-2 items-stretch border-b border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full">
-                <div class="pr-12 py-12 h-full">
+            <div id="origin-brazil" class="grid grid-cols-1 lg:grid-cols-2 items-stretch lg:border-b border-[#D7D0C4] lg:divide-x divide-[#D7D0C4] h-full py-6 lg:py-0">
+                <div class="lg:pr-12 lg:py-12 h-full">
                     <!-- Left content -->
                     <div class="flex flex-row justify-between items-start">
                         <div>
@@ -835,22 +829,22 @@
                         </tr>
                     </table>
                 </div>
-                <div class="pl-12 py-12 h-full">
+                <div class="lg:pl-12 lg:py-12 h-full py-4 order-first lg:order-last">
                     <!-- Right content -->
                     <img src="/src/images/Brazil_result.jpg" alt="Origins Image"
-                        class="w-full h-96 object-cover rounded-lg">
+                        class="w-full lg:h-96 object-cover rounded-lg">
                 </div>
             </div>
 
             <!-- Indonesia Details  -->
             <div id="origin-indonesia"
-                class="grid grid-cols-2 items-stretch border-b border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full">
-                <div class="pr-12 py-12 h-full">
+                class="grid grid-cols-1 lg:grid-cols-2 items-stretch lg:border-b border-[#D7D0C4] lg:divide-x divide-[#D7D0C4] h-full py-4 lg:py-0">
+                <div class="lg:pr-12 lg:py-12 h-full py-4">
                     <!-- Left content -->
                     <img src="/src/images/Indonesia_result.jpg" alt="Origins Image"
-                        class="w-full h-96 object-cover rounded-lg">
+                        class="w-full lg:h-96 object-cover rounded-lg">
                 </div>
-                <div class="pl-12 py-12 h-full">
+                <div class="lg:pl-12 lg:py-12 h-full">
                     <!-- Right content -->
                     <div class="flex flex-row justify-between items-start">
                         <div>
@@ -889,8 +883,8 @@
             </div>
 
             <!-- Vietnam Details -->
-            <div id="origin-vietnam" class="grid grid-cols-2 items-stretch border-b border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full">
-                <div class="pr-12 py-12 h-full">
+            <div id="origin-vietnam" class="grid grid-cols-1 lg:grid-cols-2 items-stretch lg:border-b border-[#D7D0C4] lg:divide-x divide-[#D7D0C4] h-full py-6 lg:py-0">
+                <div class="lg:pr-12 lg:py-12 h-full">
                     <!-- Left content -->
                     <div class="flex flex-row justify-between items-start">
                         <div>
@@ -927,7 +921,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="pl-12 py-12 h-full">
+                <div class="lg:pl-12 lg:py-12 h-full py-4 order-first lg:order-last">
                     <!-- Right content -->
                     <img src="/src/images/Brazil_result.jpg" alt="Origins Image"
                         class="w-full h-96 object-cover rounded-lg">
@@ -937,13 +931,13 @@
 
             <!-- Costa Rica Details  -->
             <div id="origin-costa-rica"
-                class="grid grid-cols-2 items-stretch border-b border-[#D7D0C4] divide-x divide-[#D7D0C4] h-full">
-                <div class="pr-12 py-12 h-full">
+                class="grid grid-cols-1 lg:grid-cols-2 items-stretch lg:border-b border-[#D7D0C4] lg:divide-x divide-[#D7D0C4] h-full py-6 lg:py-0">
+                <div class="lg:pr-12 lg:py-12 h-full py-4">
                     <!-- Left content -->
                     <img src="/src/images/Costa-Rica_result.jpg" alt="Origins Image"
                         class="w-full h-96 object-cover rounded-lg">
                 </div>
-                <div class="pl-12 py-12 h-full">
+                <div class="lg:pl-12 lg:py-12 h-full">
                     <!-- Right content -->
                     <div class="flex flex-row justify-between items-start">
                         <div>
@@ -1024,7 +1018,24 @@
         });
     </script>
 
+    <!-- JS Toggle -->
+    <script>
+      const menu = document.getElementById('menu');
+      const openBtn = document.getElementById('menu-open');
+      const closeBtn = document.getElementById('menu-close');
 
+      openBtn.addEventListener('click', () => {
+        menu.classList.remove('hidden');
+        openBtn.classList.add('hidden');
+        closeBtn.classList.remove('hidden');
+      });
+
+      closeBtn.addEventListener('click', () => {
+        menu.classList.add('hidden');
+        openBtn.classList.remove('hidden');
+        closeBtn.classList.add('hidden');
+      });
+    </script>
 
     <!-- Icon Animation Script -->
       <script>
